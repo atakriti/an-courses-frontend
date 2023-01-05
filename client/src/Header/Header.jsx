@@ -9,7 +9,8 @@ function Header() {
           <nav> 
                 <Link to="/contact">Contact</Link>
                 <Link to="/about">About</Link>
-                <Link to="/courses">Courses</Link>
+                {/* <Link to="/courses">Courses</Link> */}
+                <Link to="/feedback">Feedbacks</Link>
                 <Link to="/register">Sign in</Link>
            
           </nav>
