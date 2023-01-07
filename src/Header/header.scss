@@ -21,7 +21,29 @@ header{
         a{
             color: #DDBC9B;
             font-size: 1.1rem;
-            text-decoration: none;            
+            text-decoration: none;  
+                     
         }
+        .signout{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 30%;
+                height: 30%;
+                border-radius: 50%;
+                object-fit: cover;
+
+                }
+        }
+        // .signout{
+        //     display: flex;
+        //     border: 1px red solid;
+        //     img{
+        //         width: 10%;
+        //         height: 100%;
+        //     }
+        // }
     }
 }

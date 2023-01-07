@@ -1,0 +1,29 @@
+.levels {
+    .levels_container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0.5 1 350px;
+        padding: 1rem;
+        border: 1px #DDBC9B solid;
+        border-radius: 10px;
+        text-decoration: none;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        h3 {
+          color: white;
+          margin-top: 1rem;
+          font-size: clamp(1.2rem, 1.5vw, 2rem);
+        }
+      }
+    }
+  }
+  

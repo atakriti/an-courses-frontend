@@ -7,7 +7,7 @@ import user from "../images/user.jpg";
 import { context } from "../Context";
 
 function Register() {
-    let { users,fetchUsers,setUsers } = useContext(context)
+    let { users,fetchUsers,setUsers,setSignedin,setIsSignedin } = useContext(context)
     let navigate = useNavigate()
   let [switchRegister, setSwitchRegister] = useState(1);
   let [signUpValue, setSignUpValue] = useState({
@@ -27,7 +27,12 @@ function Register() {
     }
     let handleSubmitSignin = ( e) => {
         e.preventDefault()
-        if (users?.some(user => user?.email === signinValue?.email && user?.password === signinValue?.password)) {
+      if (users?.some(user => user?.email === signinValue?.email && user?.password === signinValue?.password)) {
+        setSignedin({
+          username: signinValue?.email,
+          password:signinValue?.password
+        })
+        setIsSignedin(true)
             navigate("/")
         }else{
             alert("E-Mail or Password is not correct !")

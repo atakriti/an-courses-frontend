@@ -2,7 +2,7 @@ let data = [
     {
         question: "__ heiße Maria",
         translate: "اسمي ماريا",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -15,7 +15,7 @@ let data = [
     {
         question: "__ geht es dir?",
         translate: "كيفك؟",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -28,7 +28,7 @@ let data = [
     {
         question: "Du __ in Berlin.",
         translate: "انت ساكن في برلين",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -41,7 +41,7 @@ let data = [
     {
         question: "Ich spreche __ Deutsch",
         translate: "انا ما بحكي الماني",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -54,7 +54,7 @@ let data = [
     {
         question: "Ich __ Durst",
         translate: "انا عطشان",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -67,7 +67,7 @@ let data = [
     {
         question: "Ich __ Hunger.",
         translate: "انا جوعان",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -80,7 +80,7 @@ let data = [
     {
         question: "Ich __ müde.",
         translate: "انا تعبان",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -93,7 +93,7 @@ let data = [
     {
         question: "Du __ nett.",
         translate: "انت ظريف",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -106,7 +106,7 @@ let data = [
     {
         question: "Ihr __ zu spät.",
         translate: "انتو متاخرين",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -119,7 +119,7 @@ let data = [
     {
         question: "Er __ krank.",
         translate: "هو مريض",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -132,7 +132,7 @@ let data = [
     {
         question: "__ ist kalt draußen.",
         translate: "برا برد",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -145,7 +145,7 @@ let data = [
     {
         question: "Wir __ hungrig.",
         translate: "نحنا جوعانين",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -158,7 +158,7 @@ let data = [
     {
         question: "__ machst du heute Abend? ",
         translate: "شو عندك اليوم المسا؟",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -171,7 +171,7 @@ let data = [
     {
         question: "__ wohnst du? ",
         translate: "وين ساكن انت؟",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -184,7 +184,7 @@ let data = [
     {
         question: "__ fängt der Film an?",
         translate: "امتى لح يبلش الفلم؟",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -197,7 +197,7 @@ let data = [
     {
         question: "__ bist du traurig?",
         translate: "ليش زعلان؟",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -210,7 +210,7 @@ let data = [
     {
         question: "__ kommst du zu spät ?",
         translate: "ليش متاخر؟",
-        type: "grammer",
+        type: "grammar",
         level:"a1",
         lan: "de",
         options: [
@@ -454,7 +454,7 @@ let data = [
     {
         question: "Ich sehe __ Katze __ Garten",
         translate: "انا شايف القطة بالحديقة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -467,7 +467,7 @@ let data = [
     {
         question: "Ich habe __ Buch auf __ Tisch gelesen",
         translate: "انا قرات الكتاب على الطاولة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -480,7 +480,7 @@ let data = [
     {
         question: "Wir hören __ Musik __ Auto",
         translate: "عم نسمع الاغاني بالسيارة ",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -493,7 +493,7 @@ let data = [
     {
         question: "Er trinkt __ Kaffee schnell",
         translate: "عم يشرب القهوة بسرعة ",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -506,7 +506,7 @@ let data = [
     {
         question: "Ich habe __ Handy verloren",
         translate: "ضيعت موبايلي",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -519,7 +519,7 @@ let data = [
     {
         question: "Sie gibt __ Baby die Flasche",
         translate: "عم تعطي الطفل القنينة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -532,7 +532,7 @@ let data = [
     {
         question: "Er schreibt die E-Mail auf __ Computer",
         translate: "عم يكتب الايميل على الكمبيوتر",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -545,7 +545,7 @@ let data = [
     {
         question: "Ich nehme die Jacke __ Haken",
         translate: "عم ياخود الجاكيت من العليقة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -558,7 +558,7 @@ let data = [
     {
         question: "Sie trägt die Tasche über __ Schulter",
         translate: "هية حاملة الشنتاية على الكتف",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -571,7 +571,7 @@ let data = [
     {
         question: "Die Blume gehört __ Mädchen",
         translate: "الوردة للبنت",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -584,7 +584,7 @@ let data = [
     {
         question: "Der Ball ist unter __ Sofa",
         translate: "الطابة تحت الصوفا",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -597,7 +597,7 @@ let data = [
     {
         question: "Der Lehrer gibt __ Schüler eine Aufgabe",
         translate: "الاستاذ عم يعطي الطالب وظيفة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -610,7 +610,7 @@ let data = [
     {
         question: "Der Apfel fällt __ Baum",
         translate: "التفاحة تسقط من على الشجرة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -623,7 +623,7 @@ let data = [
     {
         question: "Ich gebe __ Katz__ Futter",
         translate: "عم طعمي القطة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -636,7 +636,7 @@ let data = [
     {
         question: "Die Kinder bekommen Geschenke __ __ Eltern",
         translate: "الاولاد عم يتلقون هدايا من الاهل",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -649,7 +649,7 @@ let data = [
     {
         question: "Wir danken __ Nachbar_ für ihre Hilfe",
         translate: "نحنا منشكر الجيران لمساعدتهم",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -662,7 +662,7 @@ let data = [
     {
         question: "Ich gebe __ Frau eine Blume",
         translate: "عم اعطي المرأة وردة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -675,7 +675,7 @@ let data = [
     {
         question: "Die Schwester schenkt __ Mutter eine Karte",
         translate: "الاخت تهدي الام بطاقة",
-        type: "grammer",
+        type: "grammar",
         level:"a2",
         lan: "de",
         options: [
@@ -923,6 +923,414 @@ let data = [
         lan: "de",
        answer:"Die Schüler, die in der letzten Reihe sitzen, unterhalten sich während des Unterrichts."
     },
-  
+    // =========================================== B1 ====================================================
+    {
+        question: "Ich __ gerne wissen, ob du morgen Zeit __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,hast",isCorrect:false},
+            {answer:"wäre,hättest",isCorrect:false},
+            {answer:"würde,hättest",isCorrect:true},
+            {answer:"würde,habe",isCorrect:false}
+        ]
+    }, 
+    {
+        question: "Es __ schön, wenn du mir bei meiner Hausarbeit helfen __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,hast",isCorrect:false},
+            {answer:"wäre,könntest",isCorrect:true},
+            {answer:"wäre,hättest",isCorrect:false},
+            {answer:"würde,habe",isCorrect:false}
+        ]
+    }, 
+    {
+        question: "Ich __ gerne, ob du vielleicht Lust __, heute Abend ins Kino zu gehen",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,hast",isCorrect:false},
+            {answer:"wäre,hättest",isCorrect:false},
+            {answer:"würde,habe",isCorrect:false},
+            {answer:"wüsste,hättest",isCorrect:true},
+        ]
+    }, 
+    {
+        question: "Es __ toll, wenn du mich bei meinem Projekt unterstützen __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"wäre,könntest",isCorrect:true},
+            {answer:"würde,hast",isCorrect:false},
+            {answer:"wäre,hättest",isCorrect:false},
+            {answer:"würde,habe",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Ich __ mich freuen, wenn du mich bei meiner Präsentation begleiten __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,hast",isCorrect:false},
+            {answer:"wäre,hättest",isCorrect:false},
+            {answer:"würde,habe",isCorrect:false},
+            {answer:"würde,könntest",isCorrect:true},
+        ]
+    }, 
+    {
+        question: "Es __ nett, wenn ihr mir bei der Vorbereitung meiner Reise helfen __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,hat",isCorrect:false},
+            {answer:"wäre,könntet",isCorrect:true},
+            {answer:"wäre,hättet",isCorrect:false},
+            {answer:"würde,habt",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Ich __ gerne wissen, ob Sie vielleicht Lust __, am Wochenende etwas zusammen zu unternehmen",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,hatten",isCorrect:false},
+            {answer:"würde,hätten",isCorrect:true},
+            {answer:"wäre,haben",isCorrect:false},
+            {answer:"würde,hat",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"wäre,könnte",isCorrect:true},
+            {answer:"würde,habt",isCorrect:false},
+            {answer:"wäre,könntet",isCorrect:false},
+            {answer:"würde,hat",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,habt",isCorrect:false},
+            {answer:"wäre,könnte",isCorrect:true},
+            {answer:"wäre,könntet",isCorrect:false},
+            {answer:"würde,hat",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Wenn es möglich gewesen __, __ wir das Problem früher gelöst",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"wäre,hätten",isCorrect:true},
+            {answer:"würde,hätten",isCorrect:false},
+            {answer:"wäre,könnten",isCorrect:false},
+            {answer:"würde,haben",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Wenn ich genügend Geld __, __ ich mir ein neues Auto kaufen",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,hätte",isCorrect:false},
+            {answer:"wäre,könnte",isCorrect:false},
+            {answer:"hätte,würde",isCorrect:true},
+            {answer:"würde,habe",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Er __ den Job annehmen, wenn er die Zusage __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würde,bekommt",isCorrect:false},
+            {answer:"wäre,könnte",isCorrect:false},
+            {answer:"würde,bekäme",isCorrect:true},
+            {answer:"würde,hat",isCorrect:false},
+        ]
+    }, 
+    {
+        question: "Sie __ sicherlich besser spielen, wenn sie mehr üben __",
+        translate: "No Translate",
+        type: "grammar",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"würden,bekommt",isCorrect:false},
+            {answer:"wären,könnte",isCorrect:false},
+            {answer:"würden,hat",isCorrect:false},
+            {answer:"würden,würden",isCorrect:true},
+        ]
+    }, 
+    // ====================================================== B1 Vocabs ==============================
+    {
+        question: "Die Mädchen, die ich gesehen habe, als ich durch den __ spazierte, spielten Frisbee.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"park",isCorrect:true},
+            {answer:"haus",isCorrect:false},
+            {answer:"straße",isCorrect:false},
+            {answer:"platz",isCorrect:false}
+            ]
+    },
+    {
+        question: "Er wohnt in einem Haus, das direkt am __ liegt, und manchmal geht er angeln.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"fluss",isCorrect:true},
+            {answer:"see",isCorrect:false},
+            {answer:"ozean",isCorrect:false},
+            {answer:"meer",isCorrect:false}
+            ]
+    },
+    {
+        question: "Wenn ich genug __ hätte, würde ich gerne eine Reise um die Welt machen.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"geld",isCorrect:true},
+            {answer:"zeit",isCorrect:false},
+            {answer:"tickets",isCorrect:false},
+            {answer:"visa",isCorrect:false}
+            ]
+    },
+    {
+        question: "Ich habe das Buch, das du mir empfohlen hast, noch nicht __, aber ich werde es bald tun.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"gelesen",isCorrect:true},
+            {answer:"gekauft",isCorrect:false},
+            {answer:"ausgeliehen",isCorrect:false},
+            {answer:"verschenkt",isCorrect:false}
+            ]
+    },
+    {
+        question: "Die Schüler, die in der __ Reihe sitzen, hören dem Lehrer besonders aufmerksam zu.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"ersten",isCorrect:true},
+            {answer:"letzten",isCorrect:false},
+            {answer:"mittleren",isCorrect:false},
+            {answer:"vierten",isCorrect:false}
+            ]
+    },
+    {
+        question: "Ich habe gehört, dass es in __ viele gefährliche Tiere gibt, wie Krokodile und Giftschlangen.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"australien",isCorrect:true},
+            {answer:"afrika",isCorrect:false},
+            {answer:"südamerika",isCorrect:false},
+            {answer:"asien",isCorrect:false}
+            ]
+    },
+    {
+        question: "Die Familie, die in dem __ Haus wohnt, hat viele Kinder und Haustiere.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"großen",isCorrect:true},
+            {answer:"kleinen",isCorrect:false},
+            {answer:"alten",isCorrect:false},
+            {answer:"neuen",isCorrect:false}
+            ]
+    },
+    {
+        question: "Der Junge, der das Fahrrad __, ist mein kleiner Bruder.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"fährt",isCorrect:true},
+            {answer:"repariert",isCorrect:false},
+            {answer:"verkauft",isCorrect:false},
+            {answer:"verleiht",isCorrect:false}
+            ]
+    },
+    {
+        question: "Das Wetter ist heute so schön, dass ich gerne im __ spazieren gehen würde.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"park",isCorrect:true},
+            {answer:"wald",isCorrect:false},
+            {answer:"garten",isCorrect:false},
+            {answer:"strand",isCorrect:false}
+            ]
+    },
+    {
+        question: "Ich habe gehört, dass es in __ viele interessante Orte zu besuchen gibt, wie zum Beispiel die Stadt Tokio.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"japan",isCorrect:true},
+            {answer:"korea",isCorrect:false},
+            {answer:"china",isCorrect:false},
+            {answer:"thailand",isCorrect:false}
+            ]
+    },
+    {
+        question: "Ich habe das Museum, das du mir empfohlen hast, letztes Wochenende __ und es war sehr interessant.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"besucht",isCorrect:true},
+            {answer:"gefunden",isCorrect:false},
+            {answer:"empfohlen",isCorrect:false},
+            {answer:"geöffnet",isCorrect:false}
+            ]
+    },
+    {
+        question: "Ich habe das Museum, das du mir empfohlen hast, letztes Wochenende __ und es war sehr interessant.",
+        translate: "No Translate",
+        type: "vocabs",
+        level:"b1",
+        lan: "de",
+        options: [
+            {answer:"besucht",isCorrect:true},
+            {answer:"gefunden",isCorrect:false},
+            {answer:"empfohlen",isCorrect:false},
+            {answer:"geöffnet",isCorrect:false}
+            ]
+    },
+    // =================================== B1 Writting ==============================
+    {
+        question: "Schüler,/die/Die/im/belohnt./werden/gut/aufgepasst/Unterricht/haben,",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Die Schüler, die im Unterricht gut aufgepasst haben, werden belohnt."
+    },
+    {
+        question: "habe/das/Antworten/alle/Buch,/vergessen./in/Ich/dem/stehen,",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Ich habe das Buch, in dem alle Antworten stehen, vergessen."
+    },
+    {
+        question: "spazieren/es/wir/regnet,/gehen./Obwohl/werden",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Obwohl es regnet, werden wir spazieren gehen."
+    },
+    {
+        question: "habe/du/das/geliehen/das/Auto,/gepflegt./sorgfältig/Ich/mir/hast,",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Ich habe das Auto, das du mir geliehen hast, sorgfältig gepflegt"
+    },
+    {
+        question: "du/glaube,/hast./recht/Ich/dass",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Ich glaube, dass du recht hast."
+    },
+    {
+        question: "stellte/dass/sich/er/lügt./Es/heraus,",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Es stellte sich heraus, dass er lügt."
+    },
+    {
+        question: "nicht,/Ich/du/dass/wusste/würdest./kommen",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Ich wusste nicht, dass du kommen würdest."
+    },
+    {
+        question: "es/wir/regnet,/gehen/spazieren./Obwohl",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Obwohl es regnet, gehen wir spazieren."
+    },
+    {
+        question: "er/arbeitet/er/weiter./müde/Obwohl ist,",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Obwohl er müde ist, arbeitet er weiter."
+    },
+    {
+        question: "keinen/esse/Sandwich./Hunger/ich/Obwohl/habe,/ich/das",
+        translate: "No Translate, Dont forget to put after the coma a space",
+        type: "writting",
+        level:"b1",
+        lan: "de",
+       answer:"Obwohl ich keinen Hunger habe, esse ich das Sandwich."
+    }
+   
 ]
 console.log(data.length);
