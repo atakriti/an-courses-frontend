@@ -5,7 +5,6 @@ export let context = createContext()
 
 function Context(props) {
   let [users, setUsers] = useState([])
-  console.log("🚀 ~ file: Context.jsx:6 ~ Context ~ users", users)
   let fetchUsers = async () => {
     let api = await fetch("http://localhost:4000/getTheAllUsers")
     let json = await api.json()

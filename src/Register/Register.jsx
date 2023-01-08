@@ -29,7 +29,7 @@ function Register() {
         e.preventDefault()
       if (users?.some(user => user?.email === signinValue?.email && user?.password === signinValue?.password)) {
         setSignedin({
-          username: signinValue?.email,
+          email: signinValue?.email,
           password:signinValue?.password
         })
         setIsSignedin(true)

@@ -1,0 +1,62 @@
+.singleCourse{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    .singleCourse_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:min(100% - 7% ,800px);
+        padding: 1rem;
+        h1{
+            color: #FFDE59;
+            margin-bottom: 2rem;
+            text-align: center;
+
+        }
+        h3{
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+        ul{
+            // border: 1px red solid;
+             width:min(100% - 3% ,800px);
+            list-style:decimal ;
+            list-style-position: inside;
+            margin:2rem 0rem;
+            li{
+                border-bottom: 1px solid #fff;
+                padding: 1rem;
+                color: white;
+                font-size: 1.1rem;
+                cursor: pointer;
+                // margin-bottom: 1rem;
+                // text-align: center;
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: #FFDE59;
+                    border: none;
+                    color: black;
+                    transition: 0.2s;
+                }
+            }
+        }
+        button{
+            background-color: #3994C9;
+            width: min(100% - 7% , 20rem);
+            padding: 0.7rem 0;
+            font-size: 1.1rem;
+            transition: 0.5s;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: white;
+            &:hover{
+            transition: 0.5s;
+                background-color: #136696;
+            }
+        }
+    }
+}

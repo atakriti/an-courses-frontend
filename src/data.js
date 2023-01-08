@@ -1333,4 +1333,4 @@ let data = [
     }
    
 ]
-console.log(data.length);
+export default data

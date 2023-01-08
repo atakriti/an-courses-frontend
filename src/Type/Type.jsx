@@ -1,10 +1,10 @@
 import React from 'react'
-import "./categories.scss"
+import "./type.scss"
 import { Link, useParams } from 'react-router-dom'
 import grammar from "../images/grammar.jpg"
 import vocabs from "../images/vocabs.jpg"
 import writting from "../images/writting.jpg"
-function Categories() {
+function Type() {
   let {lan,level} = useParams()
 
   return (
@@ -18,4 +18,4 @@ function Categories() {
   )
 }
 
-export default Categories
+export default Type
