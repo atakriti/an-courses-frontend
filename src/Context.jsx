@@ -5,6 +5,7 @@ export let context = createContext()
 
 function Context(props) {
   let [users, setUsers] = useState([])
+  let [isFetching,setIsFetching] = useState(false)
   let fetchUsers = async () => {
     let api = await fetch("http://localhost:4000/getTheAllUsers")
     let json = await api.json()
@@ -43,10 +44,12 @@ function Context(props) {
   // ========================================== End Precentage ===================================
 
   useEffect(() => {
-      fetchUsers().then(result => setUsers(result))
+    setIsFetching(true)
+    fetchUsers().then(result => setUsers(result)).then(() => setIsFetching(false))
+    
   },[])
   return (
-    <context.Provider value={{fetchUsers,users, setUsers,signedin, setSignedin,isSignedin,setIsSignedin}}>{props.children}</context.Provider>
+    <context.Provider value={{fetchUsers,users, setUsers,signedin, setSignedin,isSignedin,setIsSignedin,isFetching}}>{props.children}</context.Provider>
   )
 }
 
