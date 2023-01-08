@@ -80,10 +80,37 @@
                     fill: #FFDE59;
                 }
             }
-            .mic{
-                fill: green;
-            }
+           
         }
+        .mic_btn{
+            padding: 1.5rem;
+            border-radius: 50%;
+            background-color: #FFDE59;
+            margin: 1rem 0;
+            cursor: pointer;
+            svg{
+                
+                font-size: 3rem;
+                fill: white;
+            }
+            
+        }
+        .mic_btn_active{
+            padding: 1.5rem;
+            border-radius: 50%;
+            background-color: green;
+            margin: 1rem 0;
+            cursor: pointer;
+            svg{
+                font-size: 3rem;
+                fill: white;
+            }
+           
+        }
+
+
+
+
         h4{
             font-size: 1.1rem;
             color: #3994C9;
@@ -181,6 +208,16 @@
                 color: red;
                 margin-bottom: 1rem;
                 font-size: 1rem;
+            }
+        }
+        p{
+            color: white;
+            border: 1px white solid;
+            width: min(100% - 5% , 600px);
+            font-size: 1.1rem;
+            padding: 1rem;
+            &:empty{
+                display: none;
             }
         }
         button{

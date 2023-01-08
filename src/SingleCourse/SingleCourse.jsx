@@ -31,7 +31,7 @@ function SingleCourse() {
   // console.log("🚀 ~ file: SingleCourse.jsx:16 ~ SingleCourse ~ clickedSentence", clickedSentence)
   // ==================================================================================================================
   let handleClickSentence = (i,item) => {
-    setClickedSentence(item)
+    setClickedSentence(item) 
     setClickedIndex(i)
     if (item.isCorrect === true) {
       setColorCorrect(true)
@@ -96,9 +96,13 @@ function SingleCourse() {
     resetTranscript,
     browserSupportsSpeechRecognition
   } = useSpeechRecognition();
-  inputValue = transcript
+  console.log("🚀 ~ file: SingleCourse.jsx:99 ~ SingleCourse ~ transcript", typeof transcript)
+  // setInputValue(transcript)
+  // inputValue = transcript
+  
   let handleRecord = () => {
     if (lan === "de") {
+
       SpeechRecognition.startListening({ language: 'de-DE' })
     } else {
       SpeechRecognition.startListening({ language: 'en-US' })
@@ -129,11 +133,15 @@ function SingleCourse() {
         <div className="btns">
           <BsTranslate onClick={()=>setTranslate(!translate)} />
           <GiSpeaker onClick={handleSpeech} />
-          {type === "writting" && (
-            <MdKeyboardVoice onClick={handleRecord} className={listening && "mic"} />
-            )}
+          
         </div>
-        {type === "writting" && (
+        {type === "speaking" && (
+            <div onClick={handleRecord} className={listening ? "mic_btn_active" : "mic_btn"}>
+            <MdKeyboardVoice  />
+            </div>
+           )}
+       
+        {type === "speaking" && (
             <h6>{ listening ? "Mic is on" : "Mic is off"}</h6>
             )}
         <h5>{translate && filterData[counter]?.translate}</h5>
@@ -145,10 +153,13 @@ function SingleCourse() {
         </ul>
         {type === "writting" && (
           <form action="">
-            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue} type="text" name="writting" id="" placeholder="Write the Sentence, or press the voice button" />
+            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue } type="text" name="writting" id="" placeholder="Write the Sentence, or press the voice button" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>
+        )}
+        {type === "speaking" && (
+          <p>{transcript}</p>
         )}
         {clickedSentence?.isCorrect === true && (
           <button onClick={handleNext}>Next</button>
