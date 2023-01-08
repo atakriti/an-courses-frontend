@@ -5,6 +5,8 @@ import { context } from "../Context";
 import data from "../data";
 import { BsTranslate } from "react-icons/bs"
 import { GiSpeaker } from "react-icons/gi"
+import {MdKeyboardVoice} from "react-icons/md"
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 import "./singleCourse.scss";
 function SingleCourse() {
@@ -88,7 +90,23 @@ speech.pitch = 1
     
   }
   // ====================================================================================================
-
+  const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition
+  } = useSpeechRecognition();
+    console.log("🚀 ~ file: SingleCourse.jsx:99 ~ SingleCourse ~ listening", listening)
+  inputValue = transcript
+  let handleRecord = () => {
+    if (lan === "de") {
+      SpeechRecognition.startListening({ language: 'de-DE' })
+    } else {
+      SpeechRecognition.startListening({ language: 'en-US' })
+      
+    }
+     
+  }
   // console.log("testing", { [`${lan}-${level}-${type}`]: true });
   useEffect(() => {
         setFoundUserState(findUser)
@@ -100,15 +118,25 @@ speech.pitch = 1
         <span class="loader"></span>
         </div>
       )}
+      {listening && (
+          <div className="speaking">
+          <span class="loader"></span>
+          </div>
+      )}
       <div className="singleCourse_container">
         <h1>{`${lan === "de" && "German" || lan === "en" && "English"} – ${level[0].toUpperCase() + level.slice(1)} – ${type[0].toUpperCase() + type.slice(1)}`}</h1>
-        
         <h4>{ `${counter + 1} out of ${filterData.length}`}</h4>
         <h3>{filterData[counter]?.question}</h3>
         <div className="btns">
           <BsTranslate onClick={()=>setTranslate(!translate)} />
-          <GiSpeaker onClick={handleSpeech}/>
+          <GiSpeaker onClick={handleSpeech} />
+          {type === "writting" && (
+            <MdKeyboardVoice onClick={handleRecord} className={listening && "mic"} />
+            )}
         </div>
+        {type === "writting" && (
+            <h6>{ listening ? "Mic is on" : "Mic is off"}</h6>
+            )}
         <h5>{translate && filterData[counter].translate}</h5>
        
         <ul>
@@ -119,7 +147,7 @@ speech.pitch = 1
         {type === "writting" && (
           <form action="">
             <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue} type="text" name="writting" id="" placeholder="Correct the Sentence" />
-            {writtingFalse && <h5>The answer is not correct !</h5>}
+            {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>
         )}

@@ -49,6 +49,7 @@
         0%   { height: 48px} 
         100% { height: 4px}
       }
+     
    }
     // ===================================== End Loader ==================
     .singleCourse_container{
@@ -64,7 +65,7 @@
 
         }
         .btns{
-            width: min(100% - 5% ,100px);
+            width: min(100% - 5% ,120px);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -78,6 +79,9 @@
                     transition: 0.5s;
                     fill: #FFDE59;
                 }
+            }
+            .mic{
+                fill: green;
             }
         }
         h4{
@@ -94,6 +98,10 @@
             color: #3994C9;
             font-size: 1rem;
             margin: 1rem 0;
+        }
+        h6{
+            color: red;
+            font-size: 1rem;
         }
         ul{
             // border: 1px red solid;
