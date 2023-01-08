@@ -14,7 +14,34 @@ function Context(props) {
     email: "",
     password: "",
   })
-  let [isSignedin,setIsSignedin] = useLocalStorage("course-isSignedin",false)
+  let [isSignedin, setIsSignedin] = useLocalStorage("course-isSignedin", false)
+  // ========================================== Precentage ===================================
+  // const [percent, setPercent] = useState(0);
+  // const [intervalId, setIntervalId] = useState(null);
+  // const [time, setTime] = useState(0);
+
+  // useEffect(() => {
+    
+  //     const startTime = Date.now();
+
+  //     // Start a timer to update the percentage value over time
+  //     const id = setInterval(() => {
+  //       setPercent((prevPercent) => prevPercent + 10);
+  //     }, time / 10);
+  //     setIntervalId(id);
+  //     // Perform the data fetch
+  //     fetchUsers().then(result => setUsers(result))
+  //     // Calculate the elapsed time and update the state
+  //     const elapsedTime = Date.now() - startTime;
+  //     setTime(elapsedTime);
+
+  //     // Clear the timer when the fetch is complete
+  //     clearInterval(intervalId);
+    
+    
+  // }, []);
+  // ========================================== End Precentage ===================================
+
   useEffect(() => {
       fetchUsers().then(result => setUsers(result))
   },[])

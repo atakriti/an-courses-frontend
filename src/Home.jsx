@@ -5,10 +5,10 @@ import DownloadApp from './DownloadApp/DownloadApp'
 import Footer from './Footer/Footer'
 import Landing1 from './Landing1/Landing1'
 import LandingBaner from './LandingBaner/LandingBaner'
-
 function Home() {
   return (
-      <div>
+    <div>
+     
           <LandingBaner />
           <Courses/>
           <Baner />

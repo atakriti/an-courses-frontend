@@ -109,6 +109,9 @@
             list-style:decimal ;
             list-style-position: inside;
             margin:2rem 0rem;
+            &:empty{
+                display: none;
+            }
             li{
                 border-bottom: 1px solid #fff;
                 padding: 1rem;

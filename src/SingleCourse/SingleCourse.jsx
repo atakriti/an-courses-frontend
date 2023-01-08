@@ -96,7 +96,6 @@ speech.pitch = 1
     resetTranscript,
     browserSupportsSpeechRecognition
   } = useSpeechRecognition();
-    console.log("🚀 ~ file: SingleCourse.jsx:99 ~ SingleCourse ~ listening", listening)
   inputValue = transcript
   let handleRecord = () => {
     if (lan === "de") {
