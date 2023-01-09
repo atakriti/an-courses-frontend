@@ -8,8 +8,9 @@ import Landing1 from './Landing1/Landing1'
 import LandingBaner from './LandingBaner/LandingBaner'
 import logo from "./images/an-logo.png"
 import "./home.scss"
+import Feedback from './Feedback/Feedback'
 function Home() {
-  let {isFetching} = useContext(context)
+  let {isFetching,isFeedback} = useContext(context)
   return (
     <div>
       {isFetching && (
@@ -17,6 +18,10 @@ function Home() {
           <a><img src={logo} alt="" /></a>
           <span class="loader"></span>
         </div>
+      )}
+      
+        {isFeedback && (
+        <Feedback/>
       )}
           <LandingBaner />
           <Courses/>

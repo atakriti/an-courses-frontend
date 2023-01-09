@@ -9,6 +9,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        h4{
+            color: #ffde59;
+            font-size: clamp(1.5rem,4vw,2rem);
+            margin-bottom: 2%;
+        }
         h1,p,h2{
             color: white;
         }

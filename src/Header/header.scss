@@ -4,15 +4,16 @@ header{
     justify-content: space-between;
     align-items: center;
     .logo{
-        width: 3rem;
+        width: 5rem;
         display: flex;
         img{
-            width: 100%;
+            width: 80%;
             height: 100%;
             object-fit: cover;
             
         }
     }
+    
     nav{
         display: flex;
         justify-content: space-between;
