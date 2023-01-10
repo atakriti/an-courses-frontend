@@ -21,7 +21,7 @@ function SingleCourse() {
   // ====================================
   let { lan, level, type } = useParams();
   let navigate = useNavigate()
-  let { users, signedin,setIsFetching,isFetching } = useContext(context)
+  let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers } = useContext(context)
   // ====================== Find the user =========================
   let findUser = users.find(user => user.email === signedin.email)
   let [foundUserState, setFoundUserState] = useState(findUser)  
@@ -60,6 +60,7 @@ function SingleCourse() {
       setFoundUserState({...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       setIsFetching(true)
+      fetchUsers().then(result => setUsers(result))
       setTimeout(()=>setIsFetching(false),2000)
       setTimeout(()=>navigate(`/course/${lan}/${level}`),2000)
       
