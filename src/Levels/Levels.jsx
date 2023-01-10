@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams,useNavigate } from 'react-router-dom'
 import "./levels.scss"
 import { BsFillLockFill, BsFillUnlockFill } from "react-icons/bs"
 import {MdDoneAll} from "react-icons/md"
@@ -12,36 +12,48 @@ function Levels() {
   let { users, signedin} = useContext(context)
   // ====================== Find the user =========================
   let findUser = users?.find(user => user?.email === signedin?.email)
-  let log1 = findUser?.done["de-a1-vocabs"] === undefined && "not"
-  // data-clip={findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? <MdDoneAll/> : <BsFillUnlockFill/> } to={`/course/${lan}/a1`}
-  console.log("🚀 ~ file: Levels.jsx:17 ~ Levels ~ log", log1)
+  let navigate= useNavigate()
+  let handleA2 = () => {
+    if (findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true) {
+      navigate(`/course/${lan}/a2`)
+    } else {
+      alert("You must first finish A1")
+    }
+  }
+  let handleB1 = () => {
+    if (findUser?.done['de-a1-speaking'] && findUser?.done['de-a2-speaking'] === true && findUser?.done['de-a1-grammar'] && findUser?.done['de-a2-grammar'] === true && findUser?.done['de-a1-writting'] && findUser?.done['de-a2-writting'] === true && findUser?.done['de-a1-vocabs'] && findUser?.done['de-a2-vocabs'] === true) {
+      navigate(`/course/${lan}/b1`)
+    } else {
+      alert("You must first finish A1 and A2 ")
+    }
+  }
   return (
       <div className='levels'>
       <div className="levels_container">
         {/* ================================= ONE ===================== */}
         <Link to={`/course/${lan}/a1`}><img src={a1} alt="" /><h3>A1</h3>
-        <span>{findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? <MdDoneAll/> : <BsFillUnlockFill/> }</span>
+        <span className="clip-green">{findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? <MdDoneAll/> : <BsFillUnlockFill/> }</span>
         </Link>
         {/* =================================== TWO ======================== */}
-        <Link to={`/course/${lan}/a2`}><img src={a2} alt="" /><h3>A2</h3>
-          <span>
+        <a onClick={handleA2} ><img src={a2} alt="" /><h3>A2</h3>
+          <span className={findUser?.done['de-a2-speaking'] === true && findUser?.done['de-a2-grammar'] === true && findUser?.done['de-a2-writting'] === true && findUser?.done['de-a2-vocabs'] === true ? "clip-green" : "clip-red"} >
             {/* ==================== */}
             {findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? <BsFillUnlockFill /> : <BsFillLockFill />}
             
           {/* =================== */}
           {findUser?.done['de-a2-speaking'] === true && findUser?.done['de-a2-grammar'] === true && findUser?.done['de-a2-writting'] === true && findUser?.done['de-a2-vocabs'] === true && <MdDoneAll/>}
           </span>
-        </Link>
+        </a>
         {/* =================================== THREE ======================== */}
 
-        <Link to={`/course/${lan}/b1`}><img src={b1} alt="" /><h3>B1</h3>
-          <span>
+        <a onClick={handleB1} ><img src={b1} alt="" /><h3>B1</h3>
+          <span className={findUser?.done['de-b1-speaking'] === true && findUser?.done['de-b1-grammar'] === true && findUser?.done['de-b1-writting'] === true && findUser?.done['de-b1-vocabs'] === true ? "clip-green" : "clip-red"}>
             {/* ======================= */}
             {findUser?.done['de-a2-speaking'] === true && findUser?.done['de-a2-grammar'] === true && findUser?.done['de-a2-writting'] === true && findUser?.done['de-a2-vocabs'] === true ? <BsFillUnlockFill /> : <BsFillLockFill />}
             {/* ==================== */}
             {findUser?.done['de-b1-speaking'] === true && findUser?.done['de-b1-grammar'] === true && findUser?.done['de-b1-writting'] === true && findUser?.done['de-b1-vocabs'] === true && <MdDoneAll/>}
           </span>
-        </Link>
+        </a>
           </div>
     </div>
   )
