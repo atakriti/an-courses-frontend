@@ -5,7 +5,9 @@ import { context } from "../Context";
 import data from "../data";
 import { BsTranslate } from "react-icons/bs"
 import { GiSpeaker } from "react-icons/gi"
-import {MdKeyboardVoice} from "react-icons/md"
+import { MdKeyboardVoice } from "react-icons/md"
+import logo from "../images/an-logo.png"
+
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 import "./singleCourse.scss";
@@ -19,7 +21,7 @@ function SingleCourse() {
   // ====================================
   let { lan, level, type } = useParams();
   let navigate = useNavigate()
-  let { users, signedin } = useContext(context)
+  let { users, signedin,setIsFetching,isFetching } = useContext(context)
   // ====================== Find the user =========================
   let findUser = users.find(user => user.email === signedin.email)
   let [foundUserState, setFoundUserState] = useState(findUser)  
@@ -57,11 +59,13 @@ function SingleCourse() {
     if (counter === filterData?.length - 1 && clickedSentence?.isCorrect || counter === filterData?.length - 1 && filterData[counter].answer === inputValue  ) {
       setFoundUserState({...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
-      navigate(`/course/${lan}/${level}`)
+      setIsFetching(true)
+      setTimeout(()=>setIsFetching(false),2000)
+      setTimeout(()=>navigate(`/course/${lan}/${level}`),2000)
+      
     }else if (clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() ) {
       setCounter(counter + 1)
       resetTranscript()
-
       setClickedSentence()
       setColorFalse(false)
       setColorCorrect(false)
@@ -131,6 +135,12 @@ function SingleCourse() {
           <span class="loader"></span>
           </div>
       )}
+       {isFetching && (
+        <div className="isFetching">
+          <a><img src={logo} alt="" /></a>
+          <span class="loader"></span>
+        </div>
+      )}
       <div className="singleCourse_container">
         <h1>{`${lan === "de" && "German" || lan === "en" && "English"} – ${level[0].toUpperCase() + level.slice(1)} – ${type[0].toUpperCase() + type.slice(1)}`}</h1>
         <h4>{ `${counter + 1} out of ${filterData?.length}`}</h4>
@@ -166,7 +176,10 @@ function SingleCourse() {
         {type === "speaking" && (
           <p>{transcript}</p>
         )}
-        {clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() && (
+        {speechText === transcript.toLowerCase() && (
+          <button onClick={handleNext}>Next</button>
+        )}
+        {clickedSentence?.isCorrect === true  && (
           <button onClick={handleNext}>Next</button>
         )}
       </div>

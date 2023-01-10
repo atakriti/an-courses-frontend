@@ -7,13 +7,15 @@ function FeedbackPage() {
   return (
     <div className='feedbackPage'>
       {users.map(item => (
-        <div className="box">
+        item.comment !== undefined && (
+          <div className="box">
           <a><img src={user} alt="" /></a>
           <h1>{item.username}</h1>
           <span>{Array(item.rate).fill().map(() => <h3>⭐️</h3>)}</span>
           <h4>{item.comment}</h4>
           <h5>{ item.timeStamp}</h5>
         </div>
+       )
       ))}
     </div>
   )

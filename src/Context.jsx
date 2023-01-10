@@ -50,7 +50,7 @@ function Context(props) {
     
   },[])
   return (
-    <context.Provider value={{fetchUsers,users, setUsers,signedin, setSignedin,isSignedin,setIsSignedin,isFetching,isFeedback,setIsFeedback}}>{props.children}</context.Provider>
+    <context.Provider value={{fetchUsers,users, setUsers,signedin, setSignedin,isSignedin,setIsSignedin,isFetching,setIsFetching,isFeedback,setIsFeedback}}>{props.children}</context.Provider>
   )
 }
 

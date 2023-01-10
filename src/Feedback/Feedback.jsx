@@ -54,7 +54,7 @@ function Feedback() {
           activeColor="#ffd700"
           classNames={"stars"}
         />
-        <button>Submit</button>
+        <button>{ isSignedin ? "Submit" : "You should sign in"}</button>
         <h4 onClick={()=>setIsFeedback(false)}>Later</h4>
       </form>
     </div>

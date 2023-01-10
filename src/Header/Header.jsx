@@ -3,20 +3,29 @@ import { Link,useNavigate } from 'react-router-dom'
 import "./header.scss"
 import logo from "../images/header-logo.png"
 import user from "../images/user.jpg";
+import logo2 from "../images/an-logo.png"
 
 import { context } from '../Context'
 function Header() {
   // let navigate = useNavigate()
-  let { users,setSignedin, isSignedin, setIsSignedin,signedin } = useContext(context)
+  let { users,setSignedin, isSignedin, setIsSignedin,signedin,setIsFetching,isFetching } = useContext(context)
   let handleSignout = () => {
     setIsSignedin(false)
+    setIsFetching(true)
+    setTimeout(()=>setIsFetching(false),2000)
     setSignedin({
       username: "",
       password:""
     })
   }
   return (
-      <header>
+    <header>
+      {isFetching && (
+        <div className="isFetching">
+          <a><img src={logo} alt="" /></a>
+          <span class="loader"></span>
+        </div>
+      )}
       <Link className='logo' to="/" ><img src={logo} alt="" /></Link>
           <nav> 
                 <Link to="/contact">Contact</Link>
