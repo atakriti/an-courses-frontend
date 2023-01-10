@@ -450,9 +450,43 @@ let data = [
         lan: "de",
        answer:"Ich möchte gerne ins Kino gehe"
     },
+    // ========================================== Speaking ===================================
+    {
+        question: "Ich gehe jeden Tag spazieren",
+        translate: "No Translate",
+        type: "speaking",
+        level:"a1",
+        lan: "de",
+       answer:""
+    },
+    {
+        question: "Das Buch ist auf dem Tisch",
+        translate: "No Translate",
+        type: "speaking",
+        level:"a1",
+        lan: "de",
+       answer:""
+    },
+    {
+        question: "Wir essen jetzt Mittag",
+        translate: "No Translate",
+        type: "speaking",
+        level:"a1",
+        lan: "de",
+       answer:""
+    },
+    {
+        question: "Ich trinke gerne Tee mit Milch",
+        translate: "No Translate",
+        type: "speaking",
+        level:"a1",
+        lan: "de",
+       answer:""
+    },
+
     // =============================================== A2 ========================
     {
-        question: "Ich sehe __ Katze __ Garten",
+        question: "Es war einmal ein kleines Häuschen und es stand alleine am Waldrand und drinnen wohnte eine alte Frau die viel Geschichten erzählen konnte",
         translate: "انا شايف القطة بالحديقة",
         type: "grammar",
         level:"a2",
@@ -923,6 +957,32 @@ let data = [
         lan: "de",
        answer:"Die Schüler, die in der letzten Reihe sitzen, unterhalten sich während des Unterrichts."
     },
+     // ========================================== Speaking ===================================
+     {
+        question: "Es war einmal ein kleiner Junge, der in einem Dorf am Fluss wohnte und eines Tages beschloss die Welt zu entdecken",
+        translate: "No Translate",
+        type: "speaking",
+        level:"a2",
+        lan: "de",
+       answer:""
+    },
+    {
+        question: "Ich glaube nicht, dass es eine gute Idee ist, diesen Weg zu gehen, da es sehr gefährlich sein kann und es viele bessere Alternativen gibt",
+        translate: "No Translate",
+        type: "speaking",
+        level:"a2",
+        lan: "de",
+       answer:""
+    },
+    {
+        question: "Es ist ein sehr komplexes und schwieriges Thema, über das man lange und ausführlich diskutieren kann",
+        translate: "No Translate",
+        type: "speaking",
+        level:"a2",
+        lan: "de",
+       answer:""
+    },
+
     // =========================================== B1 ====================================================
     {
         question: "Ich __ gerne wissen, ob du morgen Zeit __",
@@ -1330,7 +1390,25 @@ let data = [
         level:"b1",
         lan: "de",
        answer:"Obwohl ich keinen Hunger habe, esse ich das Sandwich."
-    }
+    },
+    // ====================================== Speaking ===================
+    {
+        question: "Obwohl es draußen sehr kalt und unangenehm ist, beschlossen wir dennoch, den langen Spaziergang durch den Wald zu machen, um die frische Luft zu genießen",
+        translate: "No Translate",
+        type: "speaking",
+        level:"b1",
+        lan: "de",
+       answer:""
+    },
+    
+    {
+        question: "Die Übersetzung der alten Schriften erforderte nicht nur Kenntnisse in verschiedenen Sprachen, sondern auch ein tiefes Verständnis der historischen und kulturellen Hintergründe",
+        translate: "No Translate",
+        type: "speaking",
+        level:"b1",
+        lan: "de",
+       answer:""
+    },
    
 ]
 export default data

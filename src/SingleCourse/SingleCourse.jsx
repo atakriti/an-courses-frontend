@@ -10,7 +10,13 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 
 import "./singleCourse.scss";
 function SingleCourse() {
-
+  const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition
+  } = useSpeechRecognition();
+  // ====================================
   let { lan, level, type } = useParams();
   let navigate = useNavigate()
   let { users, signedin } = useContext(context)
@@ -43,14 +49,19 @@ function SingleCourse() {
     }
   }
   // =================================================================================================================
+  let speechText = filterData[counter]?.question.toLowerCase() //! Here replacing the comma with empty
+  speechText = speechText?.replace(/,/g, '')
+  console.log("🚀 ~ file: SingleCourse.jsx:54 ~ SingleCourse ~ speechText", speechText)
   let handleNext = async (e) => {
     e.preventDefault()
-    if (counter === filterData?.length - 1 && clickedSentence?.isCorrect || counter === filterData?.length - 1 && filterData[counter].answer === inputValue ) {
+    if (counter === filterData?.length - 1 && clickedSentence?.isCorrect || counter === filterData?.length - 1 && filterData[counter].answer === inputValue  ) {
       setFoundUserState({...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       navigate(`/course/${lan}/${level}`)
-    }else if (clickedSentence?.isCorrect === true) {
+    }else if (clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() ) {
       setCounter(counter + 1)
+      resetTranscript()
+
       setClickedSentence()
       setColorFalse(false)
       setColorCorrect(false)
@@ -60,12 +71,12 @@ function SingleCourse() {
       setWrittingFalse(false)
     } else if (filterData[counter].answer !== inputValue) {
       setWrittingFalse(true)
-    }
+    } 
   }
   // ================================================================================================================
   let handleSpeech = () => {
     let text = filterData[counter]?.question
-    text = text.replace(/_/g, '')
+    text = text?.replace(/_/g, '')
     if (lan === "de") {
       setIsSpeaking(true)
       let speech = new SpeechSynthesisUtterance(text)
@@ -90,13 +101,7 @@ function SingleCourse() {
     
   }
   // ====================================================================================================
-  const {
-    transcript,
-    listening,
-    resetTranscript,
-    browserSupportsSpeechRecognition
-  } = useSpeechRecognition();
-  console.log("🚀 ~ file: SingleCourse.jsx:99 ~ SingleCourse ~ transcript", typeof transcript)
+
   // setInputValue(transcript)
   // inputValue = transcript
   
@@ -153,7 +158,7 @@ function SingleCourse() {
         </ul>
         {type === "writting" && (
           <form action="">
-            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue } type="text" name="writting" id="" placeholder="Write the Sentence, or press the voice button" />
+            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue } type="text" name="writting" id="" placeholder="Write the Sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>
@@ -161,7 +166,7 @@ function SingleCourse() {
         {type === "speaking" && (
           <p>{transcript}</p>
         )}
-        {clickedSentence?.isCorrect === true && (
+        {clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() && (
           <button onClick={handleNext}>Next</button>
         )}
       </div>
