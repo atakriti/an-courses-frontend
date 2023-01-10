@@ -67,6 +67,7 @@ function SingleCourse() {
     }else if (clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() ) {
       setCounter(counter + 1)
       resetTranscript()
+      setTranslate(false)
       setClickedSentence()
       setColorFalse(false)
       setColorCorrect(false)

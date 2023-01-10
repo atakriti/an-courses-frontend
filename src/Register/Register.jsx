@@ -7,7 +7,7 @@ import user from "../images/user.jpg";
 import { context } from "../Context";
 
 function Register() {
-    let { users,fetchUsers,setUsers,setSignedin,setIsSignedin } = useContext(context)
+    let { users,fetchUsers,setUsers,setSignedin,setIsSignedin,setIsFetching } = useContext(context)
     let navigate = useNavigate()
   let [switchRegister, setSwitchRegister] = useState(1);
   let [signUpValue, setSignUpValue] = useState({
@@ -33,7 +33,9 @@ function Register() {
           password:signinValue?.password
         })
         setIsSignedin(true)
-            navigate("/")
+        setIsFetching(true)
+        setTimeout(() => navigate("/"),2000)
+            setTimeout(() => setIsFetching(false),2000)
         }else{
             alert("E-Mail or Password is not correct !")
         }

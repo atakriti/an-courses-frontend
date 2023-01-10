@@ -4,7 +4,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     .box{
-        flex: 0.2 1 250px;
+        // flex: 0.2 1 250px;
+        width: 30%;
         border: 1px #FFDE59 solid;
         display: flex;
         align-items: center;
