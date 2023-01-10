@@ -40,11 +40,16 @@ function Type() {
       <div className="german_container">
         {/* ====================== One =================== */}
         <Link to={`/course/${lan}/${level}/grammar`}><img src={grammar} alt="" /><h3>Grammar</h3>
-          <span className={findUser?.done[`${lan}-${level}-grammar`] === true ? "clip-green" : "clip-red"}>{findUser?.done[`${lan}-${level}-grammar`] === true ? <MdDoneAll/> : <BsFillUnlockFill/>}</span>
+          <span className={findUser?.done[`${lan}-${level}-grammar`] === true ? "clip-green" : "clip-red"}>
+          <BsFillUnlockFill />
+            {findUser?.done[`${lan}-${level}-grammar`] === true ? <MdDoneAll /> : <BsFillUnlockFill />}</span>
         </Link>
         {/* ====================== Two =================== */}
         <a onClick={handleVocabs}><img src={vocabs} alt="" /><h3>Vocabulary</h3>
-          <span className={findUser?.done[`${lan}-${level}-vocabs`] === true ? "clip-green" : "clip-red"}>{findUser?.done[`${lan}-${level}-grammar`] === true ? <BsFillUnlockFill /> : <BsFillLockFill />}
+          <span className={findUser?.done[`${lan}-${level}-vocabs`] === true ? "clip-green" : "clip-red"}>
+            
+
+            {findUser?.done[`${lan}-${level}-grammar`] === true ? <BsFillUnlockFill /> : <BsFillLockFill />}
           {findUser?.done[`${lan}-${level}-vocabs`] === true && <MdDoneAll/>}
           </span>
         </a>

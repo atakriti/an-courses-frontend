@@ -32,12 +32,16 @@ function Levels() {
       <div className="levels_container">
         {/* ================================= ONE ===================== */}
         <Link to={`/course/${lan}/a1`}><img src={a1} alt="" /><h3>A1</h3>
-        <span className={findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? "clip-green" : "clip-red"}>{findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? <MdDoneAll/> : <BsFillUnlockFill/> }</span>
+          <span className={findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? "clip-green" : "clip-red"}>
+            {findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? <MdDoneAll /> : <BsFillUnlockFill />}
+            {findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true && <BsFillUnlockFill />}
+          </span>
         </Link>
         {/* =================================== TWO ======================== */}
         <a onClick={handleA2} ><img src={a2} alt="" /><h3>A2</h3>
           <span className={findUser?.done['de-a2-speaking'] === true && findUser?.done['de-a2-grammar'] === true && findUser?.done['de-a2-writting'] === true && findUser?.done['de-a2-vocabs'] === true ? "clip-green" : "clip-red"} >
             {/* ==================== */}
+            
             {findUser?.done['de-a1-speaking'] === true && findUser?.done['de-a1-grammar'] === true && findUser?.done['de-a1-writting'] === true && findUser?.done['de-a1-vocabs'] === true ? <BsFillUnlockFill /> : <BsFillLockFill />}
             
           {/* =================== */}
