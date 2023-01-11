@@ -10,7 +10,7 @@ import {MdDoneAll} from "react-icons/md"
 import { context } from '../Context'
 function Type() {
   let {lan,level} = useParams()
-  let { users, signedin} = useContext(context)
+  let { users, signedin,setAnimateDownload,animateDownload} = useContext(context)
   // ====================== Find the user =========================
   let findUser = users?.find(user => user?.email === signedin?.email)
   let navigate = useNavigate()
@@ -37,6 +37,15 @@ function Type() {
   }
   return (
     <div className='german'>
+      {animateDownload && (
+        <div className="download">
+        <div className='download_container'>
+            <span class="loading">Loading</span>
+            <h3>{findUser?.username} your Certificate is in progress...</h3>
+            <span class="loader1"></span>
+        </div>
+        </div>
+      )}
       <div className="german_container">
         {/* ====================== One =================== */}
         <Link to={`/course/${lan}/${level}/grammar`}><img src={grammar} alt="" /><h3>Grammar</h3>

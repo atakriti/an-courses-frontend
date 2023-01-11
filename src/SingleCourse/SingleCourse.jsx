@@ -105,8 +105,8 @@ function SingleCourse() {
       setTimeout(()=>setIsFetching(false),2000)
       setTimeout(() => navigate(`/course/${lan}/${level}`), 2000)
 //! ============================ Here when the b1 is done it must give him a certificate (I have to check it if it works)
-      if (counter === filterB1.length - 1 && type === "b1") {
-        setTimeout(() => setAnimateDownload(true),2000 )
+      if (counter === filterB1.length - 1 && level === "b1") {
+        setTimeout(() => setAnimateDownload(true),2000)
         
         setTimeout(() => setAnimateDownload(false), 6000)
         setTimeout(() => pdf.save("certificate.pdf"), 6000)
@@ -175,6 +175,9 @@ function SingleCourse() {
     },[users])
   return (
     <div className="singleCourse">
+
+
+
       {isSpeaking && (
         <div className="speaking">
         <span class="loader"></span>
