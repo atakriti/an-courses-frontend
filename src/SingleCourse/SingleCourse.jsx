@@ -7,11 +7,53 @@ import { BsTranslate } from "react-icons/bs"
 import { GiSpeaker } from "react-icons/gi"
 import { MdKeyboardVoice } from "react-icons/md"
 import logo from "../images/an-logo.png"
-
+import jsPDF from "jspdf";
+import certificate from "../images/an-logo.png";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 import "./singleCourse.scss";
 function SingleCourse() {
+  let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers,setAnimateDownload } = useContext(context)
+  // ====================== Find the user =========================
+  let findUser = users.find(user => user.email === signedin.email)
+  let [foundUserState, setFoundUserState] = useState(findUser)
+  const pdf = new jsPDF();
+  let text = `                     Thank you for visiting my Website \n
+        Congratulation (${findUser?.username}) you completed the Course \n
+           This Certificate is for fun, it is Fake and not Real \n
+               only to remember that you could make it \n
+                               What you achieved : \n
+           A1 (Grammar, Vocabulary, Writting, Speaking) \n
+           A2 (Grammar, Vocabulary, Writting, Speaking) \n
+           B1 (Grammar, Vocabulary, Writting, Speaking) \n
+           \n
+           Best regards \n
+           Anwar Takriti
+      `;
+
+  var imgWidth = 70;
+  var imgHeight = 70;
+  var x = (pdf.internal.pageSize.width - imgWidth) / 2;
+  var y = 0.05 * pdf.internal.pageSize.height;
+  pdf.addImage(certificate, "png", x, y, imgWidth, imgHeight);
+  var textWidth = pdf.internal.pageSize.width * 0.8;
+
+  // Determine the center position of the text
+  var textX = (pdf.internal.pageSize.width - textWidth + 20) / 2;
+
+  // Split the text into lines
+  var textLines = pdf.splitTextToSize(text, textWidth);
+
+  // Calculate the center position of the text
+  var textY = y + imgHeight + 10;
+
+  // Add the text to the PDF
+  pdf.text(textX, textY, textLines);
+  
+  // ===========================================================================
+  
+  
+  
   const {
     transcript,
     listening,
@@ -21,12 +63,11 @@ function SingleCourse() {
   // ====================================
   let { lan, level, type } = useParams();
   let navigate = useNavigate()
-  let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers } = useContext(context)
-  // ====================== Find the user =========================
-  let findUser = users.find(user => user.email === signedin.email)
-  let [foundUserState, setFoundUserState] = useState(findUser)  
+    
   // ====================== End Find the user =========================
   let filterData = data.filter((item) => item.lan === lan && item.type === type && item.level === level);
+  let filterB1 = data.filter(item => item.type === "speaking" && item.level === "b1")
+  console.log("🚀 ~ file: SingleCourse.jsx:69 ~ SingleCourse ~ filterB1", filterB1)
   let [counter, setCounter] = useState(0)
   let [clickedSentence, setClickedSentence] = useState()
   let [colorCorrect, setColorCorrect] = useState(false)
@@ -62,7 +103,14 @@ function SingleCourse() {
       setIsFetching(true)
       fetchUsers().then(result => setUsers(result))
       setTimeout(()=>setIsFetching(false),2000)
-      setTimeout(()=>navigate(`/course/${lan}/${level}`),2000)
+      setTimeout(() => navigate(`/course/${lan}/${level}`), 2000)
+//! ============================ Here when the b1 is done it must give him a certificate (I have to check it if it works)
+      if (counter === filterB1.length - 1 && type === "b1") {
+        setTimeout(() => setAnimateDownload(true),2000 )
+        
+        setTimeout(() => setAnimateDownload(false), 6000)
+        setTimeout(() => pdf.save("certificate.pdf"), 6000)
+      }
       
     }else if (clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() ) {
       setCounter(counter + 1)

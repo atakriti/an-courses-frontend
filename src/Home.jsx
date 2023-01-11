@@ -10,7 +10,9 @@ import logo from "./images/an-logo.png"
 import "./home.scss"
 import Feedback from './Feedback/Feedback'
 function Home() {
-  let {isFetching,isFeedback} = useContext(context)
+  let { isFetching, isFeedback,users, signedin,isSignedin,animateDownload,setAnimateDownload } = useContext(context);
+  // ====================== Find the user =========================
+  let findUser = users.find((user) => user.email === signedin.email);
   return (
     <div>
       {isFetching && (
@@ -19,6 +21,18 @@ function Home() {
           <span class="loader"></span>
         </div>
       )}
+
+{animateDownload && (
+        <div className="download">
+        <div className='download_container'>
+            <span class="loading">Loading</span>
+            <h3>{findUser?.username} your Certificate is in progress...</h3>
+            <span class="loader1"></span>
+        </div>
+        </div>
+      )}
+
+
       
         {isFeedback && (
         <Feedback/>

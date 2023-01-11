@@ -486,7 +486,7 @@ let data = [
 
     // =============================================== A2 ========================
     {
-        question: "Es war einmal ein kleines Häuschen und es stand alleine am Waldrand und drinnen wohnte eine alte Frau die viel Geschichten erzählen konnte",
+        question: "Ich sehe __ Katze __ Garten",
         translate: "انا شايف القطة بالحديقة",
         type: "grammar",
         level:"a2",
