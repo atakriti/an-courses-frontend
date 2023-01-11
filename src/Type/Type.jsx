@@ -51,7 +51,7 @@ function Type() {
         <Link to={`/course/${lan}/${level}/grammar`}><img src={grammar} alt="" /><h3>Grammar</h3>
           <span className={findUser?.done[`${lan}-${level}-grammar`] === true ? "clip-green" : "clip-red"}>
           <BsFillUnlockFill />
-            {findUser?.done[`${lan}-${level}-grammar`] === true ? <MdDoneAll /> : <BsFillUnlockFill />}</span>
+            {findUser?.done[`${lan}-${level}-grammar`] === true && <MdDoneAll /> }</span>
         </Link>
         {/* ====================== Two =================== */}
         <a onClick={handleVocabs}><img src={vocabs} alt="" /><h3>Vocabulary</h3>
