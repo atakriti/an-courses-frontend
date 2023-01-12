@@ -5,7 +5,7 @@ import ReactStars from "react-rating-stars-component";
 import "./feedback.scss"
 import axios from 'axios';
 function Feedback() {
-    let { users,signedin, fetchUsers,setUsers,setIsFeedback,isSignedin} = useContext(context)
+    let { users,signedin, fetchUsers,setUsers,setIsFeedback,isSignedin,animateIsSignin,setAnimateIsSignin} = useContext(context)
 
     let findUser = users.find((user) => user.email === signedin.email);
 
@@ -25,7 +25,8 @@ function Feedback() {
     fetchUsers().then((result) => setUsers(result));
     setFoundUserState(findUser);
       } else {
-        alert("Please sign in first")
+        setAnimateIsSignin(true)
+        setTimeout(( )=>setAnimateIsSignin(false),2000 )
       }
         
     }

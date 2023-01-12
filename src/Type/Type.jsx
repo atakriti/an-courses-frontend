@@ -37,15 +37,7 @@ function Type() {
   }
   return (
     <div className='german'>
-      {animateDownload && (
-        <div className="download">
-        <div className='download_container'>
-            <span class="loading">Loading</span>
-            <h3>{findUser?.username} your Certificate is in progress...</h3>
-            <span class="loader1"></span>
-        </div>
-        </div>
-      )}
+
       <div className="german_container">
         {/* ====================== One =================== */}
         <Link to={`/course/${lan}/${level}/grammar`}><img src={grammar} alt="" /><h3>Grammar</h3>

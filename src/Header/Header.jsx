@@ -20,12 +20,7 @@ function Header() {
   }
   return (
     <header>
-      {isFetching && (
-        <div className="isFetching">
-          <a><img src={logo} alt="" /></a>
-          <span class="loader"></span>
-        </div>
-      )}
+    
       <Link className='logo' to="/" ><img src={logo} alt="" /></Link>
           <nav> 
                 <Link to="/contact">Contact</Link>

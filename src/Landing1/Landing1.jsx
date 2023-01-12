@@ -1,47 +1,46 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { context } from "../Context";
 import "./landing1.scss";
 import logo from "../images/landing1.jpg";
 import jsPDF from "jspdf";
 import certificate from "../images/an-logo.png";
 function Landing1() {
-  let { users, signedin,isSignedin,animateDownload,setAnimateDownload } = useContext(context);
+  let { users, signedin,isSignedin,animateDownload,setAnimateDownload,setAnimateIsSignin } = useContext(context);
   // ====================== Find the user =========================
   let findUser = users.find((user) => user.email === signedin.email);
-
-
+  let getKeysCertificate =  findUser  ? Object.keys(findUser?.done).filter(item => findUser?.done[item] === true) : [];
+  console.log("The find user", getKeysCertificate);
+  let mappingKeysDE = getKeysCertificate?.map(item => item?.includes("de") && `\n ${item}`).filter(item => item !== false);
+  let mappingKeysEN = getKeysCertificate?.map(item => item?.includes("en") && `\n ${item}`).filter(item => item !== false)
   const pdf = new jsPDF();
-  let text = `                     Thank you for visiting my Website \n
-        Congratulation (${findUser?.username}) you completed the Course \n
-           This Certificate is for fun, it is Fake and not Real \n
-               only to remember that you could make it \n
-                               What you achieved : \n
-           A1 (Grammar, Vocabulary, Writting, Speaking) \n
-           A2 (Grammar, Vocabulary, Writting, Speaking) \n
-           B1 (Grammar, Vocabulary, Writting, Speaking) \n
-           \n
-           Best regards \n
-           Anwar Takriti
-      `;
+  pdf.text(65, 90, `Thank you for visiting my Website`);
+pdf.text(47, 100, `Congratulation (${findUser?.username}) you completed the Course`);
+pdf.text(45, 110, `This Certificate is for fun, it is Fake and not Real`);
+pdf.text(55, 120, `only to remember that you could make it`);
+pdf.text(78, 130, `What you achieved :`);
+pdf.text(50, 140, mappingKeysDE.join(""));
+pdf.text(110, 140, mappingKeysEN.join(""));
+pdf.text(50, 230, `Best regards`);
+pdf.text(50, 237, `Anwar Takriti`);
 
   var imgWidth = 70;
   var imgHeight = 70;
   var x = (pdf.internal.pageSize.width - imgWidth) / 2;
   var y = 0.05 * pdf.internal.pageSize.height;
   pdf.addImage(certificate, "png", x, y, imgWidth, imgHeight);
-  var textWidth = pdf.internal.pageSize.width * 0.8;
+  // var textWidth = pdf.internal.pageSize.width * 0.8;
 
   // Determine the center position of the text
-  var textX = (pdf.internal.pageSize.width - textWidth + 20) / 2;
+  // var textX = (pdf.internal.pageSize.width - textWidth + 20) / 2;
 
   // Split the text into lines
-  var textLines = pdf.splitTextToSize(text, textWidth);
+  // var textLines = pdf.splitTextToSize(text, textWidth);
 
   // Calculate the center position of the text
-  var textY = y + imgHeight + 10;
+  // var textY = y + imgHeight + 10;
 
   // Add the text to the PDF
-  pdf.text(textX, textY, textLines);
+  // pdf.text(textX, textY, textLines);
   // pdf.text(text,30,125)
   let handleDownload = () => {
     if (isSignedin) {
@@ -49,10 +48,10 @@ function Landing1() {
       setTimeout(() => setAnimateDownload(false), 4000)
       setTimeout(() => pdf.save("certificate.pdf"), 4000)
     } else {
-      alert("Please sign in first, to download it")
+      setAnimateIsSignin(true)
+      setTimeout(( )=>setAnimateIsSignin(false),2000 )
     }
   };
-
   return (
     <div className="landing1">
      

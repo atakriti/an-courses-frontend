@@ -6,20 +6,22 @@ import german from "../images/german.jpg"
 import { context } from '../Context';
 
 function Courses() {
-  let { isSignedin } = useContext(context)
+  let { isSignedin,setAnimateIsSignin } = useContext(context)
   let navigate = useNavigate()
   let handleGerman = () => {
     if (isSignedin) {
       navigate("/course/de")
     } else {
-      alert("First Sign in Please")
+      setAnimateIsSignin(true)
+      setTimeout(( )=>setAnimateIsSignin(false),2000 )
     }
   }
   let handleEnglish = () => {
     if (isSignedin) {
       navigate("/course/en")
     } else {
-      alert("First Sign in Please")
+      setAnimateIsSignin(true)
+      setTimeout(( )=>setAnimateIsSignin(false),2000 )
     }
   }
   return (
