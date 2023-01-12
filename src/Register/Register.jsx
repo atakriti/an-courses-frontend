@@ -36,7 +36,7 @@ function Register() {
         setIsFetching(true)
         setTimeout(() => navigate("/"),2000)
             setTimeout(() => setIsFetching(false),2000)
-        }else{
+      } else{
             alert("E-Mail or Password is not correct !")
         }
         
@@ -46,7 +46,10 @@ function Register() {
         setSignUpValue({...signUpValue,[e.target.name]:e.target.value})
     }
     let handleSubmitSignup = async (e) => {
-        e.preventDefault()
+      e.preventDefault()
+      if (users?.some(user => user?.email === signUpValue?.email)) { 
+        alert("This email is allready exist")
+      } else {
         await axios.post("http://localhost:4000/postingUser", signUpValue)
         setSwitchRegister(1)
       fetchUsers().then(result => setUsers(result))
@@ -55,6 +58,8 @@ function Register() {
             email: signUpValue.email,
             password:signUpValue.password
         })
+      }
+        
     }
   return (
     <div className="register">
@@ -70,6 +75,7 @@ function Register() {
           <h4 onClick={() => setSwitchRegister(2)}>
             You don't have an account
           </h4>
+          <h4>Forgot your Password?</h4>
         </form>
       )}
       {switchRegister === 2 && (

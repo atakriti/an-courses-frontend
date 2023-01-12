@@ -5,7 +5,7 @@
     gap: 1rem;
     .box{
         // flex: 0.2 1 250px;
-        width: 30%;
+        width: min(100% - 5%,25rem);
         border: 1px #FFDE59 solid;
         display: flex;
         align-items: center;
