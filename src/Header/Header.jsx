@@ -22,7 +22,7 @@ function Header() {
   let handleSignout = () => {
     setIsSignedin(false);
     setIsFetching(true);
-    setAnimateIsMenu(!animateIsMenu)
+    setAnimateIsMenu(false)
     setTimeout(() => setIsMenu(false),300)
     setTimeout(() => setIsFetching(false), 2000);
     setSignedin({
@@ -35,11 +35,11 @@ function Header() {
   const breakpoint = useMediaQuery("(max-width: 700px)");
   // ======================
   let handleMenuOpen = () => {
-    setAnimateIsMenu(!animateIsMenu)
+    setAnimateIsMenu(true)
     setTimeout(() => setIsMenu(true),100)
   };
   let handleMenuClose = () => {
-    setAnimateIsMenu(!animateIsMenu)
+    setAnimateIsMenu(false)
     setTimeout(() => setIsMenu(false),300)
   };
   return (

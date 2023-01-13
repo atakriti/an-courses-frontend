@@ -53,7 +53,7 @@ header{
 // ========================= hamburger ================
 .hamburger{
     svg{
-        fill: white;
+        fill: #DDBC9B;
         position: fixed;
         top: 1.5%;
         right: 1.5%;
@@ -79,7 +79,7 @@ header{
             display: none;
         }
         a{
-            color: white;
+            color: #DDBC9B;
             font-weight: bolder;
             font-size: 1.7rem;
             text-decoration: none;
@@ -105,6 +105,7 @@ header{
         transform: scale(0);
         transform-origin: 100% 0%;
         border-radius: 30% 70% 70% 30% / 30% 0% 100% 70% ;
+        box-shadow: 0 0 0 100vmax #DDBC9B;
         
     } to{
         transform: scale(1);
@@ -121,5 +122,6 @@ header{
         transform: scale(0);
         transform-origin: 100% 0%;
         border-radius: 30% 70% 70% 30% / 30% 0% 100% 70% ;
+        // box-shadow: 0 0 0 100vmax #DDBC9B;
     }
 }
