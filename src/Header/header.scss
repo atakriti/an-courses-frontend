@@ -3,6 +3,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     .logo{
         width: 5rem;
         display: flex;
@@ -13,6 +14,7 @@ header{
             
         }
     }
+   
     
     nav{
         display: flex;
@@ -48,4 +50,76 @@ header{
         // }
     }
 }
-// ========================= IsFetching ================
+// ========================= hamburger ================
+.hamburger{
+    svg{
+        fill: white;
+        position: fixed;
+        top: 1.5%;
+        right: 1.5%;
+        z-index: 21;
+        font-size: 3rem;
+    }
+    .nav{
+        background-color: black;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        // display: none;
+        transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        a{
+            color: white;
+            font-weight: bolder;
+            font-size: 1.7rem;
+            text-decoration: none;
+        }
+    }
+}
+// @keyframes open {
+//     from{
+//         transform: translateY(-100%);
+//     }to{
+//         transform: translateY(0%);
+//     }
+// }
+// @keyframes close {
+//    from{
+//         transform: translateY(0%);
+//     } to{
+//         transform: translateY(-100%);
+//     }
+// }
+@keyframes open {
+    from{
+        transform: scale(0);
+        transform-origin: 100% 0%;
+        border-radius: 30% 70% 70% 30% / 30% 0% 100% 70% ;
+        
+    } to{
+        transform: scale(1);
+        transform-origin: 100% 0%;
+    }
+}
+@keyframes close {
+   from{
+        transform: scale(1);
+        transform-origin: 100% 0%;
+
+        
+    } to{
+        transform: scale(0);
+        transform-origin: 100% 0%;
+        border-radius: 30% 70% 70% 30% / 30% 0% 100% 70% ;
+    }
+}

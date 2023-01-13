@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./register.scss";
@@ -19,7 +19,11 @@ function Register() {
     email: "",
     password: "",
   });
-
+  let [isChangePassword, setIsChangePassword] = useState(false)
+  let [changePasswordValue, setChangePasswordValue] = useState({
+    emailChangePassword: "",
+    newPassword:""
+  })
 // ======================= Sign in =============
 
     let handleChangeSignin = (e) => {
@@ -61,8 +65,47 @@ function Register() {
       }
         
     }
+  
+  // ============================ Change password ==============
+  let handleChangeNewPassword = (e) => {
+    setChangePasswordValue({...changePasswordValue,[e.target.name]:e.target.value})
+  }
+  let findChangePassword = users.find(user => user.email === changePasswordValue.emailChangePassword)
+  let [findChangePasswordState,setFindChangePasswordState] = useState(findChangePassword)
+  console.log("🚀 ~ file: Register.jsx:74 ~ Register ~ findChangePasswordState", findChangePasswordState)
+  let handleChangePassword =async (e) => {
+    e.preventDefault()
+    setFindChangePasswordState({...findChangePasswordState,password:changePasswordValue.emailChangePassword})
+    await axios.put(`http://localhost:4000/updateUser/${findChangePassword._id}`, { ...findChangePasswordState, password:changePasswordValue.newPassword })
+    setIsSignedin(false);
+    setIsFetching(true);
+    setIsChangePassword(false) 
+    fetchUsers().then(result => setUsers(result))
+    setTimeout(() => setIsFetching(false), 2000);
+    setSignedin({
+      username: "",
+      password: "",
+    });
+
+  }
+  useEffect(() => {
+    setFindChangePasswordState(findChangePassword)
+  },[findChangePassword])
   return (
     <div className="register">
+      {isChangePassword && (
+        <div className="changePassword">
+         
+          <form onSubmit={handleChangePassword}>
+          <h1>Did you forgot your password ?</h1>
+          <h3>Please enter your E-Mail and the new password</h3>
+            <input onChange={handleChangeNewPassword} value={changePasswordValue.emailChangePassword} placeholder="Please enter you E-Mail..." type="email" name="emailChangePassword" id="" />
+            <input onChange={handleChangeNewPassword} value={changePasswordValue.newPassword} placeholder="Please enter you new password..." type="text" name="newPassword" id="" />
+            <button>Done</button>
+            <h4 onClick={()=>setIsChangePassword(false)}>Close</h4>
+          </form>
+        </div>
+)}
       {switchRegister === 1 && (
         <form onSubmit={handleSubmitSignin}>
           <a>
@@ -75,7 +118,7 @@ function Register() {
           <h4 onClick={() => setSwitchRegister(2)}>
             You don't have an account
           </h4>
-          <h4>Forgot your Password?</h4>
+          <h4 onClick={()=>setIsChangePassword(true)}>Forgot your Password?</h4>
         </form>
       )}
       {switchRegister === 2 && (
