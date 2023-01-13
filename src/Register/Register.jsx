@@ -80,8 +80,8 @@ function Register() {
     setIsSignedin(false);
     setIsFetching(true);
     setIsChangePassword(false) 
-    fetchUsers().then(result => setUsers(result))
-    setTimeout(() => setIsFetching(false), 2000);
+    fetchUsers().then(result => setUsers(result)).then(() =>setIsFetching(false))
+    // // setTimeout(() => setIsFetching(false), 2000);
     setSignedin({
       username: "",
       password: "",

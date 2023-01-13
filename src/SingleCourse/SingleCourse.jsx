@@ -17,38 +17,25 @@ function SingleCourse() {
   // ====================== Find the user =========================
   let findUser = users.find(user => user.email === signedin.email)
   let [foundUserState, setFoundUserState] = useState(findUser)
+  let getKeysCertificate =  findUser  ? Object.keys(findUser?.done).filter(item => findUser?.done[item] === true) : [];
+  console.log("The find user", getKeysCertificate);
+  let mappingKeysDE = getKeysCertificate?.map(item => item?.includes("de") && `\n ${item}`).filter(item => item !== false);
+  let mappingKeysEN = getKeysCertificate?.map(item => item?.includes("en") && `\n ${item}`).filter(item => item !== false)
   const pdf = new jsPDF();
-  let text = `                     Thank you for visiting my Website \n
-        Congratulation (${findUser?.username}) you completed the Course \n
-           This Certificate is for fun, it is Fake and not Real \n
-               only to remember that you could make it \n
-                               What you achieved : \n
-           A1 (Grammar, Vocabulary, Writting, Speaking) \n
-           A2 (Grammar, Vocabulary, Writting, Speaking) \n
-           B1 (Grammar, Vocabulary, Writting, Speaking) \n
-           \n
-           Best regards \n
-           Anwar Takriti
-      `;
+  pdf.text(65, 90, `Thank you for visiting my Website`);
+pdf.text(47, 100, `Congratulation (${findUser?.username}) you completed the Course`);
+pdf.text(45, 110, `This Certificate is for fun, it is Fake and not Real`);
+pdf.text(55, 120, `only to remember that you could make it`);
+pdf.text(78, 130, `What you achieved :`);
+ 
+pdf.text(50, 230, `Best regards`);
+pdf.text(50, 237, `Anwar Takriti`);
 
   var imgWidth = 70;
   var imgHeight = 70;
   var x = (pdf.internal.pageSize.width - imgWidth) / 2;
   var y = 0.05 * pdf.internal.pageSize.height;
   pdf.addImage(certificate, "png", x, y, imgWidth, imgHeight);
-  var textWidth = pdf.internal.pageSize.width * 0.8;
-
-  // Determine the center position of the text
-  var textX = (pdf.internal.pageSize.width - textWidth + 20) / 2;
-
-  // Split the text into lines
-  var textLines = pdf.splitTextToSize(text, textWidth);
-
-  // Calculate the center position of the text
-  var textY = y + imgHeight + 10;
-
-  // Add the text to the PDF
-  pdf.text(textX, textY, textLines);
   
   // ===========================================================================
   
@@ -99,15 +86,22 @@ function SingleCourse() {
     e.preventDefault()
     if (counter === filterData?.length - 1 && clickedSentence?.isCorrect || counter === filterData?.length - 1 && filterData[counter].answer === inputValue  ) {
       setFoundUserState({...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
-      await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       setIsFetching(true)
-      fetchUsers().then(result => setUsers(result))
-      setTimeout(()=>setIsFetching(false),2000)
-      setTimeout(() => navigate(`/course/${lan}/${level}`), 2000)
+      await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
+      setFoundUserState(findUser)
+      fetchUsers().then(result => setUsers(result)).then(() => setIsFetching(false))
+      // setTimeout(()=>setIsFetching(false),2000)
+       navigate(`/course/${lan}/${level}`)
 //! ============================ Here when the b1 is done it must give him a certificate (I have to check it if it works)
-      if (counter === filterB1.length - 1 && level === "b1") {
+      if (counter === filterB1.length - 1 && level === "b1" && lan === "de") {
         setTimeout(() => setAnimateDownload(true),2000)
-        
+        pdf.text(50, 140,  mappingKeysDE.join("")) 
+        setTimeout(() => setAnimateDownload(false), 6000)
+        setTimeout(() => pdf.save("certificate.pdf"), 6000)
+      }
+      if (counter === filterB1.length - 1 && level === "b1" && lan === "en") {
+        setTimeout(() => setAnimateDownload(true),2000)
+        pdf.text(110, 140,  mappingKeysEN.join("")) 
         setTimeout(() => setAnimateDownload(false), 6000)
         setTimeout(() => pdf.save("certificate.pdf"), 6000)
       }

@@ -17,9 +17,13 @@ function Landing1() {
 pdf.text(47, 100, `Congratulation (${findUser?.username}) you completed the Course`);
 pdf.text(45, 110, `This Certificate is for fun, it is Fake and not Real`);
 pdf.text(55, 120, `only to remember that you could make it`);
-pdf.text(78, 130, `What you achieved :`);
-pdf.text(50, 140, mappingKeysDE.join(""));
-pdf.text(110, 140, mappingKeysEN.join(""));
+  pdf.text(78, 130, `What you achieved :`);
+  
+
+  findUser?.done["de-b1-speaking"] && pdf.text(50, 140,  mappingKeysDE.join(""))  
+  findUser?.done["en-b1-speaking"] && pdf.text(110, 140,  mappingKeysEN.join("")) 
+
+
 pdf.text(50, 230, `Best regards`);
 pdf.text(50, 237, `Anwar Takriti`);
 
@@ -28,30 +32,21 @@ pdf.text(50, 237, `Anwar Takriti`);
   var x = (pdf.internal.pageSize.width - imgWidth) / 2;
   var y = 0.05 * pdf.internal.pageSize.height;
   pdf.addImage(certificate, "png", x, y, imgWidth, imgHeight);
-  // var textWidth = pdf.internal.pageSize.width * 0.8;
 
-  // Determine the center position of the text
-  // var textX = (pdf.internal.pageSize.width - textWidth + 20) / 2;
-
-  // Split the text into lines
-  // var textLines = pdf.splitTextToSize(text, textWidth);
-
-  // Calculate the center position of the text
-  // var textY = y + imgHeight + 10;
-
-  // Add the text to the PDF
-  // pdf.text(textX, textY, textLines);
-  // pdf.text(text,30,125)
   let handleDownload = () => {
-    if (isSignedin) {
-      setAnimateDownload(true)
-      setTimeout(() => setAnimateDownload(false), 4000)
-      setTimeout(() => pdf.save("certificate.pdf"), 4000)
-    } else {
-      setAnimateIsSignin(true)
-      setTimeout(( )=>setAnimateIsSignin(false),2000 )
+    if (findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ) {
+      if (isSignedin) {
+        setAnimateDownload(true)
+        setTimeout(() => setAnimateDownload(false), 4000)
+        setTimeout(() => pdf.save("certificate.pdf"), 4000)
+      } else {
+        setAnimateIsSignin(true)
+        setTimeout(( )=>setAnimateIsSignin(false),2000 )
+      }
     }
+   
   };
+  
   return (
     <div className="landing1">
      
@@ -62,7 +57,10 @@ pdf.text(50, 237, `Anwar Takriti`);
           <br /> You will get a Certificate but it is Fake only just for fun,
           that you achived it{" "}
         </p>
+        {findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ? (
+
         <button onClick={handleDownload}>Download Certificate</button>
+        ):<h2>Download button will appear once you finished German or English</h2>}
 
         {/* {findUser?.done['de-b1-speaking'] === true && findUser?.done['de-b1-grammar'] === true && findUser?.done['de-b1-writting'] === true && findUser?.done['de-b1-vocabs'] === true ? <button>Download Certificate</button> :  <h2>When you achieve the course the Download button will appear automatically</h2>}
          */}
