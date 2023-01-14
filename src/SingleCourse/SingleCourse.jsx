@@ -28,8 +28,8 @@ pdf.text(45, 110, `This Certificate is for fun, it is Fake and not Real`);
 pdf.text(55, 120, `only to remember that you could make it`);
 pdf.text(78, 130, `What you achieved :`);
  
-pdf.text(50, 230, `Best regards`);
-pdf.text(50, 237, `Anwar Takriti`);
+pdf.text(50, 240, `Best regards`);
+pdf.text(50, 247, `Anwar Takriti`);
 
   var imgWidth = 70;
   var imgHeight = 70;
@@ -50,6 +50,7 @@ pdf.text(50, 237, `Anwar Takriti`);
   // ====================================
   let { lan, level, type } = useParams();
   let navigate = useNavigate()
+  let [isShowResult,setIsShowResult] = useState(0)
     
   // ====================== End Find the user =========================
   let filterData = data.filter((item) => item.lan === lan && item.type === type && item.level === level);
@@ -84,7 +85,7 @@ pdf.text(50, 237, `Anwar Takriti`);
   console.log("🚀 ~ file: SingleCourse.jsx:54 ~ SingleCourse ~ speechText", speechText)
   let handleNext = async (e) => {
     e.preventDefault()
-    if (counter === filterData?.length - 1 && clickedSentence?.isCorrect || counter === filterData?.length - 1 && filterData[counter].answer === inputValue  ) {
+    if ((counter === filterData?.length - 1 && clickedSentence?.isCorrect) ||( counter === filterData?.length - 1 && filterData[counter].answer === inputValue  )) {
       setFoundUserState({...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       setIsFetching(true)
       await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
@@ -94,16 +95,18 @@ pdf.text(50, 237, `Anwar Takriti`);
        navigate(`/course/${lan}/${level}`)
 //! ============================ Here when the b1 is done it must give him a certificate (I have to check it if it works)
       if (counter === filterB1.length - 1 && level === "b1" && lan === "de") {
-        setTimeout(() => setAnimateDownload(true),2000)
-        pdf.text(50, 140,  mappingKeysDE.join("")) 
-        setTimeout(() => setAnimateDownload(false), 6000)
-        setTimeout(() => pdf.save("certificate.pdf"), 6000)
+        setTimeout(() => setAnimateDownload(true), 1000)
+        pdf.text(50, 140,"German:") 
+        pdf.text(50, 145,  mappingKeysDE.join("")) 
+        setTimeout(() => setAnimateDownload(false), 5000)
+        setTimeout(() => pdf.save("certificate.pdf"), 5000)
       }
       if (counter === filterB1.length - 1 && level === "b1" && lan === "en") {
-        setTimeout(() => setAnimateDownload(true),2000)
-        pdf.text(110, 140,  mappingKeysEN.join("")) 
-        setTimeout(() => setAnimateDownload(false), 6000)
-        setTimeout(() => pdf.save("certificate.pdf"), 6000)
+        setTimeout(() => setAnimateDownload(true), 1000)
+        pdf.text(110, 140,"English:")
+        pdf.text(110, 145,  mappingKeysEN.join("")) 
+        setTimeout(() => setAnimateDownload(false), 5000)
+        setTimeout(() => pdf.save("certificate.pdf"), 5000)
       }
       
     }else if (clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() ) {
@@ -117,8 +120,17 @@ pdf.text(50, 237, `Anwar Takriti`);
       setCounter(counter + 1)
       setInputValue("")
       setWrittingFalse(false)
+      setIsShowResult(0)
     } else if (filterData[counter].answer !== inputValue) {
+      
+      if (isShowResult === 3) {
+        return;
+      } else {
+        setIsShowResult(isShowResult + 1)
+        
+      }
       setWrittingFalse(true)
+      setInputValue("")
     } 
   }
   // ================================================================================================================
@@ -190,7 +202,10 @@ pdf.text(50, 237, `Anwar Takriti`);
       )}
       <div className="singleCourse_container">
         <h1>{`${lan === "de" && "German" || lan === "en" && "English"} – ${level[0].toUpperCase() + level.slice(1)} – ${type[0].toUpperCase() + type.slice(1)}`}</h1>
-        <h4>{ `${counter + 1} out of ${filterData?.length}`}</h4>
+        <h4>{`${counter + 1} out of ${filterData?.length}`}</h4>
+        {type === "writting" && (
+          <h6>The result will show after {isShowResult}/3 attempts <br /> { isShowResult === 3 && filterData[counter].answer}</h6>
+        )}
         <h3>{filterData[counter]?.question}</h3>
         <div className="btns">
           <BsTranslate onClick={()=>setTranslate(!translate)} />

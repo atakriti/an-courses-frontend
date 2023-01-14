@@ -19,13 +19,14 @@ pdf.text(45, 110, `This Certificate is for fun, it is Fake and not Real`);
 pdf.text(55, 120, `only to remember that you could make it`);
   pdf.text(78, 130, `What you achieved :`);
   
+  findUser?.done["de-b1-speaking"] && pdf.text(50, 140,"German:") 
+  findUser?.done["de-b1-speaking"] && pdf.text(50, 145,  mappingKeysDE.join(""))  
+  findUser?.done["en-b1-speaking"] && pdf.text(110, 140,"English:") 
+  findUser?.done["en-b1-speaking"] && pdf.text(110, 145,  mappingKeysEN.join("")) 
 
-  findUser?.done["de-b1-speaking"] && pdf.text(50, 140,  mappingKeysDE.join(""))  
-  findUser?.done["en-b1-speaking"] && pdf.text(110, 140,  mappingKeysEN.join("")) 
 
-
-pdf.text(50, 230, `Best regards`);
-pdf.text(50, 237, `Anwar Takriti`);
+pdf.text(50, 240, `Best regards`);
+pdf.text(50, 247, `Anwar Takriti`);
 
   var imgWidth = 70;
   var imgHeight = 70;
