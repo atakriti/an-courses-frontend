@@ -55,8 +55,9 @@ function Register() {
         alert("This email is allready exist")
       } else {
         await axios.post("http://localhost:4000/postingUser", signUpValue)
+        setIsFetching(true)
         setSwitchRegister(1)
-      fetchUsers().then(result => setUsers(result))
+      fetchUsers().then(result => setUsers(result)).then(() =>  setIsFetching(false))
 
         setSigninValue({
             email: signUpValue.email,
