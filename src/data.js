@@ -1,1414 +1,2339 @@
 let data = [
-    {
-        question: "__ heiße Maria",
-        translate: "اسمي ماريا",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Ich",isCorrect:true},
-            {answer:"du",isCorrect:false},
-            {answer:"sie",isCorrect:false},
-            {answer:"ihr",isCorrect:false}
-        ]
-    },
-    {
-        question: "__ geht es dir?",
-        translate: "كيفك؟",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"was",isCorrect:false},
-            {answer:"wo",isCorrect:false},
-            {answer:"wie",isCorrect:true},
-            {answer:"wann",isCorrect:false}
-        ]
-    },
-    {
-        question: "Du __ in Berlin.",
-        translate: "انت ساكن في برلين",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"hast",isCorrect:false},
-            {answer:"wohnst",isCorrect:true},
-            {answer:"was",isCorrect:false},
-            {answer:"wann",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich spreche __ Deutsch",
-        translate: "انا ما بحكي الماني",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"nein",isCorrect:false},
-            {answer:"nichts",isCorrect:false},
-            {answer:"nicht",isCorrect:false},
-            {answer:"kein",isCorrect:true}
-        ]
-    },
-    {
-        question: "Ich __ Durst",
-        translate: "انا عطشان",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"habe",isCorrect:true},
-            {answer:"bin",isCorrect:false},
-            {answer:"kann",isCorrect:false},
-            {answer:"haben",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich __ Hunger.",
-        translate: "انا جوعان",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"habe",isCorrect:true},
-            {answer:"bin",isCorrect:false},
-            {answer:"kann",isCorrect:false},
-            {answer:"haben",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich __ müde.",
-        translate: "انا تعبان",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"habe",isCorrect:false},
-            {answer:"haben",isCorrect:false},
-            {answer:"bin",isCorrect:true},
-            {answer:"sein",isCorrect:false}
-        ]
-    },
-    {
-        question: "Du __ nett.",
-        translate: "انت ظريف",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"bist",isCorrect:true},
-            {answer:"hast",isCorrect:false},
-            {answer:"haben",isCorrect:false},
-            {answer:"sein",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ihr __ zu spät.",
-        translate: "انتو متاخرين",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"habt",isCorrect:false},
-            {answer:"haben",isCorrect:false},
-            {answer:"sind",isCorrect:false},
-            {answer:"seid",isCorrect:true}
-        ]
-    },
-    {
-        question: "Er __ krank.",
-        translate: "هو مريض",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"habe",isCorrect:false},
-            {answer:"ist",isCorrect:true},
-            {answer:"sind",isCorrect:false},
-            {answer:"hat",isCorrect:false}
-        ]
-    },
-    {
-        question: "__ ist kalt draußen.",
-        translate: "برا برد",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Hat",isCorrect:false},
-            {answer:"Es",isCorrect:true},
-            {answer:"Er",isCorrect:false},
-            {answer:"Sind",isCorrect:false}
-        ]
-    },
-    {
-        question: "Wir __ hungrig.",
-        translate: "نحنا جوعانين",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"sehr",isCorrect:false},
-            {answer:"haben",isCorrect:false},
-            {answer:"sind",isCorrect:true},
-            {answer:"habe",isCorrect:false}
-        ]
-    },
-    {
-        question: "__ machst du heute Abend? ",
-        translate: "شو عندك اليوم المسا؟",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Was",isCorrect:true},
-            {answer:"Wo",isCorrect:false},
-            {answer:"Wann",isCorrect:false},
-            {answer:"Wie",isCorrect:false}
-        ]
-    },
-    {
-        question: "__ wohnst du? ",
-        translate: "وين ساكن انت؟",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Was",isCorrect:false},
-            {answer:"Wo",isCorrect:true},
-            {answer:"Wann",isCorrect:false},
-            {answer:"Wie",isCorrect:false}
-        ]
-    },
-    {
-        question: "__ fängt der Film an?",
-        translate: "امتى لح يبلش الفلم؟",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Was",isCorrect:false},
-            {answer:"Wo",isCorrect:false},
-            {answer:"Wann",isCorrect:true},
-            {answer:"Wie",isCorrect:false}
-        ]
-    },
-    {
-        question: "__ bist du traurig?",
-        translate: "ليش زعلان؟",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Was",isCorrect:false},
-            {answer:"Wo",isCorrect:false},
-            {answer:"Wann",isCorrect:false},
-            {answer:"Warum",isCorrect:true}
-        ]
-    },
-    {
-        question: "__ kommst du zu spät ?",
-        translate: "ليش متاخر؟",
-        type: "grammar",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Was",isCorrect:false},
-            {answer:"Wo",isCorrect:false},
-            {answer:"Wann",isCorrect:false},
-            {answer:"Wieso",isCorrect:true}
-        ]
-    },
-    // ============================================================= A1 Vocabs ===========
-    {
-        question: "Ich __ aus Syrien",
-        translate: "انا من سوريا",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"kann",isCorrect:false},
-            {answer:"kome",isCorrect:false},
-            {answer:"liebe",isCorrect:false},
-            {answer:"komme",isCorrect:true}
-        ]
-    },
-    {
-        question: "Ich __ ein __ Deutsch",
-        translate: "انا بحكي شوية الماني",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"sprechen,bischen",isCorrect:false},
-            {answer:"spreche,bisschen",isCorrect:true},
-            {answer:"sprachen,bischen",isCorrect:false},
-            {answer:"spreache,bisschen",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich __ gerne Deutsch",
-        translate: "انا عم اتعلم الماني",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"lernen",isCorrect:false},
-            {answer:"Lerne",isCorrect:false},
-            {answer:"lerne",isCorrect:true},
-            {answer:"lernt",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich __ in einem Haus",
-        translate: "انا بعيش ببيت",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"wohne",isCorrect:true},
-            {answer:"Wohne",isCorrect:false},
-            {answer:"wone",isCorrect:false},
-            {answer:"Wone",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich __ gerne Brot und Käse",
-        translate: "انا باكل جبنة و خبز",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Esse",isCorrect:false},
-            {answer:"ese",isCorrect:false},
-            {answer:"Ese",isCorrect:false},
-            {answer:"esse",isCorrect:true}
-        ]
-    },
-    {
-        question: "Ich __ gerne Wasser",
-        translate: "انا بشرب مي",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"trinke",isCorrect:true},
-            {answer:"Trinke",isCorrect:false},
-            {answer:"Drink",isCorrect:false},
-            {answer:"drinke",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich möchte gerne ins __ gehen",
-        translate: "انا بدي روح على السينما",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"kino",isCorrect:false},
-            {answer:"Kino",isCorrect:true},
-            {answer:"schule",isCorrect:false},
-            {answer:"fahrad",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich habe morgen __",
-        translate: "انا بكرا عندي مدرسة",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"schule",isCorrect:false},
-            {answer:"auto",isCorrect:false},
-            {answer:"kino",isCorrect:false},
-            {answer:"Schule",isCorrect:true}
-        ]
-    },
-    {
-        question: "Ich bin __",
-        translate: "انا مبسوط",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"fröhlich",isCorrect:true},
-            {answer:"mode",isCorrect:false},
-            {answer:"gluklich",isCorrect:false},
-            {answer:"frolich",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich bin __",
-        translate: "انا مشغول",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"beschäftige",isCorrect:false},
-            {answer:"bescheftigt",isCorrect:false},
-            {answer:"beschäftigt",isCorrect:true},
-            {answer:"beshäftigt",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich bin im __",
-        translate: "انا بالمول",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"Einkaufzentrum",isCorrect:false},
-            {answer:"Einkaufszentrum",isCorrect:true},
-            {answer:"einkaufszentrum",isCorrect:false},
-            {answer:"einkauf",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich bin im __",
-        translate: "انا بالمتحف",
-        type: "vocabs",
-        level:"a1",
-        lan: "de",
-        options: [
-            {answer:"musum",isCorrect:false},
-            {answer:"museum",isCorrect:false},
-            {answer:"Musum",isCorrect:false},
-            {answer:"Museum",isCorrect:true}
-        ]
-    },
-    // ==================================== Writting =========================
-    {
-        question: "heiße/Maria/Ich",
-        translate: "اسمي ماريا",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Ich heiße Maria"
-    },
-    {
-        question: "kein/spreche/Deutsch/Ich",
-        translate: "انا ما بحكي الماني",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Ich spreche kein Deutsch"
-    },
-    {
-        question: "ist/Es/draußen/kalt",
-        translate: "برا برد",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Es ist kalt draußen"
-    },
-    {
-        question: "sind/hungrig/Wir",
-        translate: "نحنا جوعانين",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Wir sind hungrig"
-    },
-    {
-        question: "heute/machst/Abend/Was/du/?",
-        translate: "شو عندك اليوم المسا؟",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Was machst du heute Abend?"
-    },
-    {
-        question: "an/der/fängt/Film/Wann/?",
-        translate: "امتى لح يبلش الفلم؟",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Wann fängt der Film an?"
-    },
-    {
-        question: "zu/du/spät/Wieso/kommst?",
-        translate: "ليش متاخر؟",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Wieso kommst du zu spät?"
-    },
-    {
-        question: "Deutsch/spreche/ein/Ich/bisschen",
-        translate: "انا بحكي شوية الماني",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Ich spreche ein bisschen Deutsch"
-    },
-    {
-        question: "Ich/Kino/gerne/möchte/gehe/ins",
-        translate: "انا بدي روح على السينما",
-        type: "writting",
-        level:"a1",
-        lan: "de",
-       answer:"Ich möchte gerne ins Kino gehe"
-    },
-    // ========================================== Speaking ===================================
-    {
-        question: "Ich gehe jeden Tag spazieren",
-        translate: "No Translate",
-        type: "speaking",
-        level:"a1",
-        lan: "de",
-       answer:""
-    },
-    {
-        question: "Das Buch ist auf dem Tisch",
-        translate: "No Translate",
-        type: "speaking",
-        level:"a1",
-        lan: "de",
-       answer:""
-    },
-    {
-        question: "Wir essen jetzt Mittag",
-        translate: "No Translate",
-        type: "speaking",
-        level:"a1",
-        lan: "de",
-       answer:""
-    },
-    {
-        question: "Ich trinke gerne Tee mit Milch",
-        translate: "No Translate",
-        type: "speaking",
-        level:"a1",
-        lan: "de",
-       answer:""
-    },
+  {
+    question: "__ heiße Maria",
+    translate: "اسمي ماريا",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Ich", isCorrect: true },
+      { answer: "du", isCorrect: false },
+      { answer: "sie", isCorrect: false },
+      { answer: "ihr", isCorrect: false },
+    ],
+  },
+  {
+    question: "__ geht es dir?",
+    translate: "كيفك؟",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "was", isCorrect: false },
+      { answer: "wo", isCorrect: false },
+      { answer: "wie", isCorrect: true },
+      { answer: "wann", isCorrect: false },
+    ],
+  },
+  {
+    question: "Du __ in Berlin.",
+    translate: "انت ساكن في برلين",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "hast", isCorrect: false },
+      { answer: "wohnst", isCorrect: true },
+      { answer: "was", isCorrect: false },
+      { answer: "wann", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich spreche __ Deutsch",
+    translate: "انا ما بحكي الماني",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "nein", isCorrect: false },
+      { answer: "nichts", isCorrect: false },
+      { answer: "nicht", isCorrect: false },
+      { answer: "kein", isCorrect: true },
+    ],
+  },
+  {
+    question: "Ich __ Durst",
+    translate: "انا عطشان",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "habe", isCorrect: true },
+      { answer: "bin", isCorrect: false },
+      { answer: "kann", isCorrect: false },
+      { answer: "haben", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich __ Hunger.",
+    translate: "انا جوعان",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "habe", isCorrect: true },
+      { answer: "bin", isCorrect: false },
+      { answer: "kann", isCorrect: false },
+      { answer: "haben", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich __ müde.",
+    translate: "انا تعبان",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "habe", isCorrect: false },
+      { answer: "haben", isCorrect: false },
+      { answer: "bin", isCorrect: true },
+      { answer: "sein", isCorrect: false },
+    ],
+  },
+  {
+    question: "Du __ nett.",
+    translate: "انت ظريف",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "bist", isCorrect: true },
+      { answer: "hast", isCorrect: false },
+      { answer: "haben", isCorrect: false },
+      { answer: "sein", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ihr __ zu spät.",
+    translate: "انتو متاخرين",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "habt", isCorrect: false },
+      { answer: "haben", isCorrect: false },
+      { answer: "sind", isCorrect: false },
+      { answer: "seid", isCorrect: true },
+    ],
+  },
+  {
+    question: "Er __ krank.",
+    translate: "هو مريض",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "habe", isCorrect: false },
+      { answer: "ist", isCorrect: true },
+      { answer: "sind", isCorrect: false },
+      { answer: "hat", isCorrect: false },
+    ],
+  },
+  {
+    question: "__ ist kalt draußen.",
+    translate: "برا برد",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Hat", isCorrect: false },
+      { answer: "Es", isCorrect: true },
+      { answer: "Er", isCorrect: false },
+      { answer: "Sind", isCorrect: false },
+    ],
+  },
+  {
+    question: "Wir __ hungrig.",
+    translate: "نحنا جوعانين",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "sehr", isCorrect: false },
+      { answer: "haben", isCorrect: false },
+      { answer: "sind", isCorrect: true },
+      { answer: "habe", isCorrect: false },
+    ],
+  },
+  {
+    question: "__ machst du heute Abend? ",
+    translate: "شو عندك اليوم المسا؟",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Was", isCorrect: true },
+      { answer: "Wo", isCorrect: false },
+      { answer: "Wann", isCorrect: false },
+      { answer: "Wie", isCorrect: false },
+    ],
+  },
+  {
+    question: "__ wohnst du? ",
+    translate: "وين ساكن انت؟",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Was", isCorrect: false },
+      { answer: "Wo", isCorrect: true },
+      { answer: "Wann", isCorrect: false },
+      { answer: "Wie", isCorrect: false },
+    ],
+  },
+  {
+    question: "__ fängt der Film an?",
+    translate: "امتى لح يبلش الفلم؟",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Was", isCorrect: false },
+      { answer: "Wo", isCorrect: false },
+      { answer: "Wann", isCorrect: true },
+      { answer: "Wie", isCorrect: false },
+    ],
+  },
+  {
+    question: "__ bist du traurig?",
+    translate: "ليش زعلان؟",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Was", isCorrect: false },
+      { answer: "Wo", isCorrect: false },
+      { answer: "Wann", isCorrect: false },
+      { answer: "Warum", isCorrect: true },
+    ],
+  },
+  {
+    question: "__ kommst du zu spät ?",
+    translate: "ليش متاخر؟",
+    type: "grammar",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Was", isCorrect: false },
+      { answer: "Wo", isCorrect: false },
+      { answer: "Wann", isCorrect: false },
+      { answer: "Wieso", isCorrect: true },
+    ],
+  },
+  // ============================================================= A1 Vocabs ===========
+  {
+    question: "Ich __ aus Syrien",
+    translate: "انا من سوريا",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "kann", isCorrect: false },
+      { answer: "kome", isCorrect: false },
+      { answer: "liebe", isCorrect: false },
+      { answer: "komme", isCorrect: true },
+    ],
+  },
+  {
+    question: "Ich __ ein __ Deutsch",
+    translate: "انا بحكي شوية الماني",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "sprechen,bischen", isCorrect: false },
+      { answer: "spreche,bisschen", isCorrect: true },
+      { answer: "sprachen,bischen", isCorrect: false },
+      { answer: "spreache,bisschen", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich __ gerne Deutsch",
+    translate: "انا عم اتعلم الماني",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "lernen", isCorrect: false },
+      { answer: "Lerne", isCorrect: false },
+      { answer: "lerne", isCorrect: true },
+      { answer: "lernt", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich __ in einem Haus",
+    translate: "انا بعيش ببيت",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "wohne", isCorrect: true },
+      { answer: "Wohne", isCorrect: false },
+      { answer: "wone", isCorrect: false },
+      { answer: "Wone", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich __ gerne Brot und Käse",
+    translate: "انا باكل جبنة و خبز",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Esse", isCorrect: false },
+      { answer: "ese", isCorrect: false },
+      { answer: "Ese", isCorrect: false },
+      { answer: "esse", isCorrect: true },
+    ],
+  },
+  {
+    question: "Ich __ gerne Wasser",
+    translate: "انا بشرب مي",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "trinke", isCorrect: true },
+      { answer: "Trinke", isCorrect: false },
+      { answer: "Drink", isCorrect: false },
+      { answer: "drinke", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich möchte gerne ins __ gehen",
+    translate: "انا بدي روح على السينما",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "kino", isCorrect: false },
+      { answer: "Kino", isCorrect: true },
+      { answer: "schule", isCorrect: false },
+      { answer: "fahrad", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich habe morgen __",
+    translate: "انا بكرا عندي مدرسة",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "schule", isCorrect: false },
+      { answer: "auto", isCorrect: false },
+      { answer: "kino", isCorrect: false },
+      { answer: "Schule", isCorrect: true },
+    ],
+  },
+  {
+    question: "Ich bin __",
+    translate: "انا مبسوط",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "fröhlich", isCorrect: true },
+      { answer: "mode", isCorrect: false },
+      { answer: "gluklich", isCorrect: false },
+      { answer: "frolich", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich bin __",
+    translate: "انا مشغول",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "beschäftige", isCorrect: false },
+      { answer: "bescheftigt", isCorrect: false },
+      { answer: "beschäftigt", isCorrect: true },
+      { answer: "beshäftigt", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich bin im __",
+    translate: "انا بالمول",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "Einkaufzentrum", isCorrect: false },
+      { answer: "Einkaufszentrum", isCorrect: true },
+      { answer: "einkaufszentrum", isCorrect: false },
+      { answer: "einkauf", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich bin im __",
+    translate: "انا بالمتحف",
+    type: "vocabs",
+    level: "a1",
+    lan: "de",
+    options: [
+      { answer: "musum", isCorrect: false },
+      { answer: "museum", isCorrect: false },
+      { answer: "Musum", isCorrect: false },
+      { answer: "Museum", isCorrect: true },
+    ],
+  },
+  // ==================================== Writting =========================
+  {
+    question: "heiße/Maria/Ich",
+    translate: "اسمي ماريا",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Ich heiße Maria",
+  },
+  {
+    question: "kein/spreche/Deutsch/Ich",
+    translate: "انا ما بحكي الماني",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Ich spreche kein Deutsch",
+  },
+  {
+    question: "ist/Es/draußen/kalt",
+    translate: "برا برد",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Es ist kalt draußen",
+  },
+  {
+    question: "sind/hungrig/Wir",
+    translate: "نحنا جوعانين",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Wir sind hungrig",
+  },
+  {
+    question: "heute/machst/Abend/Was/du/?",
+    translate: "شو عندك اليوم المسا؟",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Was machst du heute Abend?",
+  },
+  {
+    question: "an/der/fängt/Film/Wann/?",
+    translate: "امتى لح يبلش الفلم؟",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Wann fängt der Film an?",
+  },
+  {
+    question: "zu/du/spät/Wieso/kommst?",
+    translate: "ليش متاخر؟",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Wieso kommst du zu spät?",
+  },
+  {
+    question: "Deutsch/spreche/ein/Ich/bisschen",
+    translate: "انا بحكي شوية الماني",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Ich spreche ein bisschen Deutsch",
+  },
+  {
+    question: "Ich/Kino/gerne/möchte/gehe/ins",
+    translate: "انا بدي روح على السينما",
+    type: "writting",
+    level: "a1",
+    lan: "de",
+    answer: "Ich möchte gerne ins Kino gehe",
+  },
+  // ========================================== Speaking ===================================
+  {
+    question: "Ich gehe jeden Tag spazieren",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a1",
+    lan: "de",
+    answer: "",
+  },
+  {
+    question: "Das Buch ist auf dem Tisch",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a1",
+    lan: "de",
+    answer: "",
+  },
+  {
+    question: "Wir essen jetzt Mittag",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a1",
+    lan: "de",
+    answer: "",
+  },
+  {
+    question: "Ich trinke gerne Tee mit Milch",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a1",
+    lan: "de",
+    answer: "",
+  },
 
-    // =============================================== A2 ========================
-    {
-        question: "Ich sehe __ Katze __ Garten",
-        translate: "انا شايف القطة بالحديقة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die,im",isCorrect:true},
-            {answer:"das,in",isCorrect:false},
-            {answer:"der,in",isCorrect:false},
-            {answer:"den,im",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich habe __ Buch auf __ Tisch gelesen",
-        translate: "انا قرات الكتاب على الطاولة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die,dem",isCorrect:false},
-            {answer:"das,den",isCorrect:false},
-            {answer:"das,dem",isCorrect:true},
-            {answer:"den,der",isCorrect:false}
-        ]
-    },
-    {
-        question: "Wir hören __ Musik __ Auto",
-        translate: "عم نسمع الاغاني بالسيارة ",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die,im",isCorrect:true},
-            {answer:"das,im",isCorrect:false},
-            {answer:"das,in",isCorrect:false},
-            {answer:"den,im",isCorrect:false}
-        ]
-    },
-    {
-        question: "Er trinkt __ Kaffee schnell",
-        translate: "عم يشرب القهوة بسرعة ",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die",isCorrect:false},
-            {answer:"den",isCorrect:true},
-            {answer:"das",isCorrect:false},
-            {answer:"dem",isCorrect:false}
-        ]
-    },
-    {
-        question: "Ich habe __ Handy verloren",
-        translate: "ضيعت موبايلي",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die",isCorrect:false},
-            {answer:"den",isCorrect:false},
-            {answer:"das",isCorrect:true},
-            {answer:"dem",isCorrect:false}
-        ]
-    },
-    {
-        question: "Sie gibt __ Baby die Flasche",
-        translate: "عم تعطي الطفل القنينة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die",isCorrect:false},
-            {answer:"den",isCorrect:false},
-            {answer:"das",isCorrect:false},
-            {answer:"dem",isCorrect:true}
-        ]
-    },
-    {
-        question: "Er schreibt die E-Mail auf __ Computer",
-        translate: "عم يكتب الايميل على الكمبيوتر",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die",isCorrect:false},
-            {answer:"den",isCorrect:false},
-            {answer:"das",isCorrect:false},
-            {answer:"dem",isCorrect:true}
-        ]
-    },
-    {
-        question: "Ich nehme die Jacke __ Haken",
-        translate: "عم ياخود الجاكيت من العليقة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"vom",isCorrect:true},
-            {answer:"von",isCorrect:false},
-            {answer:"auf",isCorrect:false},
-            {answer:"auf den",isCorrect:false}
-        ]
-    },
-    {
-        question: "Sie trägt die Tasche über __ Schulter",
-        translate: "هية حاملة الشنتاية على الكتف",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"den",isCorrect:false},
-            {answer:"die",isCorrect:false},
-            {answer:"der",isCorrect:true},
-            {answer:"das",isCorrect:false}
-        ]
-    },
-    {
-        question: "Die Blume gehört __ Mädchen",
-        translate: "الوردة للبنت",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"dem",isCorrect:true},
-            {answer:"die",isCorrect:false},
-            {answer:"der",isCorrect:false},
-            {answer:"das",isCorrect:false}
-        ]
-    },
-    {
-        question: "Der Ball ist unter __ Sofa",
-        translate: "الطابة تحت الصوفا",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die",isCorrect:false},
-            {answer:"der",isCorrect:false},
-            {answer:"dem",isCorrect:true},
-            {answer:"das",isCorrect:false}
-        ]
-    },
-    {
-        question: "Der Lehrer gibt __ Schüler eine Aufgabe",
-        translate: "الاستاذ عم يعطي الطالب وظيفة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die",isCorrect:false},
-            {answer:"dem",isCorrect:true},
-            {answer:"der",isCorrect:false},
-            {answer:"das",isCorrect:false}
-        ]
-    },
-    {
-        question: "Der Apfel fällt __ Baum",
-        translate: "التفاحة تسقط من على الشجرة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"über",isCorrect:false},
-            {answer:"auf",isCorrect:false},
-            {answer:"von",isCorrect:false},
-            {answer:"vom",isCorrect:true}
-        ]
-    },
-    {
-        question: "Ich gebe __ Katz__ Futter",
-        translate: "عم طعمي القطة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die,en",isCorrect:false},
-            {answer:"den,en",isCorrect:true},
-            {answer:"der,en",isCorrect:false},
-            {answer:"die,e",isCorrect:false},
-        ]
-    },
-    {
-        question: "Die Kinder bekommen Geschenke __ __ Eltern",
-        translate: "الاولاد عم يتلقون هدايا من الاهل",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"vom die",isCorrect:false},
-            {answer:"von den",isCorrect:true},
-            {answer:"von der",isCorrect:false},
-            {answer:"von die",isCorrect:false},
-        ]
-    },
-    {
-        question: "Wir danken __ Nachbar_ für ihre Hilfe",
-        translate: "نحنا منشكر الجيران لمساعدتهم",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"der,-",isCorrect:false},
-            {answer:"die,n",isCorrect:false},
-            {answer:"den,n",isCorrect:true},
-            {answer:"die,-",isCorrect:false},
-        ]
-    },
-    {
-        question: "Ich gebe __ Frau eine Blume",
-        translate: "عم اعطي المرأة وردة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"der",isCorrect:true},
-            {answer:"die",isCorrect:false},
-            {answer:"den",isCorrect:false},
-            {answer:"dem",isCorrect:false},
-        ]
-    },
-    {
-        question: "Die Schwester schenkt __ Mutter eine Karte",
-        translate: "الاخت تهدي الام بطاقة",
-        type: "grammar",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"die",isCorrect:false},
-            {answer:"der",isCorrect:true},
-            {answer:"den",isCorrect:false},
-            {answer:"dem",isCorrect:false},
-        ]
-    },
-    // ======================================= A2 Vocabs ======================
-    {
-        question: "Wir fahren in den __ nach Italien.",
-        translate: "نحنا مسافرين بالعطلة على ايطاليا",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"hause",isCorrect:false},
-            {answer:"schule",isCorrect:false},
-            {answer:"ferien",isCorrect:false},
-            {answer:"Ferien",isCorrect:true}
-        ]
-    },
-    {
-        question: "Der Hund meiner Nachbarn __ immer sehr laut",
-        translate: "كلب جيراني دائما بعوي بصوت عالي",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"geht",isCorrect:false},
-            {answer:"bellt",isCorrect:true},
-            {answer:"kommt",isCorrect:false},
-            {answer:"raucht",isCorrect:false},
-        ]
-    },
-    {
-        question: "Ich habe keine __ auf diesen Film",
-        translate: "مالي مراء لهاد الفلم",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"Lust",isCorrect:true},
-            {answer:"bock",isCorrect:false},
-            {answer:"jacke",isCorrect:false},
-            {answer:"schuhe",isCorrect:false},
-        ]
-    },
-    {
-        question: "Maria arbeitet als Lehrerin an einer __",
-        translate: "ماريا بتشتغل بمدرسة ابتدائي",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"universität",isCorrect:false},
-            {answer:"hause",isCorrect:false},
-            {answer:"Grundschule",isCorrect:true},
-            {answer:"markt",isCorrect:false},
-        ]
-    },
-    {
-        question: "Mein Handy ist leider __ gegangen",
-        translate: "موبايلي انتزع",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"kaputt",isCorrect:true},
-            {answer:"geht",isCorrect:false},
-            {answer:"sicher",isCorrect:false},
-            {answer:"gut",isCorrect:false},
-        ]
-    },
-    {
-        question: "Ich habe Hunger. Können wir bald etwas essen __?",
-        translate: "انا جوعان, فينا بعد شوي نروح ناكل شي ؟",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"kommen",isCorrect:false},
-            {answer:"zu gehen",isCorrect:false},
-            {answer:"gehen",isCorrect:true},
-            {answer:"habe",isCorrect:false},
-        ]
-    },
-    {
-        question: "Können wir bitte eine Pizza __?",
-        translate: "فينا نطلب بيتزا؟",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"singen",isCorrect:false},
-            {answer:"bestellen",isCorrect:true},
-            {answer:"gehen",isCorrect:false},
-            {answer:"kommen",isCorrect:false},
-        ]
-    },
-    {
-        question: "Die Schüler, die in der letzten __ sitzen, __ sich während des Unterrichts",
-        translate: "الطلاب, يلي قاعدين باخر صف, عم يحكو اثناء الدرس",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"reihe,unterhalten",isCorrect:false},
-            {answer:"raum,sagen",isCorrect:false},
-            {answer:"sitz,sprechen",isCorrect:false},
-            {answer:"Reihe,unterhalten",isCorrect:true}
-        ]
-    },
-    {
-        question: "Ich habe gestern Abend ein __ Buch gelesen",
-        translate: "مبارح قرات كتاب مشوق",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"spanendes",isCorrect:false},
-            {answer:"spannendes",isCorrect:true},
-            {answer:"schöne",isCorrect:false},
-            {answer:"schlechte",isCorrect:false},
-        ]
-    },
-    {
-        question: "Die Frau, arbeitet in der __",
-        translate: "المرأة تشتغل بالمكتبة",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"Bibliothek",isCorrect:true},
-            {answer:"bibliothek",isCorrect:false},
-            {answer:"Bibliotek",isCorrect:false},
-            {answer:"bibliotek",isCorrect:false},
-        ]
-    },
-    {
-        question: "Meine Nachbarin hat gerade ihr Studium __",
-        translate: "جارتي خلصت هلا دراستها",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"Beendet",isCorrect:false},
-            {answer:"beenden",isCorrect:false},
-            {answer:"beendet",isCorrect:true},
-            {answer:"bendet",isCorrect:false},
-        ]
-    },
-    {
-        question: "Ich habe keine __, wo meine Brille __. Ich habe __ gesucht",
-        translate: "ماعندي علم, وين نضارتي, دورت بكل مكان",
-        type: "vocabs",
-        level:"a2",
-        lan: "de",
-        options: [
-            {answer:"Ahnung,ist,überall",isCorrect:true},
-            {answer:"bock,sind,kein",isCorrect:false},
-            {answer:"Ahnung,sind,überall",isCorrect:false},
-            {answer:"ahnung,ist,überall",isCorrect:false},
-        ]
-    },
-    // ================================================= A2 Writting ======================================
-    {
-        question: "kocht/Meine/immer/besuche./Großmutter/Gerichte, wenn/ich/leckere/sie",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Meine Großmutter kocht immer leckere Gerichte, wenn ich sie besuche."
-    },
-    {
-        question: "habe/Paar/waren./mir/Ich/ein/neues/heute/gekauft, weil/meine/Schuhe/kaputt/alten",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Ich habe mir heute ein neues Paar Schuhe gekauft, weil meine alten kaputt waren."
-    },
-    {
-        question: "eine/Die/bauen/Höhle/aus/spielen/im/Garten/und/Kinder/Sand.",
-        translate: "No Translate",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Die Kinder spielen im Garten und bauen eine Höhle aus Sand."
-    },
-    {
-        question: "Fenster/warm./du/bitte/ist/hier/drinnen/sehr/das/Kannst/öffnen? /Es",
-        translate: "No Translate, Dont forget to put a space after the question mark",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Kannst du bitte das Fenster öffnen? Es ist hier drinnen sehr warm."
-    },
-    {
-        question: "gerade/Tafel./Lehrer/an/Mathematikaufgabe/erklärt/Der/die/der",
-        translate: "No Translate",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Der Lehrer erklärt gerade die Mathematikaufgabe an der Tafel."
-    },
-    {
-        question: "6/werde/morgen/habe./früh/Ich/Termin/wichtigen/um/Uhr/aufstehen, weil/ich/einen",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Ich werde morgen früh um 6 Uhr aufstehen, weil ich einen wichtigen Termin habe."
-    },
-    {
-        question: "oft/Wochenende/Freund/und/Kino./Mein/am/ich/gehen/ins",
-        translate: "No Translate",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Mein Freund und ich gehen am Wochenende oft ins Kino."
-    },
-    {
-        question: "gebrochen/habe/es/das/Schwester/Ich/reparieren./Fahrad/meiner/und/muss/jetzt",
-        translate: "No Translate",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Ich habe das Fahrad meiner Schwester gebrochen und muss es jetzt reparieren."
-    },
-    {
-        question: "Wetter/Sonne/heute/ist/zu/und/sehr/nicht/Das/kalt./schön./Die/scheint/es/ist",
-        translate: "No Translate",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Das Wetter heute ist sehr schön. Die Sonne scheint und es ist nicht zu kalt."
-    },
-    {
-        question: "Schüler, die/Reihe/in/unterhalten/während/Unterrichts./der/Die/letzten/sitzen, /sich/des",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"a2",
-        lan: "de",
-       answer:"Die Schüler, die in der letzten Reihe sitzen, unterhalten sich während des Unterrichts."
-    },
-     // ========================================== Speaking ===================================
-     {
-        question: "Es war einmal ein kleiner Junge, der in einem Dorf am Fluss wohnte und eines Tages beschloss die Welt zu entdecken",
-        translate: "No Translate",
-        type: "speaking",
-        level:"a2",
-        lan: "de",
-       answer:""
-    },
-    {
-        question: "Ich glaube nicht, dass es eine gute Idee ist, diesen Weg zu gehen, da es sehr gefährlich sein kann und es viele bessere Alternativen gibt",
-        translate: "No Translate",
-        type: "speaking",
-        level:"a2",
-        lan: "de",
-       answer:""
-    },
-    {
-        question: "Es ist ein sehr komplexes und schwieriges Thema, über das man lange und ausführlich diskutieren kann",
-        translate: "No Translate",
-        type: "speaking",
-        level:"a2",
-        lan: "de",
-       answer:""
-    },
+  // =============================================== A2 ========================
+  {
+    question: "Ich sehe __ Katze __ Garten",
+    translate: "انا شايف القطة بالحديقة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die,im", isCorrect: true },
+      { answer: "das,in", isCorrect: false },
+      { answer: "der,in", isCorrect: false },
+      { answer: "den,im", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich habe __ Buch auf __ Tisch gelesen",
+    translate: "انا قرات الكتاب على الطاولة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die,dem", isCorrect: false },
+      { answer: "das,den", isCorrect: false },
+      { answer: "das,dem", isCorrect: true },
+      { answer: "den,der", isCorrect: false },
+    ],
+  },
+  {
+    question: "Wir hören __ Musik __ Auto",
+    translate: "عم نسمع الاغاني بالسيارة ",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die,im", isCorrect: true },
+      { answer: "das,im", isCorrect: false },
+      { answer: "das,in", isCorrect: false },
+      { answer: "den,im", isCorrect: false },
+    ],
+  },
+  {
+    question: "Er trinkt __ Kaffee schnell",
+    translate: "عم يشرب القهوة بسرعة ",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die", isCorrect: false },
+      { answer: "den", isCorrect: true },
+      { answer: "das", isCorrect: false },
+      { answer: "dem", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich habe __ Handy verloren",
+    translate: "ضيعت موبايلي",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die", isCorrect: false },
+      { answer: "den", isCorrect: false },
+      { answer: "das", isCorrect: true },
+      { answer: "dem", isCorrect: false },
+    ],
+  },
+  {
+    question: "Sie gibt __ Baby die Flasche",
+    translate: "عم تعطي الطفل القنينة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die", isCorrect: false },
+      { answer: "den", isCorrect: false },
+      { answer: "das", isCorrect: false },
+      { answer: "dem", isCorrect: true },
+    ],
+  },
+  {
+    question: "Er schreibt die E-Mail auf __ Computer",
+    translate: "عم يكتب الايميل على الكمبيوتر",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die", isCorrect: false },
+      { answer: "den", isCorrect: false },
+      { answer: "das", isCorrect: false },
+      { answer: "dem", isCorrect: true },
+    ],
+  },
+  {
+    question: "Ich nehme die Jacke __ Haken",
+    translate: "عم ياخود الجاكيت من العليقة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "vom", isCorrect: true },
+      { answer: "von", isCorrect: false },
+      { answer: "auf", isCorrect: false },
+      { answer: "auf den", isCorrect: false },
+    ],
+  },
+  {
+    question: "Sie trägt die Tasche über __ Schulter",
+    translate: "هية حاملة الشنتاية على الكتف",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "den", isCorrect: false },
+      { answer: "die", isCorrect: false },
+      { answer: "der", isCorrect: true },
+      { answer: "das", isCorrect: false },
+    ],
+  },
+  {
+    question: "Die Blume gehört __ Mädchen",
+    translate: "الوردة للبنت",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "dem", isCorrect: true },
+      { answer: "die", isCorrect: false },
+      { answer: "der", isCorrect: false },
+      { answer: "das", isCorrect: false },
+    ],
+  },
+  {
+    question: "Der Ball ist unter __ Sofa",
+    translate: "الطابة تحت الصوفا",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die", isCorrect: false },
+      { answer: "der", isCorrect: false },
+      { answer: "dem", isCorrect: true },
+      { answer: "das", isCorrect: false },
+    ],
+  },
+  {
+    question: "Der Lehrer gibt __ Schüler eine Aufgabe",
+    translate: "الاستاذ عم يعطي الطالب وظيفة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die", isCorrect: false },
+      { answer: "dem", isCorrect: true },
+      { answer: "der", isCorrect: false },
+      { answer: "das", isCorrect: false },
+    ],
+  },
+  {
+    question: "Der Apfel fällt __ Baum",
+    translate: "التفاحة تسقط من على الشجرة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "über", isCorrect: false },
+      { answer: "auf", isCorrect: false },
+      { answer: "von", isCorrect: false },
+      { answer: "vom", isCorrect: true },
+    ],
+  },
+  {
+    question: "Ich gebe __ Katz__ Futter",
+    translate: "عم طعمي القطة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die,en", isCorrect: false },
+      { answer: "den,en", isCorrect: true },
+      { answer: "der,en", isCorrect: false },
+      { answer: "die,e", isCorrect: false },
+    ],
+  },
+  {
+    question: "Die Kinder bekommen Geschenke __ __ Eltern",
+    translate: "الاولاد عم يتلقون هدايا من الاهل",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "vom die", isCorrect: false },
+      { answer: "von den", isCorrect: true },
+      { answer: "von der", isCorrect: false },
+      { answer: "von die", isCorrect: false },
+    ],
+  },
+  {
+    question: "Wir danken __ Nachbar_ für ihre Hilfe",
+    translate: "نحنا منشكر الجيران لمساعدتهم",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "der,-", isCorrect: false },
+      { answer: "die,n", isCorrect: false },
+      { answer: "den,n", isCorrect: true },
+      { answer: "die,-", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich gebe __ Frau eine Blume",
+    translate: "عم اعطي المرأة وردة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "der", isCorrect: true },
+      { answer: "die", isCorrect: false },
+      { answer: "den", isCorrect: false },
+      { answer: "dem", isCorrect: false },
+    ],
+  },
+  {
+    question: "Die Schwester schenkt __ Mutter eine Karte",
+    translate: "الاخت تهدي الام بطاقة",
+    type: "grammar",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "die", isCorrect: false },
+      { answer: "der", isCorrect: true },
+      { answer: "den", isCorrect: false },
+      { answer: "dem", isCorrect: false },
+    ],
+  },
+  // ======================================= A2 Vocabs ======================
+  {
+    question: "Wir fahren in den __ nach Italien.",
+    translate: "نحنا مسافرين بالعطلة على ايطاليا",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "hause", isCorrect: false },
+      { answer: "schule", isCorrect: false },
+      { answer: "ferien", isCorrect: false },
+      { answer: "Ferien", isCorrect: true },
+    ],
+  },
+  {
+    question: "Der Hund meiner Nachbarn __ immer sehr laut",
+    translate: "كلب جيراني دائما بعوي بصوت عالي",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "geht", isCorrect: false },
+      { answer: "bellt", isCorrect: true },
+      { answer: "kommt", isCorrect: false },
+      { answer: "raucht", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich habe keine __ auf diesen Film",
+    translate: "مالي مراء لهاد الفلم",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "Lust", isCorrect: true },
+      { answer: "bock", isCorrect: false },
+      { answer: "jacke", isCorrect: false },
+      { answer: "schuhe", isCorrect: false },
+    ],
+  },
+  {
+    question: "Maria arbeitet als Lehrerin an einer __",
+    translate: "ماريا بتشتغل بمدرسة ابتدائي",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "universität", isCorrect: false },
+      { answer: "hause", isCorrect: false },
+      { answer: "Grundschule", isCorrect: true },
+      { answer: "markt", isCorrect: false },
+    ],
+  },
+  {
+    question: "Mein Handy ist leider __ gegangen",
+    translate: "موبايلي انتزع",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "kaputt", isCorrect: true },
+      { answer: "geht", isCorrect: false },
+      { answer: "sicher", isCorrect: false },
+      { answer: "gut", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich habe Hunger. Können wir bald etwas essen __?",
+    translate: "انا جوعان, فينا بعد شوي نروح ناكل شي ؟",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "kommen", isCorrect: false },
+      { answer: "zu gehen", isCorrect: false },
+      { answer: "gehen", isCorrect: true },
+      { answer: "habe", isCorrect: false },
+    ],
+  },
+  {
+    question: "Können wir bitte eine Pizza __?",
+    translate: "فينا نطلب بيتزا؟",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "singen", isCorrect: false },
+      { answer: "bestellen", isCorrect: true },
+      { answer: "gehen", isCorrect: false },
+      { answer: "kommen", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Die Schüler, die in der letzten __ sitzen, __ sich während des Unterrichts",
+    translate: "الطلاب, يلي قاعدين باخر صف, عم يحكو اثناء الدرس",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "reihe,unterhalten", isCorrect: false },
+      { answer: "raum,sagen", isCorrect: false },
+      { answer: "sitz,sprechen", isCorrect: false },
+      { answer: "Reihe,unterhalten", isCorrect: true },
+    ],
+  },
+  {
+    question: "Ich habe gestern Abend ein __ Buch gelesen",
+    translate: "مبارح قرات كتاب مشوق",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "spanendes", isCorrect: false },
+      { answer: "spannendes", isCorrect: true },
+      { answer: "schöne", isCorrect: false },
+      { answer: "schlechte", isCorrect: false },
+    ],
+  },
+  {
+    question: "Die Frau, arbeitet in der __",
+    translate: "المرأة تشتغل بالمكتبة",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "Bibliothek", isCorrect: true },
+      { answer: "bibliothek", isCorrect: false },
+      { answer: "Bibliotek", isCorrect: false },
+      { answer: "bibliotek", isCorrect: false },
+    ],
+  },
+  {
+    question: "Meine Nachbarin hat gerade ihr Studium __",
+    translate: "جارتي خلصت هلا دراستها",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "Beendet", isCorrect: false },
+      { answer: "beenden", isCorrect: false },
+      { answer: "beendet", isCorrect: true },
+      { answer: "bendet", isCorrect: false },
+    ],
+  },
+  {
+    question: "Ich habe keine __, wo meine Brille __. Ich habe __ gesucht",
+    translate: "ماعندي علم, وين نضارتي, دورت بكل مكان",
+    type: "vocabs",
+    level: "a2",
+    lan: "de",
+    options: [
+      { answer: "Ahnung,ist,überall", isCorrect: true },
+      { answer: "bock,sind,kein", isCorrect: false },
+      { answer: "Ahnung,sind,überall", isCorrect: false },
+      { answer: "ahnung,ist,überall", isCorrect: false },
+    ],
+  },
+  // ================================================= A2 Writting ======================================
+  {
+    question:
+      "kocht/Meine/immer/besuche./Großmutter/Gerichte, wenn/ich/leckere/sie",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer:
+      "Meine Großmutter kocht immer leckere Gerichte, wenn ich sie besuche.",
+  },
+  {
+    question:
+      "habe/Paar/waren./mir/Ich/ein/neues/heute/gekauft, weil/meine/Schuhe/kaputt/alten",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer:
+      "Ich habe mir heute ein neues Paar Schuhe gekauft, weil meine alten kaputt waren.",
+  },
+  {
+    question: "eine/Die/bauen/Höhle/aus/spielen/im/Garten/und/Kinder/Sand.",
+    translate: "No Translation",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer: "Die Kinder spielen im Garten und bauen eine Höhle aus Sand.",
+  },
+  {
+    question:
+      "Fenster/warm./du/bitte/ist/hier/drinnen/sehr/das/Kannst/öffnen? /Es",
+    translate:
+      "No Translation, Dont forget to put a space after the question mark",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer:
+      "Kannst du bitte das Fenster öffnen? Es ist hier drinnen sehr warm.",
+  },
+  {
+    question: "gerade/Tafel./Lehrer/an/Mathematikaufgabe/erklärt/Der/die/der",
+    translate: "No Translation",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer: "Der Lehrer erklärt gerade die Mathematikaufgabe an der Tafel.",
+  },
+  {
+    question:
+      "6/werde/morgen/habe./früh/Ich/Termin/wichtigen/um/Uhr/aufstehen, weil/ich/einen",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer:
+      "Ich werde morgen früh um 6 Uhr aufstehen, weil ich einen wichtigen Termin habe.",
+  },
+  {
+    question: "oft/Wochenende/Freund/und/Kino./Mein/am/ich/gehen/ins",
+    translate: "No Translation",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer: "Mein Freund und ich gehen am Wochenende oft ins Kino.",
+  },
+  {
+    question:
+      "gebrochen/habe/es/das/Schwester/Ich/reparieren./Fahrad/meiner/und/muss/jetzt",
+    translate: "No Translation",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer:
+      "Ich habe das Fahrad meiner Schwester gebrochen und muss es jetzt reparieren.",
+  },
+  {
+    question:
+      "Wetter/Sonne/heute/ist/zu/und/sehr/nicht/Das/kalt./schön./Die/scheint/es/ist",
+    translate: "No Translation",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer:
+      "Das Wetter heute ist sehr schön. Die Sonne scheint und es ist nicht zu kalt.",
+  },
+  {
+    question:
+      "Schüler, die/Reihe/in/unterhalten/während/Unterrichts./der/Die/letzten/sitzen, /sich/des",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "a2",
+    lan: "de",
+    answer:
+      "Die Schüler, die in der letzten Reihe sitzen, unterhalten sich während des Unterrichts.",
+  },
+  // ========================================== Speaking ===================================
+  {
+    question:
+      "Es war einmal ein kleiner Junge, der in einem Dorf am Fluss wohnte und eines Tages beschloss die Welt zu entdecken",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a2",
+    lan: "de",
+    answer: "",
+  },
+  {
+    question:
+      "Ich glaube nicht, dass es eine gute Idee ist, diesen Weg zu gehen, da es sehr gefährlich sein kann und es viele bessere Alternativen gibt",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a2",
+    lan: "de",
+    answer: "",
+  },
+  {
+    question:
+      "Es ist ein sehr komplexes und schwieriges Thema, über das man lange und ausführlich diskutieren kann",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a2",
+    lan: "de",
+    answer: "",
+  },
 
-    // =========================================== B1 ====================================================
-    {
-        question: "Ich __ gerne wissen, ob du morgen Zeit __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,hast",isCorrect:false},
-            {answer:"wäre,hättest",isCorrect:false},
-            {answer:"würde,hättest",isCorrect:true},
-            {answer:"würde,habe",isCorrect:false}
-        ]
-    }, 
-    {
-        question: "Es __ schön, wenn du mir bei meiner Hausarbeit helfen __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,hast",isCorrect:false},
-            {answer:"wäre,könntest",isCorrect:true},
-            {answer:"wäre,hättest",isCorrect:false},
-            {answer:"würde,habe",isCorrect:false}
-        ]
-    }, 
-    {
-        question: "Ich __ gerne, ob du vielleicht Lust __, heute Abend ins Kino zu gehen",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,hast",isCorrect:false},
-            {answer:"wäre,hättest",isCorrect:false},
-            {answer:"würde,habe",isCorrect:false},
-            {answer:"wüsste,hättest",isCorrect:true},
-        ]
-    }, 
-    {
-        question: "Es __ toll, wenn du mich bei meinem Projekt unterstützen __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"wäre,könntest",isCorrect:true},
-            {answer:"würde,hast",isCorrect:false},
-            {answer:"wäre,hättest",isCorrect:false},
-            {answer:"würde,habe",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Ich __ mich freuen, wenn du mich bei meiner Präsentation begleiten __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,hast",isCorrect:false},
-            {answer:"wäre,hättest",isCorrect:false},
-            {answer:"würde,habe",isCorrect:false},
-            {answer:"würde,könntest",isCorrect:true},
-        ]
-    }, 
-    {
-        question: "Es __ nett, wenn ihr mir bei der Vorbereitung meiner Reise helfen __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,hat",isCorrect:false},
-            {answer:"wäre,könntet",isCorrect:true},
-            {answer:"wäre,hättet",isCorrect:false},
-            {answer:"würde,habt",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Ich __ gerne wissen, ob Sie vielleicht Lust __, am Wochenende etwas zusammen zu unternehmen",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,hatten",isCorrect:false},
-            {answer:"würde,hätten",isCorrect:true},
-            {answer:"wäre,haben",isCorrect:false},
-            {answer:"würde,hat",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"wäre,könnte",isCorrect:true},
-            {answer:"würde,habt",isCorrect:false},
-            {answer:"wäre,könntet",isCorrect:false},
-            {answer:"würde,hat",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,habt",isCorrect:false},
-            {answer:"wäre,könnte",isCorrect:true},
-            {answer:"wäre,könntet",isCorrect:false},
-            {answer:"würde,hat",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Wenn es möglich gewesen __, __ wir das Problem früher gelöst",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"wäre,hätten",isCorrect:true},
-            {answer:"würde,hätten",isCorrect:false},
-            {answer:"wäre,könnten",isCorrect:false},
-            {answer:"würde,haben",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Wenn ich genügend Geld __, __ ich mir ein neues Auto kaufen",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,hätte",isCorrect:false},
-            {answer:"wäre,könnte",isCorrect:false},
-            {answer:"hätte,würde",isCorrect:true},
-            {answer:"würde,habe",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Er __ den Job annehmen, wenn er die Zusage __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würde,bekommt",isCorrect:false},
-            {answer:"wäre,könnte",isCorrect:false},
-            {answer:"würde,bekäme",isCorrect:true},
-            {answer:"würde,hat",isCorrect:false},
-        ]
-    }, 
-    {
-        question: "Sie __ sicherlich besser spielen, wenn sie mehr üben __",
-        translate: "No Translate",
-        type: "grammar",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"würden,bekommt",isCorrect:false},
-            {answer:"wären,könnte",isCorrect:false},
-            {answer:"würden,hat",isCorrect:false},
-            {answer:"würden,würden",isCorrect:true},
-        ]
-    }, 
-    // ====================================================== B1 Vocabs ==============================
-    {
-        question: "Die Mädchen, die ich gesehen habe, als ich durch den __ spazierte, spielten Frisbee.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"park",isCorrect:true},
-            {answer:"haus",isCorrect:false},
-            {answer:"straße",isCorrect:false},
-            {answer:"platz",isCorrect:false}
-            ]
+  // =========================================== B1 ====================================================
+  {
+    question: "Ich __ gerne wissen, ob du morgen Zeit __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,hast", isCorrect: false },
+      { answer: "wäre,hättest", isCorrect: false },
+      { answer: "würde,hättest", isCorrect: true },
+      { answer: "würde,habe", isCorrect: false },
+    ],
+  },
+  {
+    question: "Es __ schön, wenn du mir bei meiner Hausarbeit helfen __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,hast", isCorrect: false },
+      { answer: "wäre,könntest", isCorrect: true },
+      { answer: "wäre,hättest", isCorrect: false },
+      { answer: "würde,habe", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich __ gerne, ob du vielleicht Lust __, heute Abend ins Kino zu gehen",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,hast", isCorrect: false },
+      { answer: "wäre,hättest", isCorrect: false },
+      { answer: "würde,habe", isCorrect: false },
+      { answer: "wüsste,hättest", isCorrect: true },
+    ],
+  },
+  {
+    question: "Es __ toll, wenn du mich bei meinem Projekt unterstützen __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "wäre,könntest", isCorrect: true },
+      { answer: "würde,hast", isCorrect: false },
+      { answer: "wäre,hättest", isCorrect: false },
+      { answer: "würde,habe", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich __ mich freuen, wenn du mich bei meiner Präsentation begleiten __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,hast", isCorrect: false },
+      { answer: "wäre,hättest", isCorrect: false },
+      { answer: "würde,habe", isCorrect: false },
+      { answer: "würde,könntest", isCorrect: true },
+    ],
+  },
+  {
+    question:
+      "Es __ nett, wenn ihr mir bei der Vorbereitung meiner Reise helfen __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,hat", isCorrect: false },
+      { answer: "wäre,könntet", isCorrect: true },
+      { answer: "wäre,hättet", isCorrect: false },
+      { answer: "würde,habt", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich __ gerne wissen, ob Sie vielleicht Lust __, am Wochenende etwas zusammen zu unternehmen",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,hatten", isCorrect: false },
+      { answer: "würde,hätten", isCorrect: true },
+      { answer: "wäre,haben", isCorrect: false },
+      { answer: "würde,hat", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "wäre,könnte", isCorrect: true },
+      { answer: "würde,habt", isCorrect: false },
+      { answer: "wäre,könntet", isCorrect: false },
+      { answer: "würde,hat", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,habt", isCorrect: false },
+      { answer: "wäre,könnte", isCorrect: true },
+      { answer: "wäre,könntet", isCorrect: false },
+      { answer: "würde,hat", isCorrect: false },
+    ],
+  },
+  {
+    question: "Wenn es möglich gewesen __, __ wir das Problem früher gelöst",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "wäre,hätten", isCorrect: true },
+      { answer: "würde,hätten", isCorrect: false },
+      { answer: "wäre,könnten", isCorrect: false },
+      { answer: "würde,haben", isCorrect: false },
+    ],
+  },
+  {
+    question: "Wenn ich genügend Geld __, __ ich mir ein neues Auto kaufen",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,hätte", isCorrect: false },
+      { answer: "wäre,könnte", isCorrect: false },
+      { answer: "hätte,würde", isCorrect: true },
+      { answer: "würde,habe", isCorrect: false },
+    ],
+  },
+  {
+    question: "Er __ den Job annehmen, wenn er die Zusage __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würde,bekommt", isCorrect: false },
+      { answer: "wäre,könnte", isCorrect: false },
+      { answer: "würde,bekäme", isCorrect: true },
+      { answer: "würde,hat", isCorrect: false },
+    ],
+  },
+  {
+    question: "Sie __ sicherlich besser spielen, wenn sie mehr üben __",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "würden,bekommt", isCorrect: false },
+      { answer: "wären,könnte", isCorrect: false },
+      { answer: "würden,hat", isCorrect: false },
+      { answer: "würden,würden", isCorrect: true },
+    ],
+  },
+  // ====================================================== B1 Vocabs ==============================
+  {
+    question:
+      "Die Mädchen, die ich gesehen habe, als ich durch den __ spazierte, spielten Frisbee.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "park", isCorrect: true },
+      { answer: "haus", isCorrect: false },
+      { answer: "straße", isCorrect: false },
+      { answer: "platz", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Er wohnt in einem Haus, das direkt am __ liegt, und manchmal geht er angeln.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "fluss", isCorrect: true },
+      { answer: "see", isCorrect: false },
+      { answer: "ozean", isCorrect: false },
+      { answer: "meer", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Wenn ich genug __ hätte, würde ich gerne eine Reise um die Welt machen.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "geld", isCorrect: true },
+      { answer: "zeit", isCorrect: false },
+      { answer: "tickets", isCorrect: false },
+      { answer: "visa", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich habe das Buch, das du mir empfohlen hast, noch nicht __, aber ich werde es bald tun.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "gelesen", isCorrect: true },
+      { answer: "gekauft", isCorrect: false },
+      { answer: "ausgeliehen", isCorrect: false },
+      { answer: "verschenkt", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Die Schüler, die in der __ Reihe sitzen, hören dem Lehrer besonders aufmerksam zu.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "ersten", isCorrect: true },
+      { answer: "letzten", isCorrect: false },
+      { answer: "mittleren", isCorrect: false },
+      { answer: "vierten", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich habe gehört, dass es in __ viele gefährliche Tiere gibt, wie Krokodile und Giftschlangen.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "australien", isCorrect: true },
+      { answer: "afrika", isCorrect: false },
+      { answer: "südamerika", isCorrect: false },
+      { answer: "asien", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Die Familie, die in dem __ Haus wohnt, hat viele Kinder und Haustiere.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "großen", isCorrect: true },
+      { answer: "kleinen", isCorrect: false },
+      { answer: "alten", isCorrect: false },
+      { answer: "neuen", isCorrect: false },
+    ],
+  },
+  {
+    question: "Der Junge, der das Fahrrad __, ist mein kleiner Bruder.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "fährt", isCorrect: true },
+      { answer: "repariert", isCorrect: false },
+      { answer: "verkauft", isCorrect: false },
+      { answer: "verleiht", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Das Wetter ist heute so schön, dass ich gerne im __ spazieren gehen würde.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "park", isCorrect: true },
+      { answer: "wald", isCorrect: false },
+      { answer: "garten", isCorrect: false },
+      { answer: "strand", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich habe gehört, dass es in __ viele interessante Orte zu besuchen gibt, wie zum Beispiel die Stadt Tokio.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "japan", isCorrect: true },
+      { answer: "korea", isCorrect: false },
+      { answer: "china", isCorrect: false },
+      { answer: "thailand", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich habe das Museum, das du mir empfohlen hast, letztes Wochenende __ und es war sehr interessant.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "besucht", isCorrect: true },
+      { answer: "gefunden", isCorrect: false },
+      { answer: "empfohlen", isCorrect: false },
+      { answer: "geöffnet", isCorrect: false },
+    ],
+  },
+  {
+    question:
+      "Ich habe das Museum, das du mir empfohlen hast, letztes Wochenende __ und es war sehr interessant.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "de",
+    options: [
+      { answer: "besucht", isCorrect: true },
+      { answer: "gefunden", isCorrect: false },
+      { answer: "empfohlen", isCorrect: false },
+      { answer: "geöffnet", isCorrect: false },
+    ],
+  },
+  // =================================== B1 Writting ==============================
+  {
+    question:
+      "Schüler,/die/Die/im/belohnt./werden/gut/aufgepasst/Unterricht/haben,",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer:
+      "Die Schüler, die im Unterricht gut aufgepasst haben, werden belohnt.",
+  },
+  {
+    question: "habe/das/Antworten/alle/Buch,/vergessen./in/Ich/dem/stehen,",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Ich habe das Buch, in dem alle Antworten stehen, vergessen.",
+  },
+  {
+    question: "spazieren/es/wir/regnet,/gehen./Obwohl/werden",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Obwohl es regnet, werden wir spazieren gehen.",
+  },
+  {
+    question:
+      "habe/du/das/geliehen/das/Auto,/gepflegt./sorgfältig/Ich/mir/hast,",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Ich habe das Auto, das du mir geliehen hast, sorgfältig gepflegt",
+  },
+  {
+    question: "du/glaube,/hast./recht/Ich/dass",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Ich glaube, dass du recht hast.",
+  },
+  {
+    question: "stellte/dass/sich/er/lügt./Es/heraus,",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Es stellte sich heraus, dass er lügt.",
+  },
+  {
+    question: "nicht,/Ich/du/dass/wusste/würdest./kommen",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Ich wusste nicht, dass du kommen würdest.",
+  },
+  {
+    question: "es/wir/regnet,/gehen/spazieren./Obwohl",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Obwohl es regnet, gehen wir spazieren.",
+  },
+  {
+    question: "er/arbeitet/er/weiter./müde/Obwohl ist,",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Obwohl er müde ist, arbeitet er weiter.",
+  },
+  {
+    question: "keinen/esse/Sandwich./Hunger/ich/Obwohl/habe,/ich/das",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "de",
+    answer: "Obwohl ich keinen Hunger habe, esse ich das Sandwich.",
+  },
+  // ====================================== Speaking ===================
+  {
+    question:
+      "Obwohl es draußen sehr kalt und unangenehm ist, beschlossen wir dennoch, den langen Spaziergang durch den Wald zu machen, um die frische Luft zu genießen",
+    translate: "No Translation",
+    type: "speaking",
+    level: "b1",
+    lan: "de",
+    answer: "",
+  },
+
+  {
+    question:
+      "Die Übersetzung der alten Schriften erforderte nicht nur Kenntnisse in verschiedenen Sprachen, sondern auch ein tiefes Verständnis der historischen und kulturellen Hintergründe",
+    translate: "No Translation",
+    type: "speaking",
+    level: "b1",
+    lan: "de",
+    answer: "",
+  },
+  //! =========================================================================================================================
+  //! =========================================================================================================================
+  //! =========================================================================================================================
+  // English========================================================
+
+  {
+    question: "I __ a boy",
+    translate: "انا صبي",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "is", isCorrect: false },
+      { answer: "are", isCorrect: false },
+      { answer: "am", isCorrect: true },
+      { answer: "were", isCorrect: false },
+    ],
+  },
+  {
+    question: "They are __",
+    translate: "هدول كتب",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "books", isCorrect: true },
+      { answer: "a book", isCorrect: false },
+      { answer: "a books", isCorrect: false },
+      { answer: "an book", isCorrect: false },
+    ],
+  },
+  {
+    question: "We need some __",
+    translate: "نحنا بحاجة شوية قواميس",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "dictionary", isCorrect: false },
+      { answer: "dictionarys", isCorrect: false },
+      { answer: "dictionaries", isCorrect: true },
+      { answer: "dictionaris", isCorrect: false },
+    ],
+  },
+  {
+    question: "What __ your name ?",
+    translate: "شو اسمك ؟",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "is", isCorrect: true },
+      { answer: "his", isCorrect: false },
+      { answer: "are", isCorrect: false },
+      { answer: "a", isCorrect: false },
+    ],
+  },
+  {
+    question: "I __ live here",
+    translate: "انا بعيش هون",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "doesn't", isCorrect: false },
+      { answer: "am not", isCorrect: false },
+      { answer: "not", isCorrect: false },
+      { answer: "don't", isCorrect: true },
+    ],
+  },
+  {
+    question: "He always __ football",
+    translate: "هو دائما بيلعب كرة قدم",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "plays", isCorrect: true },
+      { answer: "is play", isCorrect: false },
+      { answer: "play", isCorrect: false },
+      { answer: "playing", isCorrect: false },
+    ],
+  },
+  {
+    question: "We __ to school yesterday",
+    translate: "مبارح رحنا على المدرسة",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "go", isCorrect: false },
+      { answer: "goed", isCorrect: false },
+      { answer: "went", isCorrect: true },
+      { answer: "wented", isCorrect: false },
+    ],
+  },
+  {
+    question: "He __ his homework",
+    translate: "ماكتب وظيفتو",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "didn't write", isCorrect: true },
+      { answer: "didn't wrote", isCorrect: false },
+      { answer: "don't write", isCorrect: false },
+      { answer: "not write", isCorrect: false },
+    ],
+  },
+  {
+    question: "There aren't __ stores",
+    translate: "مافي ولا متجر",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "some", isCorrect: false },
+      { answer: "an", isCorrect: false },
+      { answer: "any", isCorrect: true },
+      { answer: "a", isCorrect: false },
+    ],
+  },
+  {
+    question: "There is __ egg",
+    translate: "في بيضة",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "an", isCorrect: true },
+      { answer: "some", isCorrect: false },
+      { answer: "a", isCorrect: false },
+      { answer: "any", isCorrect: false },
+    ],
+  },
+  {
+    question: "I __ today",
+    translate: "انا عم اشتغل اليوم",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "am working", isCorrect: true },
+      { answer: "work", isCorrect: false },
+      { answer: "worked", isCorrect: false },
+      { answer: "working", isCorrect: false },
+    ],
+  },
+  {
+    question: "It __ rain",
+    translate: "لح تمطر",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "will", isCorrect: false },
+      { answer: "going", isCorrect: false },
+      { answer: "is", isCorrect: false },
+      { answer: "'s going to", isCorrect: true },
+    ],
+  },
+  {
+    question: "I __ learning English",
+    translate: "انا عم اتعلم انكليزي",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "am", isCorrect: true },
+      { answer: "will", isCorrect: false },
+      { answer: "going", isCorrect: false },
+      { answer: "have", isCorrect: false },
+    ],
+  },
+  {
+    question: "The flowers __ beautiful",
+    translate: "الوردات حلوين",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "is", isCorrect: false },
+      { answer: "will", isCorrect: false },
+      { answer: "are", isCorrect: true },
+      { answer: "have", isCorrect: false },
+    ],
+  },
+  {
+    question: "He __ reading a book",
+    translate: "هو عم يقرا كتاب",
+    type: "grammar",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "is", isCorrect: true },
+      { answer: "will", isCorrect: false },
+      { answer: "are", isCorrect: false },
+      { answer: "have", isCorrect: false },
+    ],
+  },
+  // =================================== Vocabs ====================
+  {
+    question: "Apples are a type of fruit that __ on trees",
+    translate: "التفاح نوع من الفواكي و ينمو على الشجر",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "take", isCorrect: false },
+      { answer: "comes", isCorrect: false },
+      { answer: "grow", isCorrect: true },
+      { answer: "get", isCorrect: false },
+    ],
+  },
+  {
+    question: "The sky is blue __ the day",
+    translate: "السما زرقا بالنهار",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "during", isCorrect: true },
+      { answer: "in", isCorrect: false },
+      { answer: "on", isCorrect: false },
+      { answer: "at", isCorrect: false },
+    ],
+  },
+  {
+    question: "Fish live in __.",
+    translate: "السمك بعيش بالمي",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "watr", isCorrect: false },
+      { answer: "woter", isCorrect: false },
+      { answer: "clouds", isCorrect: false },
+      { answer: "water", isCorrect: true },
+    ],
+  },
+  {
+    question: "Snow is __",
+    translate: "التلج بارد",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "cald", isCorrect: false },
+      { answer: "cold", isCorrect: true },
+      { answer: "hot", isCorrect: false },
+      { answer: "blue", isCorrect: false },
+    ],
+  },
+  {
+    question: "The moon __ at night",
+    translate: "القمر بيطلع بليل",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "goes", isCorrect: false },
+      { answer: "shine", isCorrect: false },
+      { answer: "come", isCorrect: false },
+      { answer: "shines", isCorrect: true },
+    ],
+  },
+  {
+    question: "Birds can __",
+    translate: "الطيور بيقدرو يطيرو",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "shine", isCorrect: false },
+      { answer: "fly", isCorrect: true },
+      { answer: "smoke", isCorrect: false },
+      { answer: "flys", isCorrect: false },
+    ],
+  },
+  {
+    question: "A car has four __",
+    translate: "السيارة الها اربع بواب",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "weels", isCorrect: false },
+      { answer: "wheels", isCorrect: true },
+      { answer: "wheel", isCorrect: false },
+      { answer: "whels", isCorrect: false },
+    ],
+  },
+  {
+    question: "The __ is green",
+    translate: "العشب اخضر",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "gras", isCorrect: false },
+      { answer: "grass", isCorrect: true },
+      { answer: "Grass", isCorrect: false },
+      { answer: "Gras", isCorrect: false },
+    ],
+  },
+  {
+    question: "Trees __ oxygen and shade",
+    translate: "الشجر تدعم الاوكسجين و الظل",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "takes", isCorrect: false },
+      { answer: "take", isCorrect: false },
+      { answer: "provides", isCorrect: false },
+      { answer: "provide", isCorrect: true },
+    ],
+  },
+  {
+    question: "Flowers come in many colors and __",
+    translate: "الازهار بتجي بكزا الوان وانواع",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "varietis", isCorrect: false },
+      { answer: "varietiess", isCorrect: false },
+      { answer: "variety", isCorrect: false },
+      { answer: "varieties", isCorrect: true },
+    ],
+  },
+  {
+    question: "The __ change throughout the year",
+    translate: "الموسم بيتغير خلال السنة",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "seasons", isCorrect: true },
+      { answer: "season", isCorrect: false },
+      { answer: "sesons", isCorrect: false },
+      { answer: "seasone", isCorrect: false },
+    ],
+  },
+  {
+    question: "Butterflies are colorful __ that fly in gardens",
+    translate: "الفراشات حشرات مليئة بالالوان بتطير بالحدائق",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "insect", isCorrect: false },
+      { answer: "insekts", isCorrect: false },
+      { answer: "insects", isCorrect: true },
+      { answer: "ensects", isCorrect: false },
+    ],
+  },
+  {
+    question: "Mountains are large __ that rise high above the ground",
+    translate: "الجبال هية تضاريس كبيرة بتعلو عن الارض",
+    type: "vocabs",
+    level: "a1",
+    lan: "en",
+    options: [
+      { answer: "landform", isCorrect: false },
+      { answer: "landforms", isCorrect: true },
+      { answer: "landphorms", isCorrect: false },
+      { answer: "landphorm", isCorrect: false },
+    ],
+  },
+  // =============================== Writting ====================
+  {
+    question: "are/Apples/of/a/type/fruit.",
+    translate: "التفاح نوع من الفواكي",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "Apples are a type of fruit.",
+  },
+  {
+    question: "fly/and/Birds/sing./can",
+    translate: "الطيور بتقدر تغني و تطير",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "Birds can fly and sing.",
+  },
+  {
+    question: "/cat/tail./legs/a/has/A/four/and",
+    translate: "القطة الها اربع رجلين و ذيل",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "A cat has four legs and a tail.",
+  },
+  {
+    question: "rectangle/has/A/sides./four",
+    translate: "المستطيل الو اربع جوانب",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "A rectangle has four sides.",
+  },
+  {
+    question: "sharp/claws./have/Cats",
+    translate: "القطط الها مخالب حدة",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "Cats have sharp claws.",
+  },
+  {
+    question: "rainforest/The/located/America./South/is/Amazon/in",
+    translate: "تقع غابات الأمازون المطيرة في أمريكا الجنوبية",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "The Amazon rainforest is located in South America.",
+  },
+  {
+    question: "The/the/around/orbits/Earth./moon",
+    translate: "القمر بدور حول الأرض",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "The moon orbits around the Earth.",
+  },
+  {
+    question: "to/Friday/nights./pizza/like/eat/on",
+    translate: "بحب اكل بيتزا الجمعة بليل",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "like to eat pizza on Friday nights.",
+  },
+  {
+    question: "gasoline/need/Cars/work./to",
+    translate: "السيارات بحاجة بترول",
+    type: "writting",
+    level: "a1",
+    lan: "en",
+    answer: "Cars need gasoline to work.",
+    },
+//   ============================== Speaking ==========================
+{
+    question:"The sun rises in the east and sets in the west",
+    translate: "No Translation",
+    type: "speaking",
+    level: "a1",
+    lan: "en",
+    answer: "",
     },
     {
-        question: "Er wohnt in einem Haus, das direkt am __ liegt, und manchmal geht er angeln.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"fluss",isCorrect:true},
-            {answer:"see",isCorrect:false},
-            {answer:"ozean",isCorrect:false},
-            {answer:"meer",isCorrect:false}
-            ]
-    },
-    {
-        question: "Wenn ich genug __ hätte, würde ich gerne eine Reise um die Welt machen.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"geld",isCorrect:true},
-            {answer:"zeit",isCorrect:false},
-            {answer:"tickets",isCorrect:false},
-            {answer:"visa",isCorrect:false}
-            ]
-    },
-    {
-        question: "Ich habe das Buch, das du mir empfohlen hast, noch nicht __, aber ich werde es bald tun.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"gelesen",isCorrect:true},
-            {answer:"gekauft",isCorrect:false},
-            {answer:"ausgeliehen",isCorrect:false},
-            {answer:"verschenkt",isCorrect:false}
-            ]
-    },
-    {
-        question: "Die Schüler, die in der __ Reihe sitzen, hören dem Lehrer besonders aufmerksam zu.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"ersten",isCorrect:true},
-            {answer:"letzten",isCorrect:false},
-            {answer:"mittleren",isCorrect:false},
-            {answer:"vierten",isCorrect:false}
-            ]
-    },
-    {
-        question: "Ich habe gehört, dass es in __ viele gefährliche Tiere gibt, wie Krokodile und Giftschlangen.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"australien",isCorrect:true},
-            {answer:"afrika",isCorrect:false},
-            {answer:"südamerika",isCorrect:false},
-            {answer:"asien",isCorrect:false}
-            ]
-    },
-    {
-        question: "Die Familie, die in dem __ Haus wohnt, hat viele Kinder und Haustiere.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"großen",isCorrect:true},
-            {answer:"kleinen",isCorrect:false},
-            {answer:"alten",isCorrect:false},
-            {answer:"neuen",isCorrect:false}
-            ]
-    },
-    {
-        question: "Der Junge, der das Fahrrad __, ist mein kleiner Bruder.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"fährt",isCorrect:true},
-            {answer:"repariert",isCorrect:false},
-            {answer:"verkauft",isCorrect:false},
-            {answer:"verleiht",isCorrect:false}
-            ]
-    },
-    {
-        question: "Das Wetter ist heute so schön, dass ich gerne im __ spazieren gehen würde.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"park",isCorrect:true},
-            {answer:"wald",isCorrect:false},
-            {answer:"garten",isCorrect:false},
-            {answer:"strand",isCorrect:false}
-            ]
-    },
-    {
-        question: "Ich habe gehört, dass es in __ viele interessante Orte zu besuchen gibt, wie zum Beispiel die Stadt Tokio.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"japan",isCorrect:true},
-            {answer:"korea",isCorrect:false},
-            {answer:"china",isCorrect:false},
-            {answer:"thailand",isCorrect:false}
-            ]
-    },
-    {
-        question: "Ich habe das Museum, das du mir empfohlen hast, letztes Wochenende __ und es war sehr interessant.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"besucht",isCorrect:true},
-            {answer:"gefunden",isCorrect:false},
-            {answer:"empfohlen",isCorrect:false},
-            {answer:"geöffnet",isCorrect:false}
-            ]
-    },
-    {
-        question: "Ich habe das Museum, das du mir empfohlen hast, letztes Wochenende __ und es war sehr interessant.",
-        translate: "No Translate",
-        type: "vocabs",
-        level:"b1",
-        lan: "de",
-        options: [
-            {answer:"besucht",isCorrect:true},
-            {answer:"gefunden",isCorrect:false},
-            {answer:"empfohlen",isCorrect:false},
-            {answer:"geöffnet",isCorrect:false}
-            ]
-    },
-    // =================================== B1 Writting ==============================
-    {
-        question: "Schüler,/die/Die/im/belohnt./werden/gut/aufgepasst/Unterricht/haben,",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Die Schüler, die im Unterricht gut aufgepasst haben, werden belohnt."
-    },
-    {
-        question: "habe/das/Antworten/alle/Buch,/vergessen./in/Ich/dem/stehen,",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Ich habe das Buch, in dem alle Antworten stehen, vergessen."
-    },
-    {
-        question: "spazieren/es/wir/regnet,/gehen./Obwohl/werden",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Obwohl es regnet, werden wir spazieren gehen."
-    },
-    {
-        question: "habe/du/das/geliehen/das/Auto,/gepflegt./sorgfältig/Ich/mir/hast,",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Ich habe das Auto, das du mir geliehen hast, sorgfältig gepflegt"
-    },
-    {
-        question: "du/glaube,/hast./recht/Ich/dass",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Ich glaube, dass du recht hast."
-    },
-    {
-        question: "stellte/dass/sich/er/lügt./Es/heraus,",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Es stellte sich heraus, dass er lügt."
-    },
-    {
-        question: "nicht,/Ich/du/dass/wusste/würdest./kommen",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Ich wusste nicht, dass du kommen würdest."
-    },
-    {
-        question: "es/wir/regnet,/gehen/spazieren./Obwohl",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Obwohl es regnet, gehen wir spazieren."
-    },
-    {
-        question: "er/arbeitet/er/weiter./müde/Obwohl ist,",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Obwohl er müde ist, arbeitet er weiter."
-    },
-    {
-        question: "keinen/esse/Sandwich./Hunger/ich/Obwohl/habe,/ich/das",
-        translate: "No Translate, Dont forget to put after the coma a space",
-        type: "writting",
-        level:"b1",
-        lan: "de",
-       answer:"Obwohl ich keinen Hunger habe, esse ich das Sandwich."
-    },
-    // ====================================== Speaking ===================
-    {
-        question: "Obwohl es draußen sehr kalt und unangenehm ist, beschlossen wir dennoch, den langen Spaziergang durch den Wald zu machen, um die frische Luft zu genießen",
-        translate: "No Translate",
+        question:"Mountains are large landforms that rise high above the ground",
+        translate: "No Translation",
         type: "speaking",
-        level:"b1",
-        lan: "de",
-       answer:""
+        level: "a1",
+        lan: "en",
+        answer: "",
+    },
+    {
+        question:"Butterflies are colorful insects that fly in garde",
+        translate: "No Translation",
+        type: "speaking",
+        level: "a1",
+        lan: "en",
+        answer: "",
     },
     
+    // ============================================================= A2 =================================
     {
-        question: "Die Übersetzung der alten Schriften erforderte nicht nur Kenntnisse in verschiedenen Sprachen, sondern auch ein tiefes Verständnis der historischen und kulturellen Hintergründe",
-        translate: "No Translate",
-        type: "speaking",
-        level:"b1",
-        lan: "de",
-       answer:""
+        question: "A teacher __ works in a school",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+          { answer: "who", isCorrect: true },
+          { answer: "where", isCorrect: false },
+          { answer: "which", isCorrect: false },
+          { answer: "when", isCorrect: false },
+        ],
     },
-   
-]
-export default data
+    {
+        question: "I have been __ English for three years",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "study", isCorrect: false },
+            { answer: "studing", isCorrect: false },
+            { answer: "studying", isCorrect: true },
+          { answer: "studed", isCorrect: false },
+        ],
+    },
+    {
+        question: "The cat, __ fur was matted, needed a bath.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "whose", isCorrect: true },
+            { answer: "who", isCorrect: false },
+            { answer: "where", isCorrect: false },
+          { answer: "what", isCorrect: false },
+        ],
+    },
+    {
+        question: "She will be __ at the airport at 6:00 PM.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "arrive", isCorrect: false },
+            { answer: "arrived", isCorrect: false },
+            { answer: "arriving", isCorrect: true },
+          { answer: "arrives", isCorrect: false },
+        ],
+    },
+    {
+        question: "He had __ hard and was well prepared for the exam.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "studied", isCorrect: true },
+            { answer: "study", isCorrect: false },
+            { answer: "studying", isCorrect: false },
+          { answer: "studies", isCorrect: false },
+        ],
+    },
+    {
+        question: "They__ going to the mall to buy new clothes.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "have", isCorrect: false },
+            { answer: "had", isCorrect: false },
+            { answer: "'re", isCorrect: true },
+          { answer: "have been", isCorrect: false },
+        ],
+    },
+    {
+        question: "The company __ in business for over 20 years.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "has", isCorrect: false },
+            { answer: "had", isCorrect: false },
+            { answer: "have been", isCorrect: false },
+            { answer: "has been", isCorrect: true },
+        ],
+    },
+    {
+        question: "He had __ the project before the deadline.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "finished", isCorrect: true },
+            { answer: "finishing", isCorrect: false },
+            { answer: "finished", isCorrect: false },
+            { answer: "finish", isCorrect: false },
+        ],
+    },
+    {
+        question: "The children __ playing in the park yesterday, laughing and having fun.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "are", isCorrect: false },
+            { answer: "have", isCorrect: false },
+            { answer: "been", isCorrect: false },
+            { answer: "were", isCorrect: true },
+        ],
+    },
+    {
+        question: "They __ friends since they were children.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "are", isCorrect: false },
+            { answer: "have been", isCorrect: true },
+            { answer: "has been", isCorrect: false },
+            { answer: "are been", isCorrect: false },
+        ],
+    },
+    {
+        question: "I __ rather stay at home than go to the party.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "am", isCorrect: false },
+            { answer: "am been", isCorrect: false },
+            { answer: "want", isCorrect: false },
+            { answer: "would", isCorrect: true },
+        ],
+    },
+    {
+        question: "He __ studying for the exam all week, but still failed.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "is", isCorrect: false },
+            { answer: "has been", isCorrect: false },
+            { answer: "had been", isCorrect: true },
+            { answer: "is been", isCorrect: false },
+        ],
+    },
+    {
+        question: "The company will be __ a new product next month.",
+        translate: "No Translation",
+        type: "grammar",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "launch", isCorrect: false },
+            { answer: "launching", isCorrect: true },
+            { answer: "launched", isCorrect: false },
+            { answer: "launches", isCorrect: false },
+        ],
+    },
+    // ===================================== Vocabs =============================
+    {
+        question: "__ it was late, she decided to call her friend.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+          { answer: "spite", isCorrect: false },
+          { answer: "is", isCorrect: false },
+          { answer: "Although", isCorrect: true },
+          { answer: "if", isCorrect: false },
+        ],
+    },
+    {
+        question: "The new __, who was trained by the previous manager, is doing well.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+          { answer: "employe", isCorrect: false },
+          { answer: "kid", isCorrect: false },
+          { answer: "employee", isCorrect: true },
+          { answer: "men", isCorrect: false },
+        ],
+    },
+    {
+        question: "She was so tired that she __ asleep on the bus.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+          { answer: "fall", isCorrect: false },
+          { answer: "fell", isCorrect: true },
+          { answer: "felt", isCorrect: false },
+          { answer: "falls", isCorrect: false },
+        ],
+    },
+    {
+        question: "They were __ to meet at the park.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+          { answer: "have", isCorrect: false },
+          { answer: "having", isCorrect: false },
+          { answer: "suppusting", isCorrect: false },
+          { answer: "supposed", isCorrect: true },
+        ],
+    },
+    {
+        question: "He had been looking __ to the vacation for weeks.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+          { answer: "toward", isCorrect: false },
+          { answer: "forward", isCorrect: true },
+          { answer: "backward", isCorrect: false },
+          { answer: "forword", isCorrect: false },
+        ],
+    },
+    {
+        question: "The team had been practicing for the __ for months.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "competition", isCorrect: true },
+          { answer: "mobile", isCorrect: false },
+          { answer: "flat", isCorrect: false },
+          { answer: "laptop", isCorrect: false },
+        ],
+    },
+    {
+        question: "Despite the __, they were able to complete the project on time.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "chalenges", isCorrect: false },
+            { answer: "challanges", isCorrect: false },
+            { answer: "challenge", isCorrect: false },
+            { answer: "challenges", isCorrect: true },
+        ],
+    },
+    {
+        question: "I am not sure if I will be able to __ the meeting tomorrow.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "attend", isCorrect: true },
+            { answer: "try", isCorrect: false },
+            { answer: "go", isCorrect: false },
+            { answer: "have", isCorrect: false },
+        ],
+    },
+    {
+        question: "The company is planning to __ its operations in the next year.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "make", isCorrect: false },
+            { answer: "take", isCorrect: false },
+            { answer: "expand", isCorrect: true },
+            { answer: "have", isCorrect: false },
+        ],
+    },
+    {
+        question: "She had been working hard to __ her skills.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "decrease", isCorrect: false },
+            { answer: "improve", isCorrect: true },
+            { answer: "increase", isCorrect: false },
+            { answer: "get", isCorrect: false },
+        ],
+    },
+    {
+        question: "He would __ stay home than go out on a rainy day.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "more", isCorrect: false },
+            { answer: "even", isCorrect: false },
+            { answer: "niether", isCorrect: false },
+            { answer: "rather", isCorrect: true },
+        ],
+    },
+    {
+        question: "Despite the __, they were able to achieve their goals.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "others", isCorrect: false },
+            { answer: "setbacks", isCorrect: true },
+            { answer: "men", isCorrect: false },
+            { answer: "benefits", isCorrect: false },
+        ],
+    },
+    {
+        question: "The team was able to win the game thanks to their hard work and __.",
+        translate: "No Translation",
+        type: "vocabs",
+        level: "a2",
+        lan: "en",
+        options: [
+            { answer: "others", isCorrect: false },
+            { answer: "men", isCorrect: false },
+            { answer: "benefits", isCorrect: false },
+            { answer: "dedication", isCorrect: true },
+        ],
+    },
+    // ===================================== Writting ========================
+    {
+        question: "Although/was/he/tired, /decided/going/to/report/finish/Ahmad/the/before/to/bed.",
+        translate: "No Translation, Dont forget to put after the coma a space",
+        type: "writting",
+        level: "a2",
+        lan: "en",
+        answer: "Although he was tired, Ahmad decided to finish the report before going to bed.",
+    },
+    {
+        question: "next/the/groceries./store/was/closed, /we/had/Because/to/go/to/the/buy/town/to",
+        translate: "No Translation, Dont forget to put after the coma a space",
+        type: "writting",
+        level: "a2",
+        lan: "en",
+        answer: "Because the store was closed, we had to go to the next town to buy groceries.",
+        },
+        {
+            question: "Although/was/it/we/went/walk/park./for/raining, /a/in/the",
+            translate: "No Translation, Dont forget to put after the coma a space",
+            type: "writting",
+            level: "a2",
+            lan: "en",
+            answer: "Although it was raining, we went for a walk in the park.",
+    },
+    {
+        question: "gone/would/have/I/party, /to/the/but/late./work/I/had/to",
+        translate: "No Translation, Dont forget to put after the coma a space",
+        type: "writting",
+        level: "a2",
+        lan: "en",
+        answer: "I would have gone to the party, but I had to work late.",
+    },
+    {
+        question: "gave/The/teacher/difficult/the/assignment./class/a",
+        translate: "No Translation",
+        type: "writting",
+        level: "a2",
+        lan: "en",
+        answer: "The teacher gave the class a difficult assignment.",
+    },
+    {
+        question: "the/exhausted, /Despite/fact/working/that/was/she/decided/to/project./she/keep/on/the",
+        translate: "No Translation, Dont forget to put after the coma a space",
+        type: "writting",
+        level: "a2",
+        lan: "en",
+        answer: "Despite the fact that she was exhausted, she decided to keep working on the project.",
+    },
+    // ===================================================== Speaking =====================================
+    {
+        question:"The cat, who was lounging on the windowsill, suddenly jumped down and ran outside",
+        translate: "No Translation",
+        type: "speaking",
+        level: "a2",
+        lan: "en",
+        answer: "",
+    },
+    {
+        question:"While I was eating dinner, the power went out and the room was plunged into darkness",
+        translate: "No Translation",
+        type: "speaking",
+        level: "a2",
+        lan: "en",
+        answer: "",
+    },
+    {
+        question:"The teacher, who was known for being strict, gave the class a difficult assignment",
+        translate: "No Translation",
+        type: "speaking",
+        level: "a2",
+        lan: "en",
+        answer: "",
+    },
+    // ============================================================ B1 ==========================================
+    
+];
+export default data;
