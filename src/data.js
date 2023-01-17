@@ -2516,7 +2516,7 @@ let data = [
   ],
   },
   {
-    question: "The birds were singing on the branches, their __ filled the air with music.",
+    question: "The birds were singing on the branches, their __ were filling the air with music.",
     translate: "No Translation",
     type: "vocabs",
     level: "b1",
