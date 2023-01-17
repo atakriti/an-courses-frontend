@@ -1571,7 +1571,7 @@ let data = [
     ],
   },
   {
-    question: "It __ rain.",
+    question: "I think, it __ rain.",
     translate: "لح تمطر",
     type: "grammar",
     level: "a1",
@@ -1663,7 +1663,7 @@ let data = [
     ],
   },
   {
-    question: "Snow is __.",
+    question: "The snow is __.",
     translate: "التلج بارد",
     type: "vocabs",
     level: "a1",
@@ -1850,12 +1850,12 @@ let data = [
     answer: "The moon orbits around the Earth.",
   },
   {
-    question: "to/Friday/nights./pizza/like/eat/on",
+    question: "to/Friday/nights./I/pizza/like/eat/on",
     translate: "بحب اكل بيتزا الجمعة بليل",
     type: "writting",
     level: "a1",
     lan: "en",
-    answer: "like to eat pizza on Friday nights.",
+    answer: "I like to eat pizza on Friday nights.",
   },
   {
     question: "gasoline/need/Cars/work./to",
@@ -1883,7 +1883,7 @@ let data = [
         answer: "",
     },
     {
-        question:"Butterflies are colorful insects that fly in garde",
+        question:"Butterflies are colorful insects that fly in garden",
         translate: "No Translation",
         type: "speaking",
         level: "a1",
@@ -2469,8 +2469,8 @@ let data = [
     level: "b1",
     lan: "en",
     options: [
-      { answer: "isn't", isCorrect: true },
-      { answer: "aren't", isCorrect: false },
+      { answer: "isn't", isCorrect: false },
+      { answer: "aren't", isCorrect: true },
       { answer: "has", isCorrect: false },
         { answer: "are", isCorrect: false },
     ],
@@ -2516,7 +2516,7 @@ let data = [
   ],
   },
   {
-    question: "The birds were singing on the branches, their __ filling the air with music.",
+    question: "The birds were singing on the branches, their __ filled the air with music.",
     translate: "No Translation",
     type: "vocabs",
     level: "b1",
