@@ -15,6 +15,7 @@ import { context } from "./Context";
 import logo from "./images/an-logo.png"
 import Feedback from "./Feedback/Feedback";
 import {FaTimes} from "react-icons/fa"
+import Test from "./Test/Test";
 
 function App() {
   let { users, animateDownload,signedin,isFetching,isFeedback,animateIsSignin } = useContext(context)
@@ -63,6 +64,7 @@ function App() {
         <Route path="/feedbackPage" element={<FeedbackPage />} />
         <Route path="/course/:lan" element={<Levels />} />
         <Route path="/course/:lan/:level" element={<Type />} />
+        <Route path="/test" element={<Test />} />
         <Route path="/course/:lan/:level/:type" element={<SingleCourse />} />
       </Routes>
       

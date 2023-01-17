@@ -1,0 +1,19 @@
+.test{
+    h1{
+        color: white;
+       
+    }
+    li{
+        border: 1px white solid;
+        // display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        list-style:decimal inside;
+        color: white;
+        font-size: 1.1rem;
+        h3{
+            color: white;
+        }
+    }
+}

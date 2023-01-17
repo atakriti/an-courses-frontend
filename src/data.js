@@ -1,6 +1,6 @@
 let data = [
   {
-    question: "__ heiße Maria",
+    question: "__ heiße Maria.",
     translate: "اسمي ماريا",
     type: "grammar",
     level: "a1",
@@ -39,7 +39,7 @@ let data = [
     ],
   },
   {
-    question: "Ich spreche __ Deutsch",
+    question: "Ich spreche __ Deutsch.",
     translate: "انا ما بحكي الماني",
     type: "grammar",
     level: "a1",
@@ -52,7 +52,7 @@ let data = [
     ],
   },
   {
-    question: "Ich __ Durst",
+    question: "Ich __ Durst.",
     translate: "انا عطشان",
     type: "grammar",
     level: "a1",
@@ -156,7 +156,7 @@ let data = [
     ],
   },
   {
-    question: "__ machst du heute Abend? ",
+    question: "__ machst du heute Abend?",
     translate: "شو عندك اليوم المسا؟",
     type: "grammar",
     level: "a1",
@@ -169,7 +169,7 @@ let data = [
     ],
   },
   {
-    question: "__ wohnst du? ",
+    question: "__ wohnst du?",
     translate: "وين ساكن انت؟",
     type: "grammar",
     level: "a1",
@@ -208,7 +208,7 @@ let data = [
     ],
   },
   {
-    question: "__ kommst du zu spät ?",
+    question: "__ kommst du zu spät?",
     translate: "ليش متاخر؟",
     type: "grammar",
     level: "a1",
@@ -222,7 +222,7 @@ let data = [
   },
   // ============================================================= A1 Vocabs ===========
   {
-    question: "Ich __ aus Syrien",
+    question: "Ich __ aus Syrien.",
     translate: "انا من سوريا",
     type: "vocabs",
     level: "a1",
@@ -235,7 +235,7 @@ let data = [
     ],
   },
   {
-    question: "Ich __ ein __ Deutsch",
+    question: "Ich __ ein __ Deutsch.",
     translate: "انا بحكي شوية الماني",
     type: "vocabs",
     level: "a1",
@@ -248,7 +248,7 @@ let data = [
     ],
   },
   {
-    question: "Ich __ gerne Deutsch",
+    question: "Ich __ gerne Deutsch.",
     translate: "انا عم اتعلم الماني",
     type: "vocabs",
     level: "a1",
@@ -261,7 +261,7 @@ let data = [
     ],
   },
   {
-    question: "Ich __ in einem Haus",
+    question: "Ich __ in einem Haus.",
     translate: "انا بعيش ببيت",
     type: "vocabs",
     level: "a1",
@@ -274,7 +274,7 @@ let data = [
     ],
   },
   {
-    question: "Ich __ gerne Brot und Käse",
+    question: "Ich __ gerne Brot und Käse.",
     translate: "انا باكل جبنة و خبز",
     type: "vocabs",
     level: "a1",
@@ -287,7 +287,7 @@ let data = [
     ],
   },
   {
-    question: "Ich __ gerne Wasser",
+    question: "Ich __ gerne Wasser.",
     translate: "انا بشرب مي",
     type: "vocabs",
     level: "a1",
@@ -300,7 +300,7 @@ let data = [
     ],
   },
   {
-    question: "Ich möchte gerne ins __ gehen",
+    question: "Ich möchte gerne ins __ gehen.",
     translate: "انا بدي روح على السينما",
     type: "vocabs",
     level: "a1",
@@ -313,7 +313,7 @@ let data = [
     ],
   },
   {
-    question: "Ich habe morgen __",
+    question: "Ich habe morgen __.",
     translate: "انا بكرا عندي مدرسة",
     type: "vocabs",
     level: "a1",
@@ -326,7 +326,7 @@ let data = [
     ],
   },
   {
-    question: "Ich bin __",
+    question: "Ich bin __.",
     translate: "انا مبسوط",
     type: "vocabs",
     level: "a1",
@@ -339,7 +339,7 @@ let data = [
     ],
   },
   {
-    question: "Ich bin __",
+    question: "Ich bin __.",
     translate: "انا مشغول",
     type: "vocabs",
     level: "a1",
@@ -352,7 +352,7 @@ let data = [
     ],
   },
   {
-    question: "Ich bin im __",
+    question: "Ich bin im __.",
     translate: "انا بالمول",
     type: "vocabs",
     level: "a1",
@@ -365,7 +365,7 @@ let data = [
     ],
   },
   {
-    question: "Ich bin im __",
+    question: "Ich bin im __.",
     translate: "انا بالمتحف",
     type: "vocabs",
     level: "a1",
@@ -379,36 +379,36 @@ let data = [
   },
   // ==================================== Writting =========================
   {
-    question: "heiße/Maria/Ich",
+    question: "heiße/Maria./Ich",
     translate: "اسمي ماريا",
     type: "writting",
     level: "a1",
     lan: "de",
-    answer: "Ich heiße Maria",
+    answer: "Ich heiße Maria.",
   },
   {
-    question: "kein/spreche/Deutsch/Ich",
+    question: "kein/spreche/Deutsch./Ich",
     translate: "انا ما بحكي الماني",
     type: "writting",
     level: "a1",
     lan: "de",
-    answer: "Ich spreche kein Deutsch",
+    answer: "Ich spreche kein Deutsch.",
   },
   {
-    question: "ist/Es/draußen/kalt",
+    question: "ist/Es/draußen./kalt",
     translate: "برا برد",
     type: "writting",
     level: "a1",
     lan: "de",
-    answer: "Es ist kalt draußen",
+    answer: "Es ist kalt draußen.",
   },
   {
-    question: "sind/hungrig/Wir",
+    question: "sind/hungrig./Wir",
     translate: "نحنا جوعانين",
     type: "writting",
     level: "a1",
     lan: "de",
-    answer: "Wir sind hungrig",
+    answer: "Wir sind hungrig.",
   },
   {
     question: "heute/machst/Abend/Was/du/?",
@@ -435,20 +435,20 @@ let data = [
     answer: "Wieso kommst du zu spät?",
   },
   {
-    question: "Deutsch/spreche/ein/Ich/bisschen",
+    question: "Deutsch./spreche/ein/Ich/bisschen",
     translate: "انا بحكي شوية الماني",
     type: "writting",
     level: "a1",
     lan: "de",
-    answer: "Ich spreche ein bisschen Deutsch",
+    answer: "Ich spreche ein bisschen Deutsch.",
   },
   {
-    question: "Ich/Kino/gerne/möchte/gehen/ins",
+    question: "Ich/Kino/gerne/möchte/gehen./ins",
     translate: "انا بدي روح على السينما",
     type: "writting",
     level: "a1",
     lan: "de",
-    answer: "Ich möchte gerne ins Kino gehen",
+    answer: "Ich möchte gerne ins Kino gehen.",
   },
   // ========================================== Speaking ===================================
   {
@@ -486,7 +486,7 @@ let data = [
 
   // =============================================== A2 ========================
   {
-    question: "Ich sehe __ Katze __ Garten",
+    question: "Ich sehe __ Katze __ Garten.",
     translate: "انا شايف القطة بالحديقة",
     type: "grammar",
     level: "a2",
@@ -499,7 +499,7 @@ let data = [
     ],
   },
   {
-    question: "Ich habe __ Buch auf __ Tisch gelesen",
+    question: "Ich habe __ Buch auf __ Tisch gelesen.",
     translate: "انا قرات الكتاب على الطاولة",
     type: "grammar",
     level: "a2",
@@ -512,7 +512,7 @@ let data = [
     ],
   },
   {
-    question: "Wir hören __ Musik __ Auto",
+    question: "Wir hören __ Musik __ Auto.",
     translate: "عم نسمع الاغاني بالسيارة ",
     type: "grammar",
     level: "a2",
@@ -525,7 +525,7 @@ let data = [
     ],
   },
   {
-    question: "Er trinkt __ Kaffee schnell",
+    question: "Er trinkt __ Kaffee schnell.",
     translate: "عم يشرب القهوة بسرعة ",
     type: "grammar",
     level: "a2",
@@ -538,7 +538,7 @@ let data = [
     ],
   },
   {
-    question: "Ich habe __ Handy verloren",
+    question: "Ich habe __ Handy verloren.",
     translate: "ضيعت موبايلي",
     type: "grammar",
     level: "a2",
@@ -551,7 +551,7 @@ let data = [
     ],
   },
   {
-    question: "Sie gibt __ Baby die Flasche",
+    question: "Sie gibt __ Baby die Flasche.",
     translate: "عم تعطي الطفل القنينة",
     type: "grammar",
     level: "a2",
@@ -564,7 +564,7 @@ let data = [
     ],
   },
   {
-    question: "Er schreibt die E-Mail auf __ Computer",
+    question: "Er schreibt die E-Mail auf __ Computer.",
     translate: "عم يكتب الايميل على الكمبيوتر",
     type: "grammar",
     level: "a2",
@@ -577,7 +577,7 @@ let data = [
     ],
   },
   {
-    question: "Ich nehme die Jacke __ Haken",
+    question: "Ich nehme die Jacke __ Haken.",
     translate: "عم ياخود الجاكيت من العليقة",
     type: "grammar",
     level: "a2",
@@ -590,7 +590,7 @@ let data = [
     ],
   },
   {
-    question: "Sie trägt die Tasche über __ Schulter",
+    question: "Sie trägt die Tasche über __ Schulter.",
     translate: "هية حاملة الشنتاية على الكتف",
     type: "grammar",
     level: "a2",
@@ -603,7 +603,7 @@ let data = [
     ],
   },
   {
-    question: "Die Blume gehört __ Mädchen",
+    question: "Die Blume gehört __ Mädchen.",
     translate: "الوردة للبنت",
     type: "grammar",
     level: "a2",
@@ -616,7 +616,7 @@ let data = [
     ],
   },
   {
-    question: "Der Ball ist unter __ Sofa",
+    question: "Der Ball ist unter __ Sofa.",
     translate: "الطابة تحت الصوفا",
     type: "grammar",
     level: "a2",
@@ -629,7 +629,7 @@ let data = [
     ],
   },
   {
-    question: "Der Lehrer gibt __ Schüler eine Aufgabe",
+    question: "Der Lehrer gibt __ Schüler eine Aufgabe.",
     translate: "الاستاذ عم يعطي الطالب وظيفة",
     type: "grammar",
     level: "a2",
@@ -642,7 +642,7 @@ let data = [
     ],
   },
   {
-    question: "Der Apfel fällt __ Baum",
+    question: "Der Apfel fällt __ Baum.",
     translate: "التفاحة تسقط من على الشجرة",
     type: "grammar",
     level: "a2",
@@ -655,7 +655,7 @@ let data = [
     ],
   },
   {
-    question: "Ich gebe __ Katz__ Futter",
+    question: "Ich gebe __ Katz__ Futter.",
     translate: "عم طعمي القطة",
     type: "grammar",
     level: "a2",
@@ -668,7 +668,7 @@ let data = [
     ],
   },
   {
-    question: "Die Kinder bekommen Geschenke __ __ Eltern",
+    question: "Die Kinder bekommen Geschenke __ __ Eltern.",
     translate: "الاولاد عم يتلقون هدايا من الاهل",
     type: "grammar",
     level: "a2",
@@ -681,7 +681,7 @@ let data = [
     ],
   },
   {
-    question: "Wir danken __ Nachbar_ für ihre Hilfe",
+    question: "Wir danken __ Nachbar_ für ihre Hilfe.",
     translate: "نحنا منشكر الجيران لمساعدتهم",
     type: "grammar",
     level: "a2",
@@ -694,7 +694,7 @@ let data = [
     ],
   },
   {
-    question: "Ich gebe __ Frau eine Blume",
+    question: "Ich gebe __ Frau eine Blume.",
     translate: "عم اعطي المرأة وردة",
     type: "grammar",
     level: "a2",
@@ -707,7 +707,7 @@ let data = [
     ],
   },
   {
-    question: "Die Schwester schenkt __ Mutter eine Karte",
+    question: "Die Schwester schenkt __ Mutter eine Karte.",
     translate: "الاخت تهدي الام بطاقة",
     type: "grammar",
     level: "a2",
@@ -734,7 +734,7 @@ let data = [
     ],
   },
   {
-    question: "Der Hund meiner Nachbarn __ immer sehr laut",
+    question: "Der Hund meiner Nachbarn __ immer sehr laut.",
     translate: "كلب جيراني دائما بعوي بصوت عالي",
     type: "vocabs",
     level: "a2",
@@ -747,7 +747,7 @@ let data = [
     ],
   },
   {
-    question: "Ich habe keine __ auf diesen Film",
+    question: "Ich habe keine __ auf diesen Film.",
     translate: "مالي مراء لهاد الفلم",
     type: "vocabs",
     level: "a2",
@@ -760,7 +760,7 @@ let data = [
     ],
   },
   {
-    question: "Maria arbeitet als Lehrerin an einer __",
+    question: "Maria arbeitet als Lehrerin an einer __.",
     translate: "ماريا بتشتغل بمدرسة ابتدائي",
     type: "vocabs",
     level: "a2",
@@ -773,7 +773,7 @@ let data = [
     ],
   },
   {
-    question: "Mein Handy ist leider __ gegangen",
+    question: "Mein Handy ist leider __ gegangen.",
     translate: "موبايلي انتزع",
     type: "vocabs",
     level: "a2",
@@ -813,7 +813,7 @@ let data = [
   },
   {
     question:
-      "Die Schüler, die in der letzten __ sitzen, __ sich während des Unterrichts",
+      "Die Schüler, die in der letzten __ sitzen, __ sich während des Unterrichts.",
     translate: "الطلاب, يلي قاعدين باخر صف, عم يحكو اثناء الدرس",
     type: "vocabs",
     level: "a2",
@@ -826,7 +826,7 @@ let data = [
     ],
   },
   {
-    question: "Ich habe gestern Abend ein __ Buch gelesen",
+    question: "Ich habe gestern Abend ein __ Buch gelesen.",
     translate: "مبارح قرات كتاب مشوق",
     type: "vocabs",
     level: "a2",
@@ -839,7 +839,7 @@ let data = [
     ],
   },
   {
-    question: "Die Frau, arbeitet in der __",
+    question: "Die Frau, arbeitet in der __.",
     translate: "المرأة تشتغل بالمكتبة",
     type: "vocabs",
     level: "a2",
@@ -852,7 +852,7 @@ let data = [
     ],
   },
   {
-    question: "Meine Nachbarin hat gerade ihr Studium __",
+    question: "Meine Nachbarin hat gerade ihr Studium __.",
     translate: "جارتي خلصت هلا دراستها",
     type: "vocabs",
     level: "a2",
@@ -865,7 +865,7 @@ let data = [
     ],
   },
   {
-    question: "Ich habe keine __, wo meine Brille __. Ich habe __ gesucht",
+    question: "Ich habe keine __, wo meine Brille __. Ich habe __ gesucht.",
     translate: "ماعندي علم, وين نضارتي, دورت بكل مكان",
     type: "vocabs",
     level: "a2",
@@ -1004,7 +1004,7 @@ let data = [
 
   // =========================================== B1 ====================================================
   {
-    question: "Ich __ gerne wissen, ob du morgen Zeit __",
+    question: "Ich __ gerne wissen, ob du morgen Zeit __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1017,7 +1017,7 @@ let data = [
     ],
   },
   {
-    question: "Es __ schön, wenn du mir bei meiner Hausarbeit helfen __",
+    question: "Es __ schön, wenn du mir bei meiner Hausarbeit helfen __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1031,7 +1031,7 @@ let data = [
   },
   {
     question:
-      "Ich __ gerne, ob du vielleicht Lust __, heute Abend ins Kino zu gehen",
+      "Ich __ gerne, ob du vielleicht Lust __, heute Abend ins Kino zu gehen.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1044,7 +1044,7 @@ let data = [
     ],
   },
   {
-    question: "Es __ toll, wenn du mich bei meinem Projekt unterstützen __",
+    question: "Es __ toll, wenn du mich bei meinem Projekt unterstützen __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1058,7 +1058,7 @@ let data = [
   },
   {
     question:
-      "Ich __ mich freuen, wenn du mich bei meiner Präsentation begleiten __",
+      "Ich __ mich freuen, wenn du mich bei meiner Präsentation begleiten __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1072,7 +1072,7 @@ let data = [
   },
   {
     question:
-      "Es __ nett, wenn ihr mir bei der Vorbereitung meiner Reise helfen __",
+      "Es __ nett, wenn ihr mir bei der Vorbereitung meiner Reise helfen __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1086,7 +1086,7 @@ let data = [
   },
   {
     question:
-      "Ich __ gerne wissen, ob Sie vielleicht Lust __, am Wochenende etwas zusammen zu unternehmen",
+      "Ich __ gerne wissen, ob Sie vielleicht Lust __, am Wochenende etwas zusammen zu unternehmen.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1100,7 +1100,7 @@ let data = [
   },
   {
     question:
-      "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
+      "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1113,7 +1113,7 @@ let data = [
     ],
   },
   {
-    question: "Wenn es möglich gewesen __, __ wir das Problem früher gelöst",
+    question: "Wenn es möglich gewesen __, __ wir das Problem früher gelöst.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1126,7 +1126,7 @@ let data = [
     ],
   },
   {
-    question: "Wenn ich genügend Geld __, __ ich mir ein neues Auto kaufen",
+    question: "Wenn ich genügend Geld __, __ ich mir ein neues Auto kaufen.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1139,7 +1139,7 @@ let data = [
     ],
   },
   {
-    question: "Er __ den Job annehmen, wenn er die Zusage __",
+    question: "Er __ den Job annehmen, wenn er die Zusage __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1152,7 +1152,7 @@ let data = [
     ],
   },
   {
-    question: "Sie __ sicherlich besser spielen, wenn sie mehr üben __",
+    question: "Sie __ sicherlich besser spielen, wenn sie mehr üben __.",
     translate: "No Translation",
     type: "grammar",
     level: "b1",
@@ -1352,7 +1352,7 @@ let data = [
     type: "writting",
     level: "b1",
     lan: "de",
-    answer: "Ich habe das Auto, das du mir geliehen hast, sorgfältig gepflegt",
+    answer: "Ich habe das Auto, das du mir geliehen hast, sorgfältig gepflegt.",
   },
   {
     question: "du/glaube,/hast./recht/Ich/dass",
@@ -1428,7 +1428,7 @@ let data = [
   // English========================================================
 
   {
-    question: "I __ a boy",
+    question: "I __ a boy.",
     translate: "انا صبي",
     type: "grammar",
     level: "a1",
@@ -1441,7 +1441,7 @@ let data = [
     ],
   },
   {
-    question: "They are __",
+    question: "They are __.",
     translate: "هدول كتب",
     type: "grammar",
     level: "a1",
@@ -1454,7 +1454,7 @@ let data = [
     ],
   },
   {
-    question: "We need some __",
+    question: "We need some __.",
     translate: "نحنا بحاجة شوية قواميس",
     type: "grammar",
     level: "a1",
@@ -1467,7 +1467,7 @@ let data = [
     ],
   },
   {
-    question: "What __ your name ?",
+    question: "What __ your name?",
     translate: "شو اسمك ؟",
     type: "grammar",
     level: "a1",
@@ -1480,7 +1480,7 @@ let data = [
     ],
   },
   {
-    question: "I __ live here",
+    question: "I __ live here.",
     translate: "انا بعيش هون",
     type: "grammar",
     level: "a1",
@@ -1493,7 +1493,7 @@ let data = [
     ],
   },
   {
-    question: "He always __ football",
+    question: "He always __ football.",
     translate: "هو دائما بيلعب كرة قدم",
     type: "grammar",
     level: "a1",
@@ -1506,7 +1506,7 @@ let data = [
     ],
   },
   {
-    question: "We __ to school yesterday",
+    question: "We __ to school yesterday.",
     translate: "مبارح رحنا على المدرسة",
     type: "grammar",
     level: "a1",
@@ -1519,7 +1519,7 @@ let data = [
     ],
   },
   {
-    question: "He __ his homework",
+    question: "He __ his homework.",
     translate: "ماكتب وظيفتو",
     type: "grammar",
     level: "a1",
@@ -1532,7 +1532,7 @@ let data = [
     ],
   },
   {
-    question: "There aren't __ stores",
+    question: "There aren't __ stores.",
     translate: "مافي ولا متجر",
     type: "grammar",
     level: "a1",
@@ -1545,7 +1545,7 @@ let data = [
     ],
   },
   {
-    question: "There is __ egg",
+    question: "There is __ egg.",
     translate: "في بيضة",
     type: "grammar",
     level: "a1",
@@ -1558,7 +1558,7 @@ let data = [
     ],
   },
   {
-    question: "I __ today",
+    question: "I __ today.",
     translate: "انا عم اشتغل اليوم",
     type: "grammar",
     level: "a1",
@@ -1571,7 +1571,7 @@ let data = [
     ],
   },
   {
-    question: "It __ rain",
+    question: "It __ rain.",
     translate: "لح تمطر",
     type: "grammar",
     level: "a1",
@@ -1584,7 +1584,7 @@ let data = [
     ],
   },
   {
-    question: "I __ learning English",
+    question: "I __ learning English.",
     translate: "انا عم اتعلم انكليزي",
     type: "grammar",
     level: "a1",
@@ -1597,7 +1597,7 @@ let data = [
     ],
   },
   {
-    question: "The flowers __ beautiful",
+    question: "The flowers __ beautiful.",
     translate: "الوردات حلوين",
     type: "grammar",
     level: "a1",
@@ -1610,7 +1610,7 @@ let data = [
     ],
   },
   {
-    question: "He __ reading a book",
+    question: "He __ reading a book.",
     translate: "هو عم يقرا كتاب",
     type: "grammar",
     level: "a1",
@@ -1624,7 +1624,7 @@ let data = [
   },
   // =================================== Vocabs ====================
   {
-    question: "Apples are a type of fruit that __ on trees",
+    question: "Apples are a type of fruit that __ on trees.",
     translate: "التفاح نوع من الفواكي و ينمو على الشجر",
     type: "vocabs",
     level: "a1",
@@ -1637,7 +1637,7 @@ let data = [
     ],
   },
   {
-    question: "The sky is blue __ the day",
+    question: "The sky is blue __ the day.",
     translate: "السما زرقا بالنهار",
     type: "vocabs",
     level: "a1",
@@ -1663,7 +1663,7 @@ let data = [
     ],
   },
   {
-    question: "Snow is __",
+    question: "Snow is __.",
     translate: "التلج بارد",
     type: "vocabs",
     level: "a1",
@@ -1676,7 +1676,7 @@ let data = [
     ],
   },
   {
-    question: "The moon __ at night",
+    question: "The moon __ at night.",
     translate: "القمر بيطلع بليل",
     type: "vocabs",
     level: "a1",
@@ -1689,7 +1689,7 @@ let data = [
     ],
   },
   {
-    question: "Birds can __",
+    question: "Birds can __.",
     translate: "الطيور بيقدرو يطيرو",
     type: "vocabs",
     level: "a1",
@@ -1702,7 +1702,7 @@ let data = [
     ],
   },
   {
-    question: "A car has four __",
+    question: "A car has four __.",
     translate: "السيارة الها اربع بواب",
     type: "vocabs",
     level: "a1",
@@ -1715,7 +1715,7 @@ let data = [
     ],
   },
   {
-    question: "The __ is green",
+    question: "The __ is green.",
     translate: "العشب اخضر",
     type: "vocabs",
     level: "a1",
@@ -1728,7 +1728,7 @@ let data = [
     ],
   },
   {
-    question: "Trees __ oxygen and shade",
+    question: "Trees __ oxygen and shade.",
     translate: "الشجر تدعم الاوكسجين و الظل",
     type: "vocabs",
     level: "a1",
@@ -1741,7 +1741,7 @@ let data = [
     ],
   },
   {
-    question: "Flowers come in many colors and __",
+    question: "Flowers come in many colors and __.",
     translate: "الازهار بتجي بكزا الوان وانواع",
     type: "vocabs",
     level: "a1",
@@ -1754,7 +1754,7 @@ let data = [
     ],
   },
   {
-    question: "The __ change throughout the year",
+    question: "The __ change throughout the year.",
     translate: "الموسم بيتغير خلال السنة",
     type: "vocabs",
     level: "a1",
@@ -1767,7 +1767,7 @@ let data = [
     ],
   },
   {
-    question: "Butterflies are colorful __ that fly in gardens",
+    question: "Butterflies are colorful __ that fly in gardens.",
     translate: "الفراشات حشرات مليئة بالالوان بتطير بالحدائق",
     type: "vocabs",
     level: "a1",
@@ -1780,7 +1780,7 @@ let data = [
     ],
   },
   {
-    question: "Mountains are large __ that rise high above the ground",
+    question: "Mountains are large __ that rise high above the ground.",
     translate: "الجبال هية تضاريس كبيرة بتعلو عن الارض",
     type: "vocabs",
     level: "a1",
@@ -1893,7 +1893,7 @@ let data = [
     
     // ============================================================= A2 =================================
     {
-        question: "A teacher __ works in a school",
+        question: "A teacher __ works in a school.",
         translate: "No Translation",
         type: "grammar",
         level: "a2",
@@ -1906,7 +1906,7 @@ let data = [
         ],
     },
     {
-        question: "I have been __ English for three years",
+        question: "I have been __ English for three years.",
         translate: "No Translation",
         type: "grammar",
         level: "a2",
@@ -2490,22 +2490,210 @@ let data = [
   },
 // =================================== Vocabs ====================
 {
-  question: "They were __ to meet at the park.",
+  question: "The sun was setting over the mountains, casting a warm orange __ over the valley below.",
   translate: "No Translation",
   type: "vocabs",
   level: "b1",
   lan: "en",
   options: [
-    { answer: "have", isCorrect: false },
-    { answer: "having", isCorrect: false },
-    { answer: "suppusting", isCorrect: false },
-    { answer: "supposed", isCorrect: true },
+    { answer: "going down", isCorrect: false },
+    { answer: "rising", isCorrect: false },
+    { answer: "getting", isCorrect: false },
+    { answer: "glow", isCorrect: true },
   ],
 },
-
-
-
-
+{
+  question: "The wind was blowing through the tall trees, __ the leaves and making a soothing sound.",
+  translate: "No Translation",
+  type: "vocabs",
+  level: "b1",
+  lan: "en",
+  options: [
+    { answer: "taking", isCorrect: false },
+    { answer: "rising", isCorrect: false },
+    { answer: "slow", isCorrect: false },
+    { answer: "rustling", isCorrect: true },
+  ],
+  },
+  {
+    question: "The birds were singing on the branches, their __ filling the air with music.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "talking", isCorrect: false },
+      { answer: "melodies", isCorrect: true },
+      { answer: "songs", isCorrect: false },
+      { answer: "sounds", isCorrect: false },
+    ],
+  },
+  {
+    question: "The flowers were __ in the garden, adding color and beauty to the space.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "opening", isCorrect: false },
+      { answer: "breathing", isCorrect: false },
+      { answer: "showing", isCorrect: false },
+      { answer: "blooming", isCorrect: true },
+    ],
+  },
+  {
+    question: "The children were laughing and playing, their joy and energy __.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "infectious", isCorrect: true },
+      { answer: "fun", isCorrect: false },
+      { answer: "gorgeous", isCorrect: false },
+      { answer: "faild", isCorrect: false },
+    ],
+  },
+  {
+    question: "The sun was shining __, its warmth and light making the day feel perfect.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "lightly", isCorrect: false },
+      { answer: "gorgeous", isCorrect: false },
+      { answer: "brightly", isCorrect: true },
+      { answer: "above", isCorrect: false },
+    ],
+  },
+  {
+    question: "The leaves were __ golden and red, signaling the arrival of fall.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "turning", isCorrect: true },
+      { answer: "getting", isCorrect: false },
+      { answer: "switching", isCorrect: false },
+      { answer: "great", isCorrect: false },
+    ],
+  },
+  {
+    question: "The ice cream was __ on a cone, its sweet and creamy taste delicious.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "falling", isCorrect: false },
+      { answer: "cold", isCorrect: false },
+      { answer: "melting", isCorrect: true },
+      { answer: "warm", isCorrect: false },
+    ],
+  },
+  {
+    question: "The phone was ringing loudly, its sound indicating an __ call.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "incoming", isCorrect: true },
+      { answer: "outcoming", isCorrect: false },
+      { answer: "ringing", isCorrect: false },
+      { answer: "coming", isCorrect: false },
+    ],
+  },
+  {
+    question: "The clock was __ steadily.",
+    translate: "No Translation",
+    type: "vocabs",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "taking", isCorrect: false },
+      { answer: "ringing", isCorrect: false },
+      { answer: "moving", isCorrect: false },
+      { answer: "ticking", isCorrect: true },
+    ],
+  },
+  // ======================================================= Writting ===================================
+  {
+    question: "The/and/apple/was/shiny, /for/a/red/perfect/person./snack/a/hungry",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "en",
+    answer: "The apple was red and shiny, a perfect snack for a hungry person.",
+  },
+  {
+    question: "The/shining, /sun/bright./was/the/day/and/making/warm",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "en",
+    answer: "The sun was shining, making the day warm and bright.",
+  },
+  {
+    question: "was/toy/play/The/car/and/fast, /fun/small/to/with.",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "en",
+    answer: "The toy car was small and fast, fun to play with.",
+  },
+  {
+    question: "was/The/walk./shoe/and/well, /fit/comfortable/for/perfect/a",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "en",
+    answer: "The shoe was comfortable and fit well, perfect for a walk.",
+  },
+  {
+    question: "soft/bear/was/companion./teddy/and/The/comforting/cuddly, /a",
+    translate: "No Translation, Dont forget to put after the coma a space",
+    type: "writting",
+    level: "b1",
+    lan: "en",
+    answer: "The teddy bear was soft and cuddly, a comforting companion.",
+  },
+  // =================================================== Speaking ========================
+{
+  question:"The ball was bouncy and round, made of durable rubber that was perfect for playing catch with friends in the park",
+  translate: "No Translation",
+  type: "speaking",
+  level: "b1",
+  lan: "en",
+  answer: "",
+  },
+  {
+    question:"The ice cream cone was creamy and delicious, with a perfect combination of vanilla and chocolate flavor that was satisfying on a hot summer day",
+    translate: "No Translation",
+    type: "speaking",
+    level: "b1",
+    lan: "en",
+    answer: "",
+  },
+  {
+    question:"The flower was fragrant and beautiful, with vibrant petals in shades of pink and purple that added color and life to the garden",
+    translate: "No Translation",
+    type: "speaking",
+    level: "b1",
+    lan: "en",
+    answer: "",
+  },
+  {
+    question:"The socks were soft and comfortable, made from breathable cotton that kept the feet warm and cozy all day",
+    translate: "No Translation",
+    type: "speaking",
+    level: "b1",
+    lan: "en",
+    answer: "",
+  },
 
 ];
 export default data;
+
