@@ -19,10 +19,10 @@ let data = [
     level: "a1",
     lan: "de",
     options: [
-      { answer: "was", isCorrect: false },
-      { answer: "wo", isCorrect: false },
-      { answer: "wie", isCorrect: true },
-      { answer: "wann", isCorrect: false },
+      { answer: "Was", isCorrect: false },
+      { answer: "Wo", isCorrect: false },
+      { answer: "Wie", isCorrect: true },
+      { answer: "Wann", isCorrect: false },
     ],
   },
   {
@@ -443,12 +443,12 @@ let data = [
     answer: "Ich spreche ein bisschen Deutsch",
   },
   {
-    question: "Ich/Kino/gerne/möchte/gehe/ins",
+    question: "Ich/Kino/gerne/möchte/gehen/ins",
     translate: "انا بدي روح على السينما",
     type: "writting",
     level: "a1",
     lan: "de",
-    answer: "Ich möchte gerne ins Kino gehe",
+    answer: "Ich möchte gerne ins Kino gehen",
   },
   // ========================================== Speaking ===================================
   {
@@ -945,13 +945,13 @@ let data = [
   },
   {
     question:
-      "gebrochen/habe/es/das/Schwester/Ich/reparieren./Fahrad/meiner/und/muss/jetzt",
+      "kaput/gemacht/habe/es/das/Schwester/Ich/reparieren./Fahrad/meiner/und/muss/jetzt",
     translate: "No Translation",
     type: "writting",
     level: "a2",
     lan: "de",
     answer:
-      "Ich habe das Fahrad meiner Schwester gebrochen und muss es jetzt reparieren.",
+      "Ich habe das Fahrad meiner Schwester kaput gemacht und muss es jetzt reparieren.",
   },
   {
     question:
@@ -976,7 +976,7 @@ let data = [
   // ========================================== Speaking ===================================
   {
     question:
-      "Es war einmal ein kleiner Junge, der in einem Dorf am Fluss wohnte und eines Tages beschloss die Welt zu entdecken",
+      "Es war einmal ein kleiner Junge, der in einem Dorf am Fluss wohnte und eines Tages beschloss, die Welt zu entdecken",
     translate: "No Translation",
     type: "speaking",
     level: "a2",
@@ -1113,20 +1113,6 @@ let data = [
     ],
   },
   {
-    question:
-      "Es __ schön, wenn er mich bei der Planung meiner Party unterstützen __",
-    translate: "No Translation",
-    type: "grammar",
-    level: "b1",
-    lan: "de",
-    options: [
-      { answer: "würde,habt", isCorrect: false },
-      { answer: "wäre,könnte", isCorrect: true },
-      { answer: "wäre,könntet", isCorrect: false },
-      { answer: "würde,hat", isCorrect: false },
-    ],
-  },
-  {
     question: "Wenn es möglich gewesen __, __ wir das Problem früher gelöst",
     translate: "No Translation",
     type: "grammar",
@@ -1187,10 +1173,10 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "park", isCorrect: true },
-      { answer: "haus", isCorrect: false },
-      { answer: "straße", isCorrect: false },
-      { answer: "platz", isCorrect: false },
+      { answer: "Park", isCorrect: true },
+      { answer: "Haus", isCorrect: false },
+      { answer: "Straße", isCorrect: false },
+      { answer: "Platz", isCorrect: false },
     ],
   },
   {
@@ -1201,10 +1187,10 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "fluss", isCorrect: true },
-      { answer: "see", isCorrect: false },
-      { answer: "ozean", isCorrect: false },
-      { answer: "meer", isCorrect: false },
+      { answer: "Fluss", isCorrect: true },
+      { answer: "See", isCorrect: false },
+      { answer: "Ozean", isCorrect: false },
+      { answer: "Meer", isCorrect: false },
     ],
   },
   {
@@ -1215,10 +1201,10 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "geld", isCorrect: true },
-      { answer: "zeit", isCorrect: false },
-      { answer: "tickets", isCorrect: false },
-      { answer: "visa", isCorrect: false },
+      { answer: "Geld", isCorrect: true },
+      { answer: "Zeit", isCorrect: false },
+      { answer: "Tickets", isCorrect: false },
+      { answer: "Visa", isCorrect: false },
     ],
   },
   {
@@ -1312,24 +1298,10 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "japan", isCorrect: true },
-      { answer: "korea", isCorrect: false },
-      { answer: "china", isCorrect: false },
-      { answer: "thailand", isCorrect: false },
-    ],
-  },
-  {
-    question:
-      "Ich habe das Museum, das du mir empfohlen hast, letztes Wochenende __ und es war sehr interessant.",
-    translate: "No Translation",
-    type: "vocabs",
-    level: "b1",
-    lan: "de",
-    options: [
-      { answer: "besucht", isCorrect: true },
-      { answer: "gefunden", isCorrect: false },
-      { answer: "empfohlen", isCorrect: false },
-      { answer: "geöffnet", isCorrect: false },
+      { answer: "Japan", isCorrect: true },
+      { answer: "Korea", isCorrect: false },
+      { answer: "China", isCorrect: false },
+      { answer: "Thailand", isCorrect: false },
     ],
   },
   {
@@ -2334,6 +2306,206 @@ let data = [
         answer: "",
     },
     // ============================================================ B1 ==========================================
-    
+    {
+      question: "He reported that he __ finished the project.",
+      translate: "No Translation",
+      type: "grammar",
+      level: "b1",
+      lan: "en",
+      options: [
+        { answer: "had", isCorrect: true },
+          { answer: "has", isCorrect: false },
+          { answer: "has been", isCorrect: false },
+          { answer: "is", isCorrect: false },
+      ],
+  },
+  {
+    question: "They stated that they __ running late.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "have", isCorrect: false },
+      { answer: "are", isCorrect: false },
+      { answer: "were", isCorrect: true },
+        { answer: "have been", isCorrect: false },
+    ],
+  },
+  {
+    question: "The teacher announced that there __ be a test tomorrow.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "would", isCorrect: true },
+      { answer: "will", isCorrect: false },
+      { answer: "are", isCorrect: false },
+        { answer: "is", isCorrect: false },
+    ],
+  },
+  {
+    question: "He mentioned that he __ be out of town next week.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "will", isCorrect: false },
+      { answer: "are", isCorrect: false },
+      { answer: "would", isCorrect: true },
+        { answer: "is", isCorrect: false },
+    ],
+  },
+  {
+    question: "She complained that the service __ poor.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "was", isCorrect: true },
+      { answer: "will", isCorrect: false },
+      { answer: "are", isCorrect: false },
+        { answer: "is", isCorrect: false },
+    ],
+  },
+  {
+    question: "He remarked that the weather __ nice.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "will", isCorrect: false },
+      { answer: "are", isCorrect: false },
+      { answer: "was", isCorrect: true },
+        { answer: "is", isCorrect: false },
+    ],
+  },
+  {
+    question: "They noted that they __ not received the package yet.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "had", isCorrect: true },
+      { answer: "did", isCorrect: false },
+      { answer: "have", isCorrect: false },
+        { answer: "are", isCorrect: false },
+    ],
+  },
+  {
+    question: "She explained that she __ been busy with work.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "did", isCorrect: false },
+      { answer: "had", isCorrect: true },
+      { answer: "have", isCorrect: false },
+        { answer: "has", isCorrect: false },
+    ],
+  },
+  {
+    question: "He confirmed that he __ be attending the meeting.",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "will", isCorrect: false },
+      { answer: "have", isCorrect: false },
+      { answer: "would", isCorrect: true },
+        { answer: "has", isCorrect: false },
+    ],
+},
+{
+  question: "She is a student, __ she?",
+  translate: "No Translation",
+  type: "grammar",
+  level: "b1",
+  lan: "en",
+  options: [
+    { answer: "will", isCorrect: false },
+    { answer: "isn't", isCorrect: true },
+    { answer: "is", isCorrect: false },
+      { answer: "has", isCorrect: false },
+  ],
+},
+{
+  question: "They are going to the park, __ they?",
+  translate: "No Translation",
+  type: "grammar",
+  level: "b1",
+  lan: "en",
+  options: [
+    { answer: "aren't", isCorrect: true },
+    { answer: "will", isCorrect: false },
+    { answer: "are", isCorrect: false },
+      { answer: "have", isCorrect: false },
+  ],
+},
+{
+  question: "He is feeling better, __ he?",
+  translate: "No Translation",
+  type: "grammar",
+  level: "b1",
+  lan: "en",
+  options: [
+    { answer: "isn't", isCorrect: true },
+    { answer: "aren't", isCorrect: false },
+    { answer: "has", isCorrect: false },
+      { answer: "have", isCorrect: false },
+  ],
+  },
+  {
+    question: "They are not coming, __ they?",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "isn't", isCorrect: true },
+      { answer: "aren't", isCorrect: false },
+      { answer: "has", isCorrect: false },
+        { answer: "are", isCorrect: false },
+    ],
+  },
+  {
+    question: "You have finished your homework, __ you?",
+    translate: "No Translation",
+    type: "grammar",
+    level: "b1",
+    lan: "en",
+    options: [
+      { answer: "haven't", isCorrect: true },
+      { answer: "aren't", isCorrect: false },
+      { answer: "has", isCorrect: false },
+        { answer: "are", isCorrect: false },
+    ],
+  },
+// =================================== Vocabs ====================
+{
+  question: "They were __ to meet at the park.",
+  translate: "No Translation",
+  type: "vocabs",
+  level: "b1",
+  lan: "en",
+  options: [
+    { answer: "have", isCorrect: false },
+    { answer: "having", isCorrect: false },
+    { answer: "suppusting", isCorrect: false },
+    { answer: "supposed", isCorrect: true },
+  ],
+},
+
+
+
+
+
 ];
 export default data;
