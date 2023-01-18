@@ -1441,7 +1441,7 @@ let data = [
     ],
   },
   {
-    question: "They are __.",
+    question: "These are __.",
     translate: "هدول كتب",
     type: "grammar",
     level: "a1",
@@ -1481,7 +1481,7 @@ let data = [
   },
   {
     question: "I __ live here.",
-    translate: "انا بعيش هون",
+    translate: "انا مابعيش هون",
     type: "grammar",
     level: "a1",
     lan: "en",
@@ -1572,7 +1572,7 @@ let data = [
   },
   {
     question: "I think, it __ rain.",
-    translate: "لح تمطر",
+    translate: "انا بعتقد لح تمطر",
     type: "grammar",
     level: "a1",
     lan: "en",
@@ -1842,12 +1842,12 @@ let data = [
     answer: "The Amazon rainforest is located in south America.",
   },
   {
-    question: "The/the/around/orbits/Earth./moon",
+    question: "The/the/around/orbits/earth./moon",
     translate: "القمر بدور حول الأرض",
     type: "writting",
     level: "a1",
     lan: "en",
-    answer: "The moon orbits around the Earth.",
+    answer: "The moon orbits around the earth.",
   },
   {
     question: "to/Friday/nights./I/pizza/like/eat/on",

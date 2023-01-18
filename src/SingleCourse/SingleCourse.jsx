@@ -242,13 +242,16 @@ type === "writting" && (
         </ul>
         {type === "writting" && (
           <form action="">
-            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue} type="text" name="writting" id="" placeholder="Write the Sentence here" />
+            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue} type="text" name="writting" id="" placeholder="Write the sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>
         )}
         {type === "speaking" && (
           <p>{transcript}</p>
+        )}
+        {speechText !== transcript.toLowerCase() && (
+          <h6>When it is correct the next button will show</h6>
         )}
         {speechText === transcript.toLowerCase() && (
           <button onClick={handleNext}>Next</button>
