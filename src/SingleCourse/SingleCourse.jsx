@@ -115,7 +115,8 @@ pdf.text(50, 247, `Anwar Takriti`);
       setColorCorrect(false)
     } else if (filterData[counter].answer === inputValue.trim()) {
       setCounter(counter + 1)
-      setInputValue("")
+      // setInputValue("")
+      e.target.reset()
       setWrittingFalse(false)
       setIsShowResult(0)
     } else if (filterData[counter].answer !== inputValue.trim()) {
