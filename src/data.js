@@ -1703,7 +1703,7 @@ let data = [
   },
   {
     question: "A car has four __.",
-    translate: "السيارة الها اربع بواب",
+    translate: "السيارة الها اربع دوليب",
     type: "vocabs",
     level: "a1",
     lan: "en",
