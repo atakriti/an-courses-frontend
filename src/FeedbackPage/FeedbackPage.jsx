@@ -5,7 +5,6 @@ import user from "../images/user.jpg";
 function FeedbackPage() {
   let { users, languageValue } = useContext(context)
   let ask = users.some(item => item.comment !== undefined)
-  console.log("🚀 ~ file: FeedbackPage.jsx:8 ~ FeedbackPage ~ ask", ask)
   return (
     <div className='feedbackPage'>
       {!ask && (

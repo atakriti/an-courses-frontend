@@ -73,7 +73,6 @@ function Register() {
   }
   let findChangePassword = users.find(user => user.email === changePasswordValue.emailChangePassword)
   let [findChangePasswordState,setFindChangePasswordState] = useState(findChangePassword)
-  console.log("🚀 ~ file: Register.jsx:74 ~ Register ~ findChangePasswordState", findChangePasswordState)
   let handleChangePassword =async (e) => {
     e.preventDefault()
     setFindChangePasswordState({...findChangePasswordState,password:changePasswordValue.emailChangePassword})

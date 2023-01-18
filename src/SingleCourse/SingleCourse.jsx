@@ -18,7 +18,6 @@ function SingleCourse() {
   let findUser = users.find(user => user.email === signedin.email)
   let [foundUserState, setFoundUserState] = useState(findUser)
   let getKeysCertificate =  findUser  ? Object.keys(findUser?.done).filter(item => findUser?.done[item] === true) : [];
-  console.log("The find user", getKeysCertificate);
   let mappingKeysDE = getKeysCertificate?.map(item => item?.includes("de") && `\n ${item}`).filter(item => item !== false);
   let mappingKeysEN = getKeysCertificate?.map(item => item?.includes("en") && `\n ${item}`).filter(item => item !== false)
   const pdf = new jsPDF();
@@ -55,7 +54,6 @@ pdf.text(50, 247, `Anwar Takriti`);
   // ====================== End Find the user =========================
   let filterData = data.filter((item) => item.lan === lan && item.type === type && item.level === level);
   let filterB1 = data.filter(item => item.type === "speaking" && item.level === "b1")
-  console.log("🚀 ~ file: SingleCourse.jsx:69 ~ SingleCourse ~ filterB1", filterB1)
   let [counter, setCounter] = useState(0)
   let [clickedSentence, setClickedSentence] = useState()
   let [colorCorrect, setColorCorrect] = useState(false)
@@ -82,7 +80,6 @@ pdf.text(50, 247, `Anwar Takriti`);
   // =================================================================================================================
   let speechText = filterData[counter]?.question.toLowerCase() //! Here replacing the comma with empty
   speechText = speechText?.replace(/,/g, '')
-  console.log("🚀 ~ file: SingleCourse.jsx:54 ~ SingleCourse ~ speechText", speechText)
   let handleNext = async (e) => {
     e.preventDefault()
     if ((counter === filterData?.length - 1 && clickedSentence?.isCorrect) ||( counter === filterData?.length - 1 && filterData[counter].answer === inputValue.trim()  )) {
@@ -177,6 +174,7 @@ pdf.text(50, 247, `Anwar Takriti`);
      
   }
   // console.log("testing", { [`${lan}-${level}-${type}`]: true });
+  // value={inputValue}
   useEffect(() => {
         setFoundUserState(findUser)
     },[users])
@@ -242,7 +240,7 @@ type === "writting" && (
         </ul>
         {type === "writting" && (
           <form action="">
-            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue} type="text" name="writting" id="" placeholder="Write the sentence here" />
+            <input onChange={(e)=>setInputValue(e.target.value)}  type="text" name="writting" id="" placeholder="Write the sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>

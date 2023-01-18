@@ -10,7 +10,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import  {FaTimes} from "react-icons/fa"
 function Header() {
   const [scroll, setScroll] = useScrollPosition();
-  console.log("🚀 ~ file: Header.jsx:13 ~ Header ~ scroll", scroll)
   // let navigate = useNavigate()
   let {
     users,

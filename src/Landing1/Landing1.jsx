@@ -9,7 +9,6 @@ function Landing1() {
   // ====================== Find the user =========================
   let findUser = users.find((user) => user.email === signedin.email);
   let getKeysCertificate =  findUser  ? Object.keys(findUser?.done).filter(item => findUser?.done[item] === true) : [];
-  console.log("The find user", getKeysCertificate);
   let mappingKeysDE = getKeysCertificate?.map(item => item?.includes("de") && `\n ${item}`).filter(item => item !== false);
   let mappingKeysEN = getKeysCertificate?.map(item => item?.includes("en") && `\n ${item}`).filter(item => item !== false)
   const pdf = new jsPDF();
