@@ -5,7 +5,7 @@ import { context } from '../Context';
 import axios from 'axios';
 function Footer() {
   const currentYear = new Date().getFullYear();
-  let { users, signedin,setAnimateDownload,animateDownload,setIsSignedin,setSignedin,fetchUsers,setUsers} = useContext(context)
+  let { users, signedin,setAnimateDownload,animateDownload,setIsSignedin,setSignedin,fetchUsers,setUsers,isSignedin} = useContext(context)
   // ====================== Find the user =========================
   let findUser = users?.find(user => user?.email === signedin?.email)
   let [isDelete, setIsDelete] = useState(false)
@@ -49,7 +49,8 @@ function Footer() {
       )}
      
       <span>
-              <button onClick={()=>setIsDelete(true)}>Delete my account</button>
+        {isSignedin && <button onClick={()=>setIsDelete(true)}>Delete my account</button>}
+              
               <h2> Developed by Anwar Takriti {currentYear}</h2>
               <div className="icons">
                  <a target={'_blank'} href="https://www.facebook.com/profile.php?id=100004043302646"> <BsFacebook /></a>

@@ -468,7 +468,7 @@ let data = [
     answer: "",
   },
   {
-    question: "Wir essen jetzt Mittag",
+    question: "Wir essen jetzt zu Mittag",
     translate: "No Translation",
     type: "speaking",
     level: "a1",
@@ -945,13 +945,13 @@ let data = [
   },
   {
     question:
-      "kaput/gemacht/habe/es/das/Schwester/Ich/reparieren./Fahrad/meiner/und/muss/jetzt",
+      "kaputtgemacht/habe/es/das/Schwester/Ich/reparieren./Fahrad/meiner/und/muss/jetzt",
     translate: "No Translation",
     type: "writting",
     level: "a2",
     lan: "de",
     answer:
-      "Ich habe das Fahrad meiner Schwester kaput gemacht und muss es jetzt reparieren.",
+      "Ich habe das Fahrad meiner Schwester kaputtgemacht und muss es jetzt reparieren.",
   },
   {
     question:
@@ -1243,10 +1243,10 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "australien", isCorrect: true },
-      { answer: "afrika", isCorrect: false },
-      { answer: "südamerika", isCorrect: false },
-      { answer: "asien", isCorrect: false },
+      { answer: "Australien", isCorrect: true },
+      { answer: "Afrika", isCorrect: false },
+      { answer: "Südamerika", isCorrect: false },
+      { answer: "Asien", isCorrect: false },
     ],
   },
   {
@@ -1284,10 +1284,10 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "park", isCorrect: true },
-      { answer: "wald", isCorrect: false },
-      { answer: "garten", isCorrect: false },
-      { answer: "strand", isCorrect: false },
+      { answer: "Park", isCorrect: true },
+      { answer: "Wald", isCorrect: false },
+      { answer: "Garten", isCorrect: false },
+      { answer: "Strand", isCorrect: false },
     ],
   },
   {

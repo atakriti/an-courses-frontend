@@ -10,7 +10,7 @@ function About() {
               <p>هذا الموقع يتضمن ثلاثة مستويات مع امكانية حفظ المستوى في حساب المستخدم بس لازم تساوي حساب</p>
               <p>يلي بالصفحة الرئيسية Your Feedback is important فيكم تعطوا رأيكم بالموقع عن طريق كبس زر</p>
               <p>بتمنى التوفيق للجميع</p>
-        <a><img src={anwar} alt="" /></a>
+        <a href='https://anwar-dev.com/' target={'_blank'}><img src={anwar} alt="" /></a>
         <h2>Anwar Takriti</h2> 
               <p>Hello everyone, This website has Three Levels, and it can save the level in your account, so you need first to Sign up</p>
               <p>You can give me your Feedback by clicking on "Your Feedback is important" in the Homepage</p>

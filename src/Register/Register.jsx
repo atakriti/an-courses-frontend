@@ -119,7 +119,7 @@ function Register() {
           <h4 onClick={() => setSwitchRegister(2)}>
             You don't have an account
           </h4>
-          <h4 onClick={()=>setIsChangePassword(true)}>Forgot your Password?</h4>
+          <h4 onClick={()=>setIsChangePassword(true)}>Forgot Password?</h4>
         </form>
       )}
       {switchRegister === 2 && (
