@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useContext, useEffect, useState,useCallback,useMemo } from "react";
+import React, { useContext, useEffect, useState,useCallback,useMemo,useRef } from "react";
 import { useParams,useNavigate } from "react-router-dom";
 import { context } from "../Context";
 import data from "../data";
@@ -10,7 +10,7 @@ import logo from "../images/an-logo.png"
 import jsPDF from "jspdf";
 import certificate from "../images/an-logo.png";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-
+import debounce from "lodash.debounce"
 import "./singleCourse.scss";
 function SingleCourse() {
   let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers,setAnimateDownload,languageValue } = useContext(context)
@@ -127,17 +127,25 @@ pdf.text(50, 247, `Anwar Takriti`);
         
       }
       setWrittingFalse(true)
-      setInputValue("")
+      // setInputValue("")
+      e.target.reset()
     } 
   }
   // ================================================================================================================
-  // let handleChangeWritting = useCallback((e) => {
-  //   setInputValue(e.target.value)
-  // },[])
-  let handleChangeWritting = useMemo(
-    () => (e) => setInputValue(e.target.value),
-    []
-  );
+
+  // let refWritting = useRef()
+  const handleChangeWritting = (value) => {
+    const debounced = debounce(() => {
+      setInputValue(value)
+    }, 1);
+    
+    debounced();
+  };
+ 
+  // let handleChangeWritting = useMemo(
+  //   () => (e) => setInputValue(e.target.value),
+  //   []
+  // );
   // =====================================================================================
   let handleSpeech = () => {
     let text = filterData[counter]?.question
@@ -246,10 +254,10 @@ type === "writting" && (
           ))}
         </ul>
         {type === "writting" && (
-          <form action="">
-            <input onChange={handleChangeWritting} value={inputValue} type="text" name="writting" id="" placeholder="Write the sentence here" />
+          <form onSubmit={handleNext}>
+            <input onChange={(e) => handleChangeWritting(e.target.value)}  type="text" name="writting" id="" placeholder="Write the sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
-            <button onClick={handleNext}>Next</button>
+            <button >Next</button>
           </form>
         )}
         {type === "speaking" && (
