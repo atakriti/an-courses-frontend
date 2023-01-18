@@ -1834,12 +1834,12 @@ let data = [
     answer: "Cats have sharp claws.",
   },
   {
-    question: "rainforest/The/located/America./South/is/Amazon/in",
+    question: "rainforest/The/located/America./south/is/Amazon/in",
     translate: "تقع غابات الأمازون المطيرة في أمريكا الجنوبية",
     type: "writting",
     level: "a1",
     lan: "en",
-    answer: "The Amazon rainforest is located in South America.",
+    answer: "The Amazon rainforest is located in south America.",
   },
   {
     question: "The/the/around/orbits/Earth./moon",
