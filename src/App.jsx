@@ -15,13 +15,20 @@ import { context } from "./Context";
 import logo from "./images/an-logo.png"
 import Feedback from "./Feedback/Feedback";
 import {FaTimes} from "react-icons/fa"
+import Welcome from "./Welcome/Welcome";
 
 function App() {
-  let { users, animateDownload,signedin,isFetching,isFeedback,animateIsSignin } = useContext(context)
+  let { users, animateDownload,signedin,isFetching,isFeedback,animateIsSignin,isWelcome } = useContext(context)
   // ====================== Find the user =========================
   let findUser = users.find(user => user.email === signedin.email)
   return (
     <div className="App">
+      {isWelcome && (
+        <Welcome/>
+      )}
+
+
+
 
       {animateIsSignin && (
         <div className="animateIsSingin">

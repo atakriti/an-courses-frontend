@@ -3,7 +3,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.5s;
+    // background-color: rgba(0, 0, 0, 0.719);
     .logo{
         width: 5rem;
         display: flex;
@@ -20,11 +26,110 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 30rem;
+        width: 37rem;
+        input[type="button"]{
+                border: none;
+                outline: none;
+
+                font-size: 1.1rem;
+                background-color: transparent;
+                color: #DDBC9B;
+                cursor: pointer;
+                transition: 0.5s;
+            &:hover{
+                transition: 0.5s;
+                color: white;
+            }
+        }
         a{
             color: #DDBC9B;
             font-size: 1.1rem;
             text-decoration: none;  
+            transition: 0.5s;
+            white-space: nowrap;
+            &:hover{
+                transition: 0.5s;
+                color: white;
+            }
+                     
+        }
+        .signout{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 30%;
+                height: 30%;
+                border-radius: 50%;
+                object-fit: cover;
+
+                }
+        }
+        // .signout{
+        //     display: flex;
+        //     border: 1px red solid;
+        //     img{
+        //         width: 10%;
+        //         height: 100%;
+        //     }
+        // }
+    }
+}
+// =======================
+.onScrollHeader{
+    padding: 0.5% 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.719);
+    transition: 0.5s;
+    .logo{
+        width: 5rem;
+        display: flex;
+        img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+    }
+   
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 37rem;
+        input[type="button"]{
+                border: none;
+                outline: none;
+
+                font-size: 1.1rem;
+                background-color: transparent;
+                color: #DDBC9B;
+                cursor: pointer;
+                transition: 0.5s;
+            &:hover{
+                transition: 0.5s;
+                color: white;
+            }
+        }
+        a{
+            color: #DDBC9B;
+            font-size: 1.1rem;
+            text-decoration: none;  
+            transition: 0.5s;
+            white-space: nowrap;
+            &:hover{
+                transition: 0.5s;
+                color: white;
+            }
                      
         }
         .signout{
@@ -78,6 +183,20 @@ header{
         &::-webkit-scrollbar{
             display: none;
         }
+        input[type="button"]{
+            border: none;
+            outline: none;
+            font-weight: bolder;
+            font-size: 1.7rem;
+            background-color: transparent;
+            color: #DDBC9B;
+            cursor: pointer;
+            transition: 0.5s;
+        &:hover{
+            transition: 0.5s;
+            color: white;
+        }
+    }
         a{
             color: #DDBC9B;
             font-weight: bolder;

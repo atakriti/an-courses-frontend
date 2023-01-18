@@ -18,7 +18,9 @@ function Context(props) {
   let [isSignedin, setIsSignedin] = useLocalStorage("course-isSignedin", false)
   let [isFeedback, setIsFeedback] = useState(false)
   let [animateDownload, setAnimateDownload] = useState(false)
-  let [animateIsSignin,setAnimateIsSignin] = useState(false)
+  let [animateIsSignin, setAnimateIsSignin] = useState(false)
+  let [languageValue, setLanguageValue] = useLocalStorage("languages","en")
+  let [isWelcome,setIsWelcome] = useLocalStorage("isWelcome",true)
   // ========================================== Precentage ===================================
   // const [percent, setPercent] = useState(0);
   // const [intervalId, setIntervalId] = useState(null);
@@ -52,7 +54,7 @@ function Context(props) {
     
   },[])
   return (
-    <context.Provider value={{fetchUsers,users, setUsers,signedin, setSignedin,isSignedin,setIsSignedin,isFetching,setIsFetching,isFeedback,setIsFeedback,animateDownload,setAnimateDownload,animateIsSignin,setAnimateIsSignin}}>{props.children}</context.Provider>
+    <context.Provider value={{fetchUsers,users, setUsers,signedin, setSignedin,isSignedin,setIsSignedin,isFetching,setIsFetching,isFeedback,setIsFeedback,animateDownload,setAnimateDownload,animateIsSignin,setAnimateIsSignin,languageValue, setLanguageValue,isWelcome,setIsWelcome}}>{props.children}</context.Provider>
   )
 }
 

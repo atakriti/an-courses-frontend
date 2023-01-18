@@ -3,6 +3,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1rem;
+    padding-top: 7rem;
+
+    h1{
+        color: white;
+    }
     .box{
         // flex: 0.2 1 250px;
         width: min(100% - 5%,25rem);
@@ -11,6 +16,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
+       
         a{
             display: flex;
             width: 100%;

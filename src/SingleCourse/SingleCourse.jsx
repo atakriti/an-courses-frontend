@@ -13,7 +13,7 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 
 import "./singleCourse.scss";
 function SingleCourse() {
-  let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers,setAnimateDownload } = useContext(context)
+  let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers,setAnimateDownload,languageValue } = useContext(context)
   // ====================== Find the user =========================
   let findUser = users.find(user => user.email === signedin.email)
   let [foundUserState, setFoundUserState] = useState(findUser)
@@ -203,9 +203,20 @@ pdf.text(50, 247, `Anwar Takriti`);
       <div className="singleCourse_container">
         <h1>{`${lan === "de" && "German" || lan === "en" && "English"} – ${level[0].toUpperCase() + level.slice(1)} – ${type[0].toUpperCase() + type.slice(1)}`}</h1>
         <h4>{`${counter + 1} out of ${filterData?.length}`}</h4>
-        {type === "writting" && (
-          <h6>The result will show after {isShowResult}/3 attempts <br /> { isShowResult === 3 && filterData[counter].answer}</h6>
+        {languageValue === "en" && (
+type === "writting" && (
+  <h6>The result will show after {isShowResult}/3 attempts <br /> { isShowResult === 3 && filterData[counter].answer}</h6>
+)
         )}
+        {languageValue === "عربي" && (
+type === "writting" && (
+  <h6>النتيجة لح تطلع بعد  {isShowResult}/3 محاولات <br /> { isShowResult === 3 && filterData[counter].answer}</h6>
+)
+        )}
+
+
+
+        
         <h3>{filterData[counter]?.question}</h3>
         <div className="btns">
           <BsTranslate onClick={()=>setTranslate(!translate)} />
@@ -230,7 +241,7 @@ pdf.text(50, 247, `Anwar Takriti`);
         </ul>
         {type === "writting" && (
           <form action="">
-            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue } type="text" name="writting" id="" placeholder="Write the Sentence here" />
+            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue.trim()} type="text" name="writting" id="" placeholder="Write the Sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>

@@ -4,11 +4,13 @@ import "./header.scss";
 import logo from "../images/header-logo.png";
 import user from "../images/user.jpg";
 import logo2 from "../images/an-logo.png";
-import { useMediaQuery } from "react-haiku";
+import { useMediaQuery,useScrollPosition } from "react-haiku";
 import { context } from "../Context";
 import { GiHamburgerMenu } from "react-icons/gi";
 import  {FaTimes} from "react-icons/fa"
 function Header() {
+  const [scroll, setScroll] = useScrollPosition();
+  console.log("🚀 ~ file: Header.jsx:13 ~ Header ~ scroll", scroll)
   // let navigate = useNavigate()
   let {
     users,
@@ -18,6 +20,7 @@ function Header() {
     signedin,
     setIsFetching,
     isFetching,
+    languageValue,setLanguageValue
   } = useContext(context);
   let handleSignout = () => {
     setIsSignedin(false);
@@ -42,15 +45,24 @@ function Header() {
     setAnimateIsMenu(false)
     setTimeout(() => setIsMenu(false),300)
   };
+  let handleChange = (e) => {
+    setLanguageValue(e.target.value)
+    setAnimateIsMenu(false)
+    setTimeout(() => setIsMenu(false),300)
+  }
   return (
-    <header>
+    <header className={scroll.y > 106 && "onScrollHeader"} >
       <Link className="logo" to="/">
         <img src={logo} alt="" />
       </Link>
 
       {!breakpoint && (
         <nav>
-          <Link to="/contact">Contact</Link>
+            {(languageValue === "en" &&<input onClick={handleChange}  type="button" value="عربي" /> ) || (languageValue === "عربي" &&<input onClick={handleChange} type="button" value="en" /> )}
+          
+          {languageValue === "en" && (
+            <>
+             <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
           <Link to="/feedbackPage">Feedbacks</Link>
           {isSignedin ? (
@@ -61,6 +73,24 @@ function Header() {
           ) : (
             <Link to="/register">Sign in</Link>
           )}
+            </>
+          )}
+           {languageValue === "عربي" && (
+            <>
+             <Link to="/contact">تواصل</Link>
+          <Link to="/about">حول</Link>
+          <Link to="/feedbackPage">آراء</Link>
+          {isSignedin ? (
+            <Link className="signout" onClick={handleSignout} to="/">
+              <span>تسجيل خروج</span>
+              <img src={user} alt="" />
+            </Link>
+          ) : (
+            <Link to="/register">تسجيل دخول</Link>
+          )}
+            </>
+          )}
+         
         </nav>
       )}
 
@@ -70,7 +100,8 @@ function Header() {
           {isMenu ? <FaTimes onClick={handleMenuClose}/> : <GiHamburgerMenu onClick={handleMenuOpen} /> }
           
           {isMenu && (
-            <div style={animateIsMenu ? {animation:"open 0.5s forwards ease-in-out"} : {animation:"close 0.5s forwards ease-in-out"}} className="nav">
+            <div style={animateIsMenu ? { animation: "open 0.5s forwards ease-in-out" } : { animation: "close 0.5s forwards ease-in-out" }} className="nav">
+                {(languageValue === "en" &&<input onClick={handleChange}  type="button" value="عربي" /> ) || (languageValue === "عربي" &&<input onClick={handleChange} type="button" value="en" /> )}
               <Link onClick={handleMenuClose} to="/contact">Contact</Link>
               <Link onClick={handleMenuClose} to="/about">About</Link>
               <Link onClick={handleMenuClose} to="/feedbackPage">Feedbacks</Link>

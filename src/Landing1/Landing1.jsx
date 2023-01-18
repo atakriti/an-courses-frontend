@@ -5,7 +5,7 @@ import logo from "../images/landing1.jpg";
 import jsPDF from "jspdf";
 import certificate from "../images/an-logo.png";
 function Landing1() {
-  let { users, signedin,isSignedin,animateDownload,setAnimateDownload,setAnimateIsSignin } = useContext(context);
+  let { users, signedin,isSignedin,animateDownload,setAnimateDownload,setAnimateIsSignin,languageValue } = useContext(context);
   // ====================== Find the user =========================
   let findUser = users.find((user) => user.email === signedin.email);
   let getKeysCertificate =  findUser  ? Object.keys(findUser?.done).filter(item => findUser?.done[item] === true) : [];
@@ -50,22 +50,43 @@ pdf.text(50, 247, `Anwar Takriti`);
   
   return (
     <div className="landing1">
+      {/* ===================================== English =============== */}
+      {languageValue === "en" && (
+          <div>
+          <h1>Wow Certificate ?!</h1>
+          <p>
+            Yes after getting done your full course either English or German,{" "}
+            <br /> You will get a Certificate but it is Fake only just for fun,
+            that you achived it{" "}
+          </p>
+          {findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ? (
+  
+          <button onClick={handleDownload}>Download Certificate</button>
+          ):<h2>Download button will appear once you finished German or English</h2>}
+  
+          {/* {findUser?.done['de-b1-speaking'] === true && findUser?.done['de-b1-grammar'] === true && findUser?.done['de-b1-writting'] === true && findUser?.done['de-b1-vocabs'] === true ? <button>Download Certificate</button> :  <h2>When you achieve the course the Download button will appear automatically</h2>}
+           */}
+        </div>
+      )}
+      {/* ===================================== Arabic =============== */}
+       {languageValue === "عربي" && (
+          <div>
+          <h1>عنجد شهادة؟</h1>
+          <p>
+            اي نعم, بس تخلصوا كورس الالماني او الانكليزي <br /> 
+            هية شهادة مزيفة وليست حقيقية, بس تقدير لجهودكم
+          </p>
+          {findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ? (
+  
+          <button onClick={handleDownload}>تحميل الشهادة</button>
+          ):<h2>زر التحميل بيطلع بس لما تكونو مخلصين الانكليزي او الالماني</h2>}
+  
+          {/* {findUser?.done['de-b1-speaking'] === true && findUser?.done['de-b1-grammar'] === true && findUser?.done['de-b1-writting'] === true && findUser?.done['de-b1-vocabs'] === true ? <button>Download Certificate</button> :  <h2>When you achieve the course the Download button will appear automatically</h2>}
+           */}
+        </div>
+      )}
      
-      <div>
-        <h1>Wow Certificate ?!</h1>
-        <p>
-          Yes after getting done your full course either English or German,{" "}
-          <br /> You will get a Certificate but it is Fake only just for fun,
-          that you achived it{" "}
-        </p>
-        {findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ? (
-
-        <button onClick={handleDownload}>Download Certificate</button>
-        ):<h2>Download button will appear once you finished German or English</h2>}
-
-        {/* {findUser?.done['de-b1-speaking'] === true && findUser?.done['de-b1-grammar'] === true && findUser?.done['de-b1-writting'] === true && findUser?.done['de-b1-vocabs'] === true ? <button>Download Certificate</button> :  <h2>When you achieve the course the Download button will appear automatically</h2>}
-         */}
-      </div>
+     
       <a>
         <img src={logo} alt="" />
       </a>
