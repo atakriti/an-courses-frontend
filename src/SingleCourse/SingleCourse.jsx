@@ -10,7 +10,7 @@ import logo from "../images/an-logo.png"
 import jsPDF from "jspdf";
 import certificate from "../images/an-logo.png";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import {debounce} from "lodash.debounce"
+import debounce from "lodash.debounce"
 import "./singleCourse.scss";
 function SingleCourse() {
   let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers,setAnimateDownload,languageValue } = useContext(context)
