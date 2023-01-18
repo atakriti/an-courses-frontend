@@ -11,7 +11,6 @@ function Welcome() {
   return (
       <div className='welcome'>
           <div className="welcomeContainer">
-              <h3 onClick={()=>setIsWelcome(false)}>X</h3>
               <div className="top">
                   <h1>اهلا وسهلا فيكم</h1>
                   <p>بتمنى يعجبكم الموقع و يفيدكم بقدر الامكان</p>
