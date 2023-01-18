@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./register.scss";
-import logo from "../images/An-languages-register.png";
+import logo from "../images/An-courses-register.png";
 import user from "../images/user.jpg";
 import { context } from "../Context";
 
