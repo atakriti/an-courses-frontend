@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState,useCallback,useMemo } from "react";
 import { useParams,useNavigate } from "react-router-dom";
 import { context } from "../Context";
 import data from "../data";
@@ -131,6 +131,14 @@ pdf.text(50, 247, `Anwar Takriti`);
     } 
   }
   // ================================================================================================================
+  // let handleChangeWritting = useCallback((e) => {
+  //   setInputValue(e.target.value)
+  // },[])
+  let handleChangeWritting = useMemo(
+    () => (e) => setInputValue(e.target.value),
+    []
+  );
+  // =====================================================================================
   let handleSpeech = () => {
     let text = filterData[counter]?.question
     text = text?.replace(/_/g, '')
@@ -174,7 +182,6 @@ pdf.text(50, 247, `Anwar Takriti`);
      
   }
   // console.log("testing", { [`${lan}-${level}-${type}`]: true });
-  // value={inputValue}
   useEffect(() => {
         setFoundUserState(findUser)
     },[users])
@@ -240,7 +247,7 @@ type === "writting" && (
         </ul>
         {type === "writting" && (
           <form action="">
-            <input onChange={(e)=>setInputValue(e.target.value)}  type="text" name="writting" id="" placeholder="Write the sentence here" />
+            <input onChange={handleChangeWritting} value={inputValue} type="text" name="writting" id="" placeholder="Write the sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>
