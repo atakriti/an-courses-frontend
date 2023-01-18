@@ -250,7 +250,7 @@ type === "writting" && (
         {type === "speaking" && (
           <p>{transcript}</p>
         )}
-        {speechText !== transcript.toLowerCase() && (
+        {(type === "speaking" && speechText !== transcript.toLowerCase()) && (
           <h6>When it is correct the next button will show</h6>
         )}
         {speechText === transcript.toLowerCase() && (
