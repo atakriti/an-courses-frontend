@@ -2036,7 +2036,7 @@ let data = [
         ],
     },
     {
-        question: "He __ studying for the exam all week, but still failed.",
+        question: "He __ studying for the exam all week, but he still failed.",
         translate: "No Translation",
         type: "grammar",
         level: "a2",
