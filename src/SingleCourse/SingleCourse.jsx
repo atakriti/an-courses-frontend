@@ -88,7 +88,7 @@ pdf.text(50, 247, `Anwar Takriti`);
     if ((counter === filterData?.length - 1 && clickedSentence?.isCorrect) ||( counter === filterData?.length - 1 && filterData[counter].answer === inputValue  )) {
       setFoundUserState({...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       setIsFetching(true)
-      await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
+      await axios.put(`https://an-languages-backend.vercel.app/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       setFoundUserState(findUser)
       fetchUsers().then(result => setUsers(result)).then(() => setIsFetching(false))
       // setTimeout(()=>setIsFetching(false),2000)

@@ -19,7 +19,7 @@ function Feedback() {
       e.preventDefault()
       if (isSignedin) {
         setFoundUserState({...foundUserState,comment:reviewValue.comment,rate:reviewValue.rate})
-        await axios.put(`http://localhost:4000/updateUser/${foundUserState?._id}`, reviewValue)
+        await axios.put(`https://an-languages-backend.vercel.app/updateUser/${foundUserState?._id}`, reviewValue)
       alert("Thank you for your Feedback")
       setIsFeedback(false)
     fetchUsers().then((result) => setUsers(result));

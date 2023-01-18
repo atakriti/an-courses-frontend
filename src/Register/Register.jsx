@@ -54,7 +54,7 @@ function Register() {
       if (users?.some(user => user?.email === signUpValue?.email)) { 
         alert("This email is allready exist")
       } else {
-        await axios.post("http://localhost:4000/postingUser", signUpValue)
+        await axios.post("https://an-languages-backend.vercel.app/postingUser", signUpValue)
         setIsFetching(true)
         setSwitchRegister(1)
       fetchUsers().then(result => setUsers(result)).then(() =>  setIsFetching(false))
@@ -77,7 +77,7 @@ function Register() {
   let handleChangePassword =async (e) => {
     e.preventDefault()
     setFindChangePasswordState({...findChangePasswordState,password:changePasswordValue.emailChangePassword})
-    await axios.put(`http://localhost:4000/updateUser/${findChangePassword._id}`, { ...findChangePasswordState, password:changePasswordValue.newPassword })
+    await axios.put(`https://an-languages-backend.vercel.app/updateUser/${findChangePassword._id}`, { ...findChangePasswordState, password:changePasswordValue.newPassword })
     setIsSignedin(false);
     setIsFetching(true);
     setIsChangePassword(false) 

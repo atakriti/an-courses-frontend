@@ -24,7 +24,7 @@ function Footer() {
   let handleDeleteAccount = async (e) => {
     e.preventDefault();
     if (inputValue === findUser.password) {
-      await axios.delete(`http://localhost:4000/deleteUser/${findUser?._id}`);
+      await axios.delete(`https://an-languages-backend.vercel.app/deleteUser/${findUser?._id}`);
       setIsSignedin(false);
       setSignedin({
         email: "",

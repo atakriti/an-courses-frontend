@@ -7,7 +7,7 @@ function Context(props) {
   let [users, setUsers] = useState([])
   let [isFetching,setIsFetching] = useState(false)
   let fetchUsers = async () => {
-    let api = await fetch("http://localhost:4000/getTheAllUsers")
+    let api = await fetch("https://an-languages-backend.vercel.app/getTheAllUsers")
     let json = await api.json()
     return json
   }
