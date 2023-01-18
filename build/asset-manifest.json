@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.82dfa650.css",
+    "main.js": "/static/js/main.ce6d3585.js",
+    "static/js/498.08e1e2c8.chunk.js": "/static/js/498.08e1e2c8.chunk.js",
+    "static/js/703.454c9987.chunk.js": "/static/js/703.454c9987.chunk.js",
+    "static/js/598.d9f56d2f.chunk.js": "/static/js/598.d9f56d2f.chunk.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/speaking.jpg": "/static/media/speaking.1b4c0bdf56d7e5b9baa0.jpg",
+    "static/media/a1.jpg": "/static/media/a1.7bbf9aec745253999a2e.jpg",
+    "static/media/vocabs.jpg": "/static/media/vocabs.35d5963d7be047a2698a.jpg",
+    "static/media/b1.jpg": "/static/media/b1.d2dea3d7e3302301d278.jpg",
+    "static/media/baner2.jpg": "/static/media/baner2.4277bab4832f616f1bfb.jpg",
+    "static/media/baner-an.jpg": "/static/media/baner-an.88a074973ef5ad72e959.jpg",
+    "static/media/a2.jpg": "/static/media/a2.a2713f3bdc6620da2328.jpg",
+    "static/media/writting.jpg": "/static/media/writting.ed8a86730386b664fbcf.jpg",
+    "static/media/english.jpg": "/static/media/english.3473bfb079152bb7d06a.jpg",
+    "static/media/landing1.jpg": "/static/media/landing1.cd601d4afd15edff1251.jpg",
+    "static/media/grammar.jpg": "/static/media/grammar.866305ce149358893ec1.jpg",
+    "static/media/german.jpg": "/static/media/german.db9da2d073382c124933.jpg",
+    "service-worker.js": "/service-worker.js",
+    "static/media/An-courses-register.png": "/static/media/An-courses-register.d78ed326efb2097e4946.png",
+    "static/media/contact-logo.png": "/static/media/contact-logo.1d4a913f9a136a50b116.png",
+    "static/media/an-logo.png": "/static/media/an-logo.bb874a98d15273660160.png",
+    "static/media/user.jpg": "/static/media/user.140847c30ad4aee7ca0e.jpg",
+    "static/media/header-logo.png": "/static/media/header-logo.000a55b099748cde144b.png",
+    "index.html": "/index.html",
+    "main.82dfa650.css.map": "/static/css/main.82dfa650.css.map",
+    "main.ce6d3585.js.map": "/static/js/main.ce6d3585.js.map",
+    "498.08e1e2c8.chunk.js.map": "/static/js/498.08e1e2c8.chunk.js.map",
+    "703.454c9987.chunk.js.map": "/static/js/703.454c9987.chunk.js.map",
+    "598.d9f56d2f.chunk.js.map": "/static/js/598.d9f56d2f.chunk.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82dfa650.css",
+    "static/js/main.ce6d3585.js"
+  ]
+}
