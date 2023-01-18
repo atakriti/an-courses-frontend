@@ -85,7 +85,7 @@ pdf.text(50, 247, `Anwar Takriti`);
   console.log("🚀 ~ file: SingleCourse.jsx:54 ~ SingleCourse ~ speechText", speechText)
   let handleNext = async (e) => {
     e.preventDefault()
-    if ((counter === filterData?.length - 1 && clickedSentence?.isCorrect) ||( counter === filterData?.length - 1 && filterData[counter].answer === inputValue  )) {
+    if ((counter === filterData?.length - 1 && clickedSentence?.isCorrect) ||( counter === filterData?.length - 1 && filterData[counter].answer === inputValue.trim()  )) {
       setFoundUserState({...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
       setIsFetching(true)
       await axios.put(`https://an-courses-backend.vercel.app/updateUser/${foundUserState?._id}`,{...foundUserState,done:{...foundUserState?.done,[`${lan}-${level}-${type}`]: true}})
@@ -116,12 +116,12 @@ pdf.text(50, 247, `Anwar Takriti`);
       setClickedSentence()
       setColorFalse(false)
       setColorCorrect(false)
-    } else if (filterData[counter].answer === inputValue) {
+    } else if (filterData[counter].answer === inputValue.trim()) {
       setCounter(counter + 1)
       setInputValue("")
       setWrittingFalse(false)
       setIsShowResult(0)
-    } else if (filterData[counter].answer !== inputValue) {
+    } else if (filterData[counter].answer !== inputValue.trim()) {
       
       if (isShowResult === 3) {
         return;
@@ -241,7 +241,7 @@ type === "writting" && (
         </ul>
         {type === "writting" && (
           <form action="">
-            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue.trim()} type="text" name="writting" id="" placeholder="Write the Sentence here" />
+            <input onChange={(e)=>setInputValue(e.target.value)} value={inputValue} type="text" name="writting" id="" placeholder="Write the Sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button onClick={handleNext}>Next</button>
           </form>
