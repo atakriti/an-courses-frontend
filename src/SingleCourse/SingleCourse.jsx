@@ -90,15 +90,14 @@ pdf.text(50, 247, `Anwar Takriti`);
       fetchUsers().then(result => setUsers(result)).then(() => setIsFetching(false))
       // setTimeout(()=>setIsFetching(false),2000)
        navigate(`/course/${lan}/${level}`)
-//! ============================ Here when the b1 is done it must give him a certificate (I have to check it if it works)
-      if (counter === filterB1.length - 1 && level === "b1" && lan === "de") {
+//! ============================ Here when the b1 is done it must give him a certificate
+      if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "de" && level === "b1") {
         setTimeout(() => setAnimateDownload(true), 1000)
         pdf.text(50, 140,"German:") 
         pdf.text(50, 145,  mappingKeysDE.join("")) 
         setTimeout(() => setAnimateDownload(false), 5000)
         setTimeout(() => pdf.save("certificate.pdf"), 5000)
-      }
-      if (counter === filterB1.length - 1 && level === "b1" && lan === "en") {
+      }else if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "en" && level === "b1") {
         setTimeout(() => setAnimateDownload(true), 1000)
         pdf.text(110, 140,"English:")
         pdf.text(110, 145,  mappingKeysEN.join("")) 
