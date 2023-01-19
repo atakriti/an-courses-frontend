@@ -92,17 +92,30 @@ pdf.text(50, 247, `Anwar Takriti`);
        navigate(`/course/${lan}/${level}`)
 //! ============================ Here when the b1 is done it must give him a certificate
       if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "de" && level === "b1") {
+        if(foundUserState.done["en-b1-speaking"] === true){
+          pdf.text(110, 140,"English:")
+          pdf.text(110, 145,  mappingKeysEN.join("")) 
+        }
         setTimeout(() => setAnimateDownload(true), 1000)
         pdf.text(50, 140,"German:") 
         pdf.text(50, 145,  mappingKeysDE.join("")) 
         setTimeout(() => setAnimateDownload(false), 5000)
         setTimeout(() => pdf.save("certificate.pdf"), 5000)
+        if(foundUserState.done["en-b1-speaking"] === true){
+          pdf.text(110, 140,"English:")
+          pdf.text(110, 145,  mappingKeysEN.join("")) 
+        }
       }else if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "en" && level === "b1") {
+        if(foundUserState.done["de-b1-speaking"] === true){
+          pdf.text(50, 140,"German:") 
+        pdf.text(50, 145,  mappingKeysDE.join("")) 
+        }
         setTimeout(() => setAnimateDownload(true), 1000)
         pdf.text(110, 140,"English:")
         pdf.text(110, 145,  mappingKeysEN.join("")) 
         setTimeout(() => setAnimateDownload(false), 5000)
         setTimeout(() => pdf.save("certificate.pdf"), 5000)
+       
       }
       
     }else if (clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() ) {
