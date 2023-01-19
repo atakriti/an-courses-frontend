@@ -2282,7 +2282,7 @@ let data = [
     },
      // ===================================================== Speaking =====================================
     {
-        question:"The cat, who was lounging on the windowsill, suddenly jumped down and ran outside",
+        question:"The team was able to win the game thanks to their hard work and dedication",
         translate: "No Translation",
         type: "speaking",
         level: "a2",
