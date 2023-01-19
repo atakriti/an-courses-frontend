@@ -2685,14 +2685,7 @@ let data = [
     lan: "en",
     answer: "",
   },
-  {
-    question:"The socks were soft and comfortable, made from breathable cotton that kept the feet warm all day",
-    translate: "No Translation",
-    type: "speaking",
-    level: "b1",
-    lan: "en",
-    answer: "",
-  },
+  
 
 ];
 export default data;
