@@ -26,7 +26,7 @@ function Feedback() {
     setFoundUserState(findUser);
       } else {
         setAnimateIsSignin(true)
-        setTimeout(( )=>setAnimateIsSignin(false),2000 )
+        setTimeout(( )=>setAnimateIsSignin(false),1000 )
       }
         
     }

@@ -13,7 +13,7 @@ function Courses() {
       navigate("/course/de")
     } else {
       setAnimateIsSignin(true)
-      setTimeout(( )=>setAnimateIsSignin(false),2000 )
+      setTimeout(( )=>setAnimateIsSignin(false),1000 )
     }
   }
   let handleEnglish = () => {
@@ -21,7 +21,7 @@ function Courses() {
       navigate("/course/en")
     } else {
       setAnimateIsSignin(true)
-      setTimeout(( )=>setAnimateIsSignin(false),2000 )
+      setTimeout(( )=>setAnimateIsSignin(false),1000 )
     }
   }
   return (

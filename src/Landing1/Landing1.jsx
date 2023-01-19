@@ -41,7 +41,7 @@ pdf.text(50, 247, `Anwar Takriti`);
         setTimeout(() => pdf.save("certificate.pdf"), 4000)
       } else {
         setAnimateIsSignin(true)
-        setTimeout(( )=>setAnimateIsSignin(false),2000 )
+        setTimeout(( )=>setAnimateIsSignin(false),1000 )
       }
     }
    
