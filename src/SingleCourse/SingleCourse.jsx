@@ -135,14 +135,18 @@ pdf.text(50, 247, `Anwar Takriti`);
   // ================================================================================================================
 
   // let refWritting = useRef()
-  const handleChangeWritting = (value) => {
+  const handleChangeWritting = (e) => {
     const debounced = debounce(() => {
-      setInputValue(value)
+      setInputValue(e.target.value)
     }, 1);
     
     debounced();
   };
- 
+  useEffect(() => {
+    return () => {
+      handleChangeWritting.cancel();
+    }
+  }, []);
   // let handleChangeWritting = useMemo(
   //   () => (e) => setInputValue(e.target.value),
   //   []
@@ -256,7 +260,7 @@ type === "writting" && (
         </ul>
         {type === "writting" && (
           <form onSubmit={handleNext}>
-            <input onChange={(e) => handleChangeWritting(e.target.value)}  type="text" name="writting" id="" placeholder="Write the sentence here" />
+            <input onChange={handleChangeWritting}  type="text" name="writting" id="" placeholder="Write the sentence here" />
             {writtingFalse && <h5>The answer is not correct <br /> It can be the uppercase, space after the coma or question mark</h5>}
             <button >Next</button>
           </form>
