@@ -1741,7 +1741,7 @@ let data = [
     ],
   },
   {
-    question: "Flowers come in many colors and __.",
+    question: "Flowers come in many colours and __.",
     translate: "الازهار بتجي بكزا الوان وانواع",
     type: "vocabs",
     level: "a1",
@@ -1767,7 +1767,7 @@ let data = [
     ],
   },
   {
-    question: "Butterflies are colorful __ that fly in gardens.",
+    question: "Butterflies are colourful __ that fly in gardens.",
     translate: "الفراشات حشرات مليئة بالالوان بتطير بالحدائق",
     type: "vocabs",
     level: "a1",
@@ -2529,7 +2529,7 @@ let data = [
     ],
   },
   {
-    question: "The flowers were __ in the garden, adding color and beauty to the space.",
+    question: "The flowers were __ in the garden, adding colour and beauty to the space.",
     translate: "No Translation",
     type: "vocabs",
     level: "b1",
