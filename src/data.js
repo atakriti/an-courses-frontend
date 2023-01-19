@@ -2678,7 +2678,7 @@ let data = [
     answer: "",
   },
   {
-    question:"The flower was fragrant and beautiful, with vibrant petals in shades of pink and purple that added color and life to the garden",
+    question:"The flower was fragrant and beautiful, with vibrant petals in shades of pink and purple that added colour and life to the garden",
     translate: "No Translation",
     type: "speaking",
     level: "b1",
