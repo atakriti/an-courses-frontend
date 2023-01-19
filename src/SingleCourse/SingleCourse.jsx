@@ -141,7 +141,7 @@ pdf.text(50, 247, `Anwar Takriti`);
       }
       setWrittingFalse(true)
       // setInputValue("")
-      e.target.reset()
+      // e.target.reset()
     } 
   }
   // ================================================================================================================
