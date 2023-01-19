@@ -155,7 +155,7 @@ pdf.text(50, 247, `Anwar Takriti`);
   let handleSpeech = () => {
     let text = filterData[counter]?.question
     text = text?.replace(/_/g, '')
-    text = text?.replace(/ - /g, '')
+    text = text?.replace(/-/g, '')
     
     if (lan === "de") {
       setIsSpeaking(true)

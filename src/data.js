@@ -157,7 +157,7 @@ let data = [
   },
   {
     question: "__ machst du heute Abend?",
-    translate: "شو عندك اليوم المسا؟",
+    translate: "شو عامل اليوم المسا؟",
     type: "grammar",
     level: "a1",
     lan: "de",
@@ -412,7 +412,7 @@ let data = [
   },
   {
     question: "heute - machst - Abend - Was - du - ?",
-    translate: "شو عندك اليوم المسا؟",
+    translate: "شو عامل اليوم المسا؟",
     type: "writting",
     level: "a1",
     lan: "de",
@@ -539,7 +539,7 @@ let data = [
   },
   {
     question: "Ich habe __ Handy verloren.",
-    translate: "ضيعت موبايلي",
+    translate: "ضيعت الموبايل",
     type: "grammar",
     level: "a2",
     lan: "de",
@@ -578,7 +578,7 @@ let data = [
   },
   {
     question: "Ich nehme die Jacke __ Haken.",
-    translate: "عم ياخود الجاكيت من العليقة",
+    translate: "عم باخود الجاكيت من العليقة",
     type: "grammar",
     level: "a2",
     lan: "de",
@@ -669,7 +669,7 @@ let data = [
   },
   {
     question: "Die Kinder bekommen Geschenke __ __ Eltern.",
-    translate: "الاولاد عم يتلقون هدايا من الاهل",
+    translate: "الاولاد يتلقون هدايا من الاهل",
     type: "grammar",
     level: "a2",
     lan: "de",
@@ -761,7 +761,7 @@ let data = [
   },
   {
     question: "Maria arbeitet als Lehrerin an einer __.",
-    translate: "ماريا بتشتغل بمدرسة ابتدائي",
+    translate: "ماريا بتشتغل انسة بمدرسة ابتدائي",
     type: "vocabs",
     level: "a2",
     lan: "de",
@@ -774,7 +774,7 @@ let data = [
   },
   {
     question: "Mein Handy ist leider __ gegangen.",
-    translate: "موبايلي انتزع",
+    translate: "موبايلي للاسف انتزع",
     type: "vocabs",
     level: "a2",
     lan: "de",
@@ -800,7 +800,7 @@ let data = [
   },
   {
     question: "Können wir bitte eine Pizza __?",
-    translate: "فينا نطلب بيتزا؟",
+    translate: "فينا من بعد اذنك نطلب بيتزا؟",
     type: "vocabs",
     level: "a2",
     lan: "de",
@@ -827,7 +827,7 @@ let data = [
   },
   {
     question: "Ich habe gestern Abend ein __ Buch gelesen.",
-    translate: "مبارح قرات كتاب مشوق",
+    translate: "مبارح المسا قرات كتاب مشوق",
     type: "vocabs",
     level: "a2",
     lan: "de",
