@@ -2670,7 +2670,7 @@ let data = [
   answer: "",
   },
   {
-    question:"The ice cream cone was creamy and delicious, with a perfect combination of vanilla and chocolate flavor that was satisfying on a hot summer day",
+    question:"The ice cream cone was creamy and delicious, with a perfect combination of vanilla and chocolate flavour that was satisfying on a hot summer day",
     translate: "No Translation",
     type: "speaking",
     level: "b1",
