@@ -155,6 +155,7 @@ pdf.text(50, 247, `Anwar Takriti`);
   let handleSpeech = () => {
     let text = filterData[counter]?.question
     text = text?.replace(/_/g, '')
+    text = text?.replace(/ - /g, '')
     
     if (lan === "de") {
       setIsSpeaking(true)
@@ -236,7 +237,7 @@ type === "writting" && (
 
 
         
-        <h3>{filterData[counter]?.question}</h3>
+        <h2>{filterData[counter]?.question}</h2>
         <div className="btns">
           <BsTranslate onClick={()=>setTranslate(!translate)} />
           <GiSpeaker onClick={handleSpeech} />

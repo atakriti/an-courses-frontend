@@ -220,7 +220,7 @@ let data = [
       { answer: "Wieso", isCorrect: true },
     ],
   },
-  // ============================================================= A1 Vocabs ===========
+   // ============================================================= A1 Vocabs ===========
   {
     question: "Ich __ aus Syrien.",
     translate: "انا من سوريا",
@@ -377,9 +377,9 @@ let data = [
       { answer: "Museum", isCorrect: true },
     ],
   },
-  // ==================================== Writting =========================
+   // ==================================== Writting =========================
   {
-    question: "heiße/Maria./Ich",
+    question: "heiße - Maria. - Ich",
     translate: "اسمي ماريا",
     type: "writting",
     level: "a1",
@@ -387,7 +387,7 @@ let data = [
     answer: "Ich heiße Maria.",
   },
   {
-    question: "kein/spreche/Deutsch./Ich",
+    question: "kein - spreche - Deutsch. - Ich",
     translate: "انا ما بحكي الماني",
     type: "writting",
     level: "a1",
@@ -395,7 +395,7 @@ let data = [
     answer: "Ich spreche kein Deutsch.",
   },
   {
-    question: "ist/Es/draußen./kalt",
+    question: "ist - Es - draußen. - kalt",
     translate: "برا برد",
     type: "writting",
     level: "a1",
@@ -403,7 +403,7 @@ let data = [
     answer: "Es ist kalt draußen.",
   },
   {
-    question: "sind/hungrig./Wir",
+    question: "sind - hungrig. - Wir",
     translate: "نحنا جوعانين",
     type: "writting",
     level: "a1",
@@ -411,7 +411,7 @@ let data = [
     answer: "Wir sind hungrig.",
   },
   {
-    question: "heute/machst/Abend/Was/du/?",
+    question: "heute - machst - Abend - Was - du - ?",
     translate: "شو عندك اليوم المسا؟",
     type: "writting",
     level: "a1",
@@ -419,7 +419,7 @@ let data = [
     answer: "Was machst du heute Abend?",
   },
   {
-    question: "an/der/fängt/Film/Wann/?",
+    question: "an - der - fängt - Film - Wann - ?",
     translate: "امتى لح يبلش الفلم؟",
     type: "writting",
     level: "a1",
@@ -427,7 +427,7 @@ let data = [
     answer: "Wann fängt der Film an?",
   },
   {
-    question: "zu/du/spät/Wieso/kommst?",
+    question: "zu - du - spät - Wieso - kommst?",
     translate: "ليش متاخر؟",
     type: "writting",
     level: "a1",
@@ -435,7 +435,7 @@ let data = [
     answer: "Wieso kommst du zu spät?",
   },
   {
-    question: "Deutsch./spreche/ein/Ich/bisschen",
+    question: "Deutsch. - spreche - ein - Ich - bisschen",
     translate: "انا بحكي شوية الماني",
     type: "writting",
     level: "a1",
@@ -443,14 +443,14 @@ let data = [
     answer: "Ich spreche ein bisschen Deutsch.",
   },
   {
-    question: "Ich/Kino/gerne/möchte/gehen./ins",
+    question: "Ich - Kino - gerne - möchte - gehen. - ins",
     translate: "انا بدي روح على السينما",
     type: "writting",
     level: "a1",
     lan: "de",
     answer: "Ich möchte gerne ins Kino gehen.",
   },
-  // ========================================== Speaking ===================================
+   //  ========================================== Speaking ===================================
   {
     question: "Ich gehe jeden Tag spazieren",
     translate: "No Translation",
@@ -484,7 +484,7 @@ let data = [
     answer: "",
   },
 
-  // =============================================== A2 ========================
+   // =============================================== A2 ========================
   {
     question: "Ich sehe __ Katze __ Garten.",
     translate: "انا شايف القطة بالحديقة",
@@ -719,7 +719,7 @@ let data = [
       { answer: "dem", isCorrect: false },
     ],
   },
-  // ======================================= A2 Vocabs ======================
+   // ======================================= A2 Vocabs ======================
   {
     question: "Wir fahren in den __ nach Italien.",
     translate: "نحنا مسافرين بالعطلة على ايطاليا",
@@ -877,10 +877,10 @@ let data = [
       { answer: "ahnung,ist,überall", isCorrect: false },
     ],
   },
-  // ================================================= A2 Writting ======================================
+   //  ================================================= A2 Writting ======================================
   {
     question:
-      "kocht/Meine/immer/besuche./Großmutter/Gerichte, wenn/ich/leckere/sie",
+      "kocht - Meine - immer - besuche. - Großmutter - Gerichte, wenn - ich - leckere - sie",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "a2",
@@ -890,7 +890,7 @@ let data = [
   },
   {
     question:
-      "habe/Paar/waren./mir/Ich/ein/neues/heute/gekauft, weil/meine/Schuhe/kaputt/alten",
+      "habe - Paar - waren. - mir - Ich - ein - neues - heute - gekauft, weil - meine - Schuhe - kaputt - alten",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "a2",
@@ -899,7 +899,7 @@ let data = [
       "Ich habe mir heute ein neues Paar Schuhe gekauft, weil meine alten kaputt waren.",
   },
   {
-    question: "eine/Die/bauen/Höhle/aus/spielen/im/Garten/und/Kinder/Sand.",
+    question: "eine - Die - bauen - Höhle - aus - spielen - im - Garten - und - Kinder - Sand.",
     translate: "No Translation",
     type: "writting",
     level: "a2",
@@ -908,7 +908,7 @@ let data = [
   },
   {
     question:
-      "Fenster/warm./du/bitte/ist/hier/drinnen/sehr/das/Kannst/öffnen? /Es",
+      "Fenster - warm. - du - bitte - ist - hier - drinnen - sehr - das - Kannst - öffnen?  - Es",
     translate:
       "No Translation, Dont forget to put a space after the question mark",
     type: "writting",
@@ -918,7 +918,7 @@ let data = [
       "Kannst du bitte das Fenster öffnen? Es ist hier drinnen sehr warm.",
   },
   {
-    question: "gerade/Tafel./Lehrer/an/Mathematikaufgabe/erklärt/Der/die/der",
+    question: "gerade - Tafel. - Lehrer - an - Mathematikaufgabe - erklärt - Der - die - der",
     translate: "No Translation",
     type: "writting",
     level: "a2",
@@ -927,7 +927,7 @@ let data = [
   },
   {
     question:
-      "6/werde/morgen/habe./früh/Ich/Termin/wichtigen/um/Uhr/aufstehen, weil/ich/einen",
+      "6 - werde - morgen - habe. - früh - Ich - Termin - wichtigen - um - Uhr - aufstehen, weil - ich - einen",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "a2",
@@ -936,7 +936,7 @@ let data = [
       "Ich werde morgen früh um 6 Uhr aufstehen, weil ich einen wichtigen Termin habe.",
   },
   {
-    question: "oft/Wochenende/Freund/und/Kino./Mein/am/ich/gehen/ins",
+    question: "oft - Wochenende - Freund - und - Kino. - Mein - am - ich - gehen - ins",
     translate: "No Translation",
     type: "writting",
     level: "a2",
@@ -945,7 +945,7 @@ let data = [
   },
   {
     question:
-      "kaputtgemacht/habe/es/das/Schwester/Ich/reparieren./Fahrad/meiner/und/muss/jetzt",
+      "kaputtgemacht - habe - es - das - Schwester - Ich - reparieren. - Fahrad - meiner - und - muss - jetzt",
     translate: "No Translation",
     type: "writting",
     level: "a2",
@@ -955,7 +955,7 @@ let data = [
   },
   {
     question:
-      "Wetter/Sonne/heute/ist/zu/und/sehr/nicht/Das/kalt./schön./Die/scheint/es/ist",
+      "Wetter - Sonne - heute - ist - zu - und - sehr - nicht - Das - kalt. - schön. - Die - scheint - es - ist",
     translate: "No Translation",
     type: "writting",
     level: "a2",
@@ -965,7 +965,7 @@ let data = [
   },
   {
     question:
-      "Schüler, die/Reihe/in/unterhalten/während/Unterrichts./der/Die/letzten/sitzen, /sich/des",
+      "Schüler, die - Reihe - in - unterhalten - während - Unterrichts. - der - Die - letzten - sitzen,  - sich - des",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "a2",
@@ -973,7 +973,7 @@ let data = [
     answer:
       "Die Schüler, die in der letzten Reihe sitzen, unterhalten sich während des Unterrichts.",
   },
-  // ========================================== Speaking ===================================
+   //  ========================================== Speaking ===================================
   {
     question:
       "Es war einmal ein kleiner Junge, der in einem Dorf am Fluss wohnte und eines Tages beschloss, die Welt zu entdecken",
@@ -1002,7 +1002,7 @@ let data = [
     answer: "",
   },
 
-  // =========================================== B1 ====================================================
+   //=========================================== B1 ====================================================
   {
     question: "Ich __ gerne wissen, ob du morgen Zeit __.",
     translate: "No Translation",
@@ -1164,7 +1164,7 @@ let data = [
       { answer: "würden,würden", isCorrect: true },
     ],
   },
-  // ====================================================== B1 Vocabs ==============================
+   // ====================================================== B1 Vocabs ==============================
   {
     question:
       "Die Mädchen, die ich gesehen habe, als ich durch den __ spazierte, spielten Frisbee.",
@@ -1318,10 +1318,10 @@ let data = [
       { answer: "geöffnet", isCorrect: false },
     ],
   },
-  // =================================== B1 Writting ==============================
+   // =================================== B1 Writting ==============================
   {
     question:
-      "Schüler,/die/Die/im/belohnt./werden/gut/aufgepasst/Unterricht/haben,",
+      "Schüler, - die - Die - im - belohnt. - werden - gut - aufgepasst - Unterricht - haben,",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1330,7 +1330,7 @@ let data = [
       "Die Schüler, die im Unterricht gut aufgepasst haben, werden belohnt.",
   },
   {
-    question: "habe/das/Antworten/alle/Buch,/vergessen./in/Ich/dem/stehen,",
+    question: "habe - das - Antworten - alle - Buch, - vergessen. - in - Ich - dem - stehen,",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1338,7 +1338,7 @@ let data = [
     answer: "Ich habe das Buch, in dem alle Antworten stehen, vergessen.",
   },
   {
-    question: "spazieren/es/wir/regnet,/gehen./Obwohl/werden",
+    question: "spazieren - es - wir - regnet, - gehen. - Obwohl - werden",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1347,7 +1347,7 @@ let data = [
   },
   {
     question:
-      "habe/du/das/geliehen/das/Auto,/gepflegt./sorgfältig/Ich/mir/hast,",
+      "habe - du - das - geliehen - das - Auto, - gepflegt. - sorgfältig - Ich - mir - hast,",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1355,7 +1355,7 @@ let data = [
     answer: "Ich habe das Auto, das du mir geliehen hast, sorgfältig gepflegt.",
   },
   {
-    question: "du/glaube,/hast./recht/Ich/dass",
+    question: "du - glaube, - hast. - recht - Ich - dass",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1363,7 +1363,7 @@ let data = [
     answer: "Ich glaube, dass du recht hast.",
   },
   {
-    question: "stellte/dass/sich/er/lügt./Es/heraus,",
+    question: "stellte - dass - sich - er - lügt. - Es - heraus,",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1371,7 +1371,7 @@ let data = [
     answer: "Es stellte sich heraus, dass er lügt.",
   },
   {
-    question: "nicht,/Ich/du/dass/wusste/würdest./kommen",
+    question: "nicht, - Ich - du - dass - wusste - würdest. - kommen",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1379,7 +1379,7 @@ let data = [
     answer: "Ich wusste nicht, dass du kommen würdest.",
   },
   {
-    question: "es/wir/regnet,/gehen/spazieren./Obwohl",
+    question: "es - wir - regnet, - gehen - spazieren. - Obwohl",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1387,7 +1387,7 @@ let data = [
     answer: "Obwohl es regnet, gehen wir spazieren.",
   },
   {
-    question: "er/arbeitet/er/weiter./müde/Obwohl ist,",
+    question: "er - arbeitet - er - weiter. - müde - Obwohl ist,",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -1395,14 +1395,14 @@ let data = [
     answer: "Obwohl er müde ist, arbeitet er weiter.",
   },
   {
-    question: "keinen/esse/Sandwich./Hunger/ich/Obwohl/habe,/ich/das",
+    question: "keinen - esse - Sandwich. - Hunger - ich - Obwohl - habe, - ich - das",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
     lan: "de",
     answer: "Obwohl ich keinen Hunger habe, esse ich das Sandwich.",
   },
-  // ====================================== Speaking ===================
+   //  ====================================== Speaking ===================
   {
     question:
       "Obwohl es draußen sehr kalt und unangenehm ist, beschlossen wir dennoch, den langen Spaziergang durch den Wald zu machen, um die frische Luft zu genießen",
@@ -1422,10 +1422,10 @@ let data = [
     lan: "de",
     answer: "",
   },
-  //! =========================================================================================================================
-  //! =========================================================================================================================
-  //! =========================================================================================================================
-  // English========================================================
+   // ! =========================================================================================================================
+   // ! =========================================================================================================================
+   // ! =========================================================================================================================
+   //  English========================================================
 
   {
     question: "I __ a boy.",
@@ -1622,7 +1622,7 @@ let data = [
       { answer: "have", isCorrect: false },
     ],
   },
-  // =================================== Vocabs ====================
+   //  =================================== Vocabs ====================
   {
     question: "Apples are a type of fruit that __ on trees.",
     translate: "التفاح نوع من الفواكي و ينمو على الشجر",
@@ -1792,9 +1792,9 @@ let data = [
       { answer: "landphorm", isCorrect: false },
     ],
   },
-  // =============================== Writting ====================
+   //  =============================== Writting ====================
   {
-    question: "are/Apples/of/a/type/fruit.",
+    question: "are - Apples - of - a - type - fruit.",
     translate: "التفاح نوع من الفواكي",
     type: "writting",
     level: "a1",
@@ -1802,7 +1802,7 @@ let data = [
     answer: "Apples are a type of fruit.",
   },
   {
-    question: "fly/and/Birds/sing./can",
+    question: "fly - and - Birds - sing. - can",
     translate: "الطيور بتقدر تغني و تطير",
     type: "writting",
     level: "a1",
@@ -1810,7 +1810,7 @@ let data = [
     answer: "Birds can fly and sing.",
   },
   {
-    question: "/cat/tail./legs/a/has/A/four/and",
+    question: " - cat - tail. - legs - a - has - A - four - and",
     translate: "القطة الها اربع رجلين و ذيل",
     type: "writting",
     level: "a1",
@@ -1818,7 +1818,7 @@ let data = [
     answer: "A cat has four legs and a tail.",
   },
   {
-    question: "rectangle/has/A/sides./four",
+    question: "rectangle - has - A - sides. - four",
     translate: "المستطيل الو اربع جوانب",
     type: "writting",
     level: "a1",
@@ -1826,7 +1826,7 @@ let data = [
     answer: "A rectangle has four sides.",
   },
   {
-    question: "sharp/claws./have/Cats",
+    question: "sharp - claws. - have - Cats",
     translate: "القطط الها مخالب حدة",
     type: "writting",
     level: "a1",
@@ -1834,7 +1834,7 @@ let data = [
     answer: "Cats have sharp claws.",
   },
   {
-    question: "rainforest/The/located/America./south/is/Amazon/in",
+    question: "rainforest - The - located - America. - south - is - Amazon - in",
     translate: "تقع غابات الأمازون المطيرة في أمريكا الجنوبية",
     type: "writting",
     level: "a1",
@@ -1842,7 +1842,7 @@ let data = [
     answer: "The Amazon rainforest is located in south America.",
   },
   {
-    question: "The/the/around/orbits/earth./moon",
+    question: "The - the - around - orbits - earth. - moon",
     translate: "القمر بدور حول الأرض",
     type: "writting",
     level: "a1",
@@ -1850,7 +1850,7 @@ let data = [
     answer: "The moon orbits around the earth.",
   },
   {
-    question: "to/Friday/nights./I/pizza/like/eat/on",
+    question: "to - Friday - nights. - I - pizza - like - eat - on",
     translate: "بحب اكل بيتزا الجمعة بليل",
     type: "writting",
     level: "a1",
@@ -1858,14 +1858,14 @@ let data = [
     answer: "I like to eat pizza on Friday nights.",
   },
   {
-    question: "gasoline/need/Cars/work./to",
+    question: "gasoline - need - Cars - work. - to",
     translate: "السيارات بحاجة بترول",
     type: "writting",
     level: "a1",
     lan: "en",
     answer: "Cars need gasoline to work.",
     },
-//   ============================== Speaking ==========================
+ //   ============================== Speaking ==========================
 {
     question:"The sun rises in the east and sets in the west",
     translate: "No Translation",
@@ -1891,7 +1891,7 @@ let data = [
         answer: "",
     },
     
-    // ============================================================= A2 =================================
+     // ============================================================= A2 =================================
     {
         question: "A teacher __ works in a school.",
         translate: "No Translation",
@@ -2061,7 +2061,7 @@ let data = [
             { answer: "launches", isCorrect: false },
         ],
     },
-    // ===================================== Vocabs =============================
+     // ===================================== Vocabs =============================
     {
         question: "__ it was late, she decided to call her friend.",
         translate: "No Translation",
@@ -2231,9 +2231,9 @@ let data = [
             { answer: "dedication", isCorrect: true },
         ],
     },
-    // ===================================== Writting ========================
+     //  ===================================== Writting ========================
     {
-        question: "Although/was/he/tired, /decided/going/to/report/finish/Ahmad/the/before/to/bed.",
+        question: "Although - was - he - tired,  - decided - going - to - report - finish - Ahmad - the - before - to - bed.",
         translate: "No Translation, Dont forget to put after the coma a space",
         type: "writting",
         level: "a2",
@@ -2241,7 +2241,7 @@ let data = [
         answer: "Although he was tired, Ahmad decided to finish the report before going to bed.",
     },
     {
-        question: "next/the/groceries./store/was/closed, /we/had/Because/to/go/to/the/buy/town/to",
+        question: "next - the - groceries. - store - was - closed,  - we - had - Because - to - go - to - the - buy - town - to",
         translate: "No Translation, Dont forget to put after the coma a space",
         type: "writting",
         level: "a2",
@@ -2249,7 +2249,7 @@ let data = [
         answer: "Because the store was closed, we had to go to the next town to buy groceries.",
         },
         {
-            question: "Although/was/it/we/went/walk/park./for/raining, /a/in/the",
+            question: "Although - was - it - we - went - walk - park. - for - raining,  - a - in - the",
             translate: "No Translation, Dont forget to put after the coma a space",
             type: "writting",
             level: "a2",
@@ -2257,7 +2257,7 @@ let data = [
             answer: "Although it was raining, we went for a walk in the park.",
     },
     {
-        question: "gone/would/have/I/party, /to/the/but/late./work/I/had/to",
+        question: "gone - would - have - I - party,  - to - the - but - late. - work - I - had - to",
         translate: "No Translation, Dont forget to put after the coma a space",
         type: "writting",
         level: "a2",
@@ -2265,7 +2265,7 @@ let data = [
         answer: "I would have gone to the party, but I had to work late.",
     },
     {
-        question: "gave/The/teacher/difficult/the/assignment./class/a",
+        question: "gave - The - teacher - difficult - the - assignment. - class - a",
         translate: "No Translation",
         type: "writting",
         level: "a2",
@@ -2273,14 +2273,14 @@ let data = [
         answer: "The teacher gave the class a difficult assignment.",
     },
     {
-        question: "the/exhausted, /Despite/fact/working/that/was/she/decided/to/project./she/keep/on/the",
+        question: "the - exhausted,  - Despite - fact - working - that - was - she - decided - to - project. - she - keep - on - the",
         translate: "No Translation, Dont forget to put after the coma a space",
         type: "writting",
         level: "a2",
         lan: "en",
         answer: "Despite the fact that she was exhausted, she decided to keep working on the project.",
     },
-    // ===================================================== Speaking =====================================
+     // ===================================================== Speaking =====================================
     {
         question:"The cat, who was lounging on the windowsill, suddenly jumped down and ran outside",
         translate: "No Translation",
@@ -2305,7 +2305,7 @@ let data = [
         lan: "en",
         answer: "",
     },
-    // ============================================================ B1 ==========================================
+     //  ============================================================ B1 ==========================================
     {
       question: "He reported that he __ finished the project.",
       translate: "No Translation",
@@ -2488,7 +2488,7 @@ let data = [
         { answer: "are", isCorrect: false },
     ],
   },
-// =================================== Vocabs ====================
+ //  =================================== Vocabs ====================
 {
   question: "The sun was setting over the mountains, casting a warm orange __ over the valley below.",
   translate: "No Translation",
@@ -2619,9 +2619,9 @@ let data = [
       { answer: "ticking", isCorrect: true },
     ],
   },
-  // ======================================================= Writting ===================================
+   // ======================================================= Writting ===================================
   {
-    question: "The/and/apple/was/shiny, /for/a/red/perfect/person./snack/a/hungry",
+    question: "The - and - apple - was - shiny,  - for - a - red - perfect - person. - snack - a - hungry",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -2629,7 +2629,7 @@ let data = [
     answer: "The apple was red and shiny, a perfect snack for a hungry person.",
   },
   {
-    question: "The/shining, /sun/bright./was/the/day/and/making/warm",
+    question: "The - shining,  - sun - bright. - was - the - day - and - making - warm",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -2637,7 +2637,7 @@ let data = [
     answer: "The sun was shining, making the day warm and bright.",
   },
   {
-    question: "was/toy/play/The/car/and/fast, /fun/small/to/with.",
+    question: "was - toy - play - The - car - and - fast,  - fun - small - to - with.",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -2645,7 +2645,7 @@ let data = [
     answer: "The toy car was small and fast, fun to play with.",
   },
   {
-    question: "was/The/walk./shoe/and/well, /fit/comfortable/for/perfect/a",
+    question: "was - The - walk. - shoe - and - well,  - fit - comfortable - for - perfect - a",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
@@ -2653,14 +2653,14 @@ let data = [
     answer: "The shoe was comfortable and fit well, perfect for a walk.",
   },
   {
-    question: "soft/bear/was/companion./teddy/and/The/comforting/cuddly, /a",
+    question: "soft - bear - was - companion. - teddy - and - The - comforting - cuddly,  - a",
     translate: "No Translation, Dont forget to put after the coma a space",
     type: "writting",
     level: "b1",
     lan: "en",
     answer: "The teddy bear was soft and cuddly, a comforting companion.",
   },
-  // =================================================== Speaking ========================
+   //  =================================================== Speaking ========================
 {
   question:"The ball was bouncy and round, made of durable rubber that was perfect for playing catch with friends in the park",
   translate: "No Translation",
