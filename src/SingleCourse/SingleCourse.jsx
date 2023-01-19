@@ -142,11 +142,7 @@ pdf.text(50, 247, `Anwar Takriti`);
     
     debounced();
   };
-  useEffect(() => {
-    return () => {
-      handleChangeWritting.cancel();
-    }
-  }, []);
+ 
   // let handleChangeWritting = useMemo(
   //   () => (e) => setInputValue(e.target.value),
   //   []
