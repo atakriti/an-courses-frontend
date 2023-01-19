@@ -219,6 +219,9 @@ pdf.text(50, 247, `Anwar Takriti`);
       <div className="singleCourse_container">
         <h1>{`${lan === "de" && "German" || lan === "en" && "English"} – ${level[0].toUpperCase() + level.slice(1)} – ${type[0].toUpperCase() + type.slice(1)}`}</h1>
         <h4>{`${counter + 1} out of ${filterData?.length}`}</h4>
+        {type === "speaking" && (
+          <h6>In speaking, don't care about the uppercase</h6>
+        )}
         {languageValue === "en" && (
 type === "writting" && (
   <h6>The result will show after {isShowResult}/3 attempts <br /> { isShowResult === 3 && filterData[counter].answer}</h6>
@@ -262,6 +265,7 @@ type === "writting" && (
             <button >Next</button>
           </form>
         )}
+
         {type === "speaking" && (
           <p>{transcript}</p>
         )}
