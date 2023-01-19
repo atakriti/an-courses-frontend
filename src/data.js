@@ -1187,8 +1187,8 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "Fluss", isCorrect: true },
       { answer: "See", isCorrect: false },
+      { answer: "Fluss", isCorrect: true },
       { answer: "Ozean", isCorrect: false },
       { answer: "Meer", isCorrect: false },
     ],
@@ -1201,9 +1201,9 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "Geld", isCorrect: true },
       { answer: "Zeit", isCorrect: false },
       { answer: "Tickets", isCorrect: false },
+      { answer: "Geld", isCorrect: true },
       { answer: "Visa", isCorrect: false },
     ],
   },
@@ -1215,8 +1215,8 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "gelesen", isCorrect: true },
       { answer: "gekauft", isCorrect: false },
+      { answer: "gelesen", isCorrect: true },
       { answer: "ausgeliehen", isCorrect: false },
       { answer: "verschenkt", isCorrect: false },
     ],
@@ -1243,9 +1243,9 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "Australien", isCorrect: true },
       { answer: "Afrika", isCorrect: false },
       { answer: "Südamerika", isCorrect: false },
+      { answer: "Australien", isCorrect: true },
       { answer: "Asien", isCorrect: false },
     ],
   },
@@ -1257,10 +1257,10 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "großen", isCorrect: true },
       { answer: "kleinen", isCorrect: false },
       { answer: "alten", isCorrect: false },
       { answer: "neuen", isCorrect: false },
+      { answer: "großen", isCorrect: true },
     ],
   },
   {
@@ -1284,8 +1284,8 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "Park", isCorrect: true },
       { answer: "Wald", isCorrect: false },
+      { answer: "Park", isCorrect: true },
       { answer: "Garten", isCorrect: false },
       { answer: "Strand", isCorrect: false },
     ],
@@ -1298,9 +1298,9 @@ let data = [
     level: "b1",
     lan: "de",
     options: [
-      { answer: "Japan", isCorrect: true },
       { answer: "Korea", isCorrect: false },
       { answer: "China", isCorrect: false },
+      { answer: "Japan", isCorrect: true },
       { answer: "Thailand", isCorrect: false },
     ],
   },
