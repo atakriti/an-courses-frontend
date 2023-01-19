@@ -2686,7 +2686,7 @@ let data = [
     answer: "",
   },
   {
-    question:"The socks were soft and comfortable, made from breathable cotton that kept the feet warm and cozy all day",
+    question:"The socks were soft and comfortable, made from breathable cotton that kept the feet warm all day",
     translate: "No Translation",
     type: "speaking",
     level: "b1",
