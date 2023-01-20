@@ -881,7 +881,7 @@ let data = [
   {
     question:
       "kocht - Meine - immer - besuche. - Großmutter - Gerichte, wenn - ich - leckere - sie",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "a2",
     lan: "de",
@@ -891,7 +891,7 @@ let data = [
   {
     question:
       "habe - Paar - waren. - mir - Ich - ein - neues - heute - gekauft, weil - meine - Schuhe - kaputt - alten",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "a2",
     lan: "de",
@@ -928,7 +928,7 @@ let data = [
   {
     question:
       "6 - werde - morgen - habe. - früh - Ich - Termin - wichtigen - um - Uhr - aufstehen, weil - ich - einen",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "a2",
     lan: "de",
@@ -966,7 +966,7 @@ let data = [
   {
     question:
       "Schüler, die - Reihe - in - unterhalten - während - Unterrichts. - der - Die - letzten - sitzen,  - sich - des",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "a2",
     lan: "de",
@@ -1322,7 +1322,7 @@ let data = [
   {
     question:
       "Schüler, - die - Die - im - belohnt. - werden - gut - aufgepasst - Unterricht - haben,",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1331,7 +1331,7 @@ let data = [
   },
   {
     question: "habe - das - Antworten - alle - Buch, - vergessen. - in - Ich - dem - stehen,",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1339,7 +1339,7 @@ let data = [
   },
   {
     question: "spazieren - es - wir - regnet, - gehen. - Obwohl - werden",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1348,7 +1348,7 @@ let data = [
   {
     question:
       "habe - du - das - geliehen - das - Auto, - gepflegt. - sorgfältig - Ich - mir - hast,",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1356,7 +1356,7 @@ let data = [
   },
   {
     question: "du - glaube, - hast. - recht - Ich - dass",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1364,7 +1364,7 @@ let data = [
   },
   {
     question: "stellte - dass - sich - er - lügt. - Es - heraus,",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1372,7 +1372,7 @@ let data = [
   },
   {
     question: "nicht, - Ich - du - dass - wusste - würdest. - kommen",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1380,7 +1380,7 @@ let data = [
   },
   {
     question: "es - wir - regnet, - gehen - spazieren. - Obwohl",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1388,7 +1388,7 @@ let data = [
   },
   {
     question: "er - arbeitet - er - weiter. - müde - Obwohl ist,",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -1396,7 +1396,7 @@ let data = [
   },
   {
     question: "keinen - esse - Sandwich. - Hunger - ich - Obwohl - habe, - ich - das",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "de",
@@ -2234,7 +2234,7 @@ let data = [
      //  ===================================== Writting ========================
     {
         question: "Although - was - he - tired,  - decided - going - to - report - finish - Ahmad - the - before - to - bed.",
-        translate: "No Translation, Dont forget to put after the coma a space",
+        translate: "No Translation, Dont forget to put after the comma a space",
         type: "writting",
         level: "a2",
         lan: "en",
@@ -2242,7 +2242,7 @@ let data = [
     },
     {
         question: "next - the - groceries. - store - was - closed,  - we - had - Because - to - go - to - the - buy - town - to",
-        translate: "No Translation, Dont forget to put after the coma a space",
+        translate: "No Translation, Dont forget to put after the comma a space",
         type: "writting",
         level: "a2",
         lan: "en",
@@ -2250,7 +2250,7 @@ let data = [
         },
         {
             question: "Although - was - it - we - went - walk - park. - for - raining,  - a - in - the",
-            translate: "No Translation, Dont forget to put after the coma a space",
+            translate: "No Translation, Dont forget to put after the comma a space",
             type: "writting",
             level: "a2",
             lan: "en",
@@ -2258,7 +2258,7 @@ let data = [
     },
     {
         question: "gone - would - have - I - party,  - to - the - but - late. - work - I - had - to",
-        translate: "No Translation, Dont forget to put after the coma a space",
+        translate: "No Translation, Dont forget to put after the comma a space",
         type: "writting",
         level: "a2",
         lan: "en",
@@ -2274,7 +2274,7 @@ let data = [
     },
     {
         question: "the - exhausted,  - Despite - fact - working - that - was - she - decided - to - project. - she - keep - on - the",
-        translate: "No Translation, Dont forget to put after the coma a space",
+        translate: "No Translation, Dont forget to put after the comma a space",
         type: "writting",
         level: "a2",
         lan: "en",
@@ -2622,7 +2622,7 @@ let data = [
    // ======================================================= Writting ===================================
   {
     question: "The - and - apple - was - shiny,  - for - a - red - perfect - person. - snack - a - hungry",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "en",
@@ -2630,7 +2630,7 @@ let data = [
   },
   {
     question: "The - shining,  - sun - bright. - was - the - day - and - making - warm",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "en",
@@ -2638,7 +2638,7 @@ let data = [
   },
   {
     question: "was - toy - play - The - car - and - fast,  - fun - small - to - with.",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "en",
@@ -2646,7 +2646,7 @@ let data = [
   },
   {
     question: "was - The - walk. - shoe - and - well,  - fit - comfortable - for - perfect - a",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "en",
@@ -2654,7 +2654,7 @@ let data = [
   },
   {
     question: "soft - bear - was - companion. - teddy - and - The - comforting - cuddly,  - a",
-    translate: "No Translation, Dont forget to put after the coma a space",
+    translate: "No Translation, Dont forget to put after the comma a space",
     type: "writting",
     level: "b1",
     lan: "en",
