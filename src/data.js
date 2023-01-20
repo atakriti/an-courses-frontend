@@ -2662,7 +2662,7 @@ let data = [
   },
    //  =================================================== Speaking ========================
 {
-  question:"The ball was bouncy and round, made of durable rubber that was perfect for playing catch with friends in the park",
+  question:"You can't make an omelette without breaking eggs",
   translate: "No Translation",
   type: "speaking",
   level: "b1",
@@ -2670,7 +2670,7 @@ let data = [
   answer: "",
   },
   {
-    question:"The ice cream cone was creamy and delicious, with a perfect combination of vanilla and chocolate flavour that was satisfying on a hot summer day",
+    question:"She carefully measured out the ingredients for her recipe",
     translate: "No Translation",
     type: "speaking",
     level: "b1",

@@ -62,7 +62,7 @@ pdf.text(50, 247, `Anwar Takriti`);
   let [inputValue, setInputValue] = useState("")
   let [writtingFalse, setWrittingFalse] = useState(false)
   let [translate, setTranslate] = useState(false)
-  let [isSpeaking,setIsSpeaking] = useState(false)
+  let [isSpeaking, setIsSpeaking] = useState(false)
   // console.log("🚀 ~ file: SingleCourse.jsx:16 ~ SingleCourse ~ clickedSentence", clickedSentence)
   // ==================================================================================================================
   let handleClickSentence = (i,item) => {
@@ -125,6 +125,7 @@ pdf.text(50, 247, `Anwar Takriti`);
       setClickedSentence()
       setColorFalse(false)
       setColorCorrect(false)
+      
     } else if (filterData[counter].answer === inputValue.trim()) {
       setCounter(counter + 1)
       // setInputValue("")
@@ -142,7 +143,7 @@ pdf.text(50, 247, `Anwar Takriti`);
       setWrittingFalse(true)
       // setInputValue("")
       // e.target.reset()
-    } 
+    }
   }
   // ================================================================================================================
 
@@ -234,6 +235,7 @@ pdf.text(50, 247, `Anwar Takriti`);
         {type === "speaking" && (
           <h6>In speaking, don't care about the uppercase</h6>
         )}
+       
         {languageValue === "en" && (
 type === "writting" && (
   <h6>The result will show after {isShowResult}/3 attempts <br /> { isShowResult === 3 && filterData[counter].answer}</h6>
