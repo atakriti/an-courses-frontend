@@ -13,6 +13,12 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import debounce from "lodash.debounce"
 import "./singleCourse.scss";
 function SingleCourse() {
+  let dateObj = new Date();
+  let month = dateObj.getUTCMonth() + 1; //months from 1-12
+  let day = dateObj.getUTCDate();
+  let year = dateObj.getUTCFullYear();
+    let FullDate = year + "/" + month + "/" + day
+    // ===========================================================
   let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers,setAnimateDownload,languageValue } = useContext(context)
   // ====================== Find the user =========================
   let findUser = users.find(user => user.email === signedin.email)
@@ -21,14 +27,20 @@ function SingleCourse() {
   let mappingKeysDE = getKeysCertificate?.map(item => item?.includes("de") && `\n ${item}`).filter(item => item !== false);
   let mappingKeysEN = getKeysCertificate?.map(item => item?.includes("en") && `\n ${item}`).filter(item => item !== false)
   const pdf = new jsPDF();
-  pdf.text(65, 90, `Thank you for visiting my Website`);
-pdf.text(47, 100, `Congratulation (${findUser?.username}) you completed the Course`);
-pdf.text(45, 110, `This Certificate is for fun, it is Fake and not Real`);
-pdf.text(55, 120, `only to remember that you could make it`);
-pdf.text(78, 130, `What you achieved :`);
+  pdf.setFont("helvetica", "bold");
+pdf.setFontSize(24);
+  pdf.text(50, 90, `${findUser?.username[0]?.toUpperCase() + findUser?.username?.slice(1)},`);
+  pdf.setFont("helvetica", "normal");
+  pdf.setFontSize(16);
+  pdf.text(50, 100, `Thank you for visiting my Website.`);
+pdf.text(50, 110, `Congratulations, you completed the Course.`);
+pdf.text(50, 120, `This Certificate is for fun, it is fake and not real.`);
+pdf.text(50, 130, `Only to remember that you could make it.`);
+pdf.text(50, 140, `What you achieved :`);
  
-pdf.text(50, 240, `Best regards`);
-pdf.text(50, 247, `Anwar Takriti`);
+pdf.text(50, 250, `Best regards,`);
+pdf.text(50, 257, `Anwar Takriti`);
+pdf.text(50, 267, `${FullDate}`);
 
   var imgWidth = 70;
   var imgHeight = 70;
@@ -92,27 +104,37 @@ pdf.text(50, 247, `Anwar Takriti`);
        navigate(`/course/${lan}/${level}`)
 //! ============================ Here when the b1 is done it must give him a certificate
       if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "de" && level === "b1") {
-        if(foundUserState.done["en-b1-speaking"] === true){
-          pdf.text(110, 140,"English:")
-          pdf.text(110, 145,  mappingKeysEN.join("")) 
+        if (foundUserState.done["en-b1-speaking"] === true) {
+          pdf.setFont("helvetica", "normal");
+          pdf.setFontSize(16);
+          pdf.text(110, 150,"English:")
+          pdf.text(110, 155,  mappingKeysEN.join("")) 
         }
         setTimeout(() => setAnimateDownload(true), 1000)
-        pdf.text(50, 140,"German:") 
-        pdf.text(50, 145,  mappingKeysDE.join("")) 
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(16);
+        pdf.text(50, 150,"German:") 
+        pdf.text(50, 155,  mappingKeysDE.join("")) 
         setTimeout(() => setAnimateDownload(false), 5000)
         setTimeout(() => pdf.save("certificate.pdf"), 5000)
-        if(foundUserState.done["en-b1-speaking"] === true){
-          pdf.text(110, 140,"English:")
-          pdf.text(110, 145,  mappingKeysEN.join("")) 
+        if (foundUserState.done["en-b1-speaking"] === true) {
+          pdf.setFont("helvetica", "normal");
+          pdf.setFontSize(16);
+          pdf.text(110, 150,"English:")
+          pdf.text(110, 155,  mappingKeysEN.join("")) 
         }
       }else if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "en" && level === "b1") {
-        if(foundUserState.done["de-b1-speaking"] === true){
-          pdf.text(50, 140,"German:") 
-        pdf.text(50, 145,  mappingKeysDE.join("")) 
+        if (foundUserState.done["de-b1-speaking"] === true) {
+          pdf.setFont("helvetica", "normal");
+          pdf.setFontSize(16);
+          pdf.text(50, 150,"German:") 
+        pdf.text(50, 155,  mappingKeysDE.join("")) 
         }
         setTimeout(() => setAnimateDownload(true), 1000)
-        pdf.text(110, 140,"English:")
-        pdf.text(110, 145,  mappingKeysEN.join("")) 
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(16);
+        pdf.text(110, 150,"English:")
+        pdf.text(110, 155,  mappingKeysEN.join("")) 
         setTimeout(() => setAnimateDownload(false), 5000)
         setTimeout(() => pdf.save("certificate.pdf"), 5000)
        
