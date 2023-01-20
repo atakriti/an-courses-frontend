@@ -908,7 +908,7 @@ let data = [
   },
   {
     question:
-      "Fenster - warm. - du - bitte - ist - hier - drinnen - sehr - das - Kannst - öffnen?  - Es",
+      "Fenster - warm. - du - bitte - ist - hier - drinnen - sehr - das - Kannst - öffnen? - Es",
     translate:
       "No Translation, Dont forget to put a space after the question mark",
     type: "writting",
@@ -961,7 +961,7 @@ let data = [
     level: "a2",
     lan: "de",
     answer:
-      "Das Wetter heute ist sehr schön. Die Sonne scheint und es ist nicht zu kalt.",
+      "Das Wetter heute ist sehr schön.Die Sonne scheint und es ist nicht zu kalt.",
   },
   {
     question:
