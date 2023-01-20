@@ -9,7 +9,7 @@ function Landing1() {
 let month = dateObj.getUTCMonth() + 1; //months from 1-12
 let day = dateObj.getUTCDate();
 let year = dateObj.getUTCFullYear();
-  let FullDate = year + "/" + month + "/" + day
+  let FullDate =  day + "/" + month + "/" +  year
   // ===========================================================
   let { users, signedin,isSignedin,animateDownload,setAnimateDownload,setAnimateIsSignin,languageValue } = useContext(context);
   // ====================== Find the user =========================

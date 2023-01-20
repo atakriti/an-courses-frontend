@@ -7,7 +7,7 @@ function FeedbackPage() {
   let month = dateObj.getUTCMonth() + 1; //months from 1-12
   let day = dateObj.getUTCDate();
   let year = dateObj.getUTCFullYear();
-  let FullDate = year + "/" + month + "/" + day
+  let FullDate = day + "/" + month + "/" +  year
   let FullTime = new Date(Date.now()).getHours() + ":" + new Date(Date.now()).getMinutes() + ":" + new Date(Date.now()).getSeconds()
 let resultDate = FullDate + "–" + FullTime
   // =============================

@@ -17,7 +17,7 @@ function SingleCourse() {
   let month = dateObj.getUTCMonth() + 1; //months from 1-12
   let day = dateObj.getUTCDate();
   let year = dateObj.getUTCFullYear();
-    let FullDate = year + "/" + month + "/" + day
+    let FullDate =  day + "/" + month + "/" +  year
     // ===========================================================
   let { users, signedin,setIsFetching,isFetching,fetchUsers,setUsers,setAnimateDownload,languageValue } = useContext(context)
   // ====================== Find the user =========================
