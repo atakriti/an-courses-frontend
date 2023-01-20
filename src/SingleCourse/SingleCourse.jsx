@@ -33,7 +33,7 @@ pdf.setFontSize(24);
   pdf.setFont("helvetica", "normal");
   pdf.setFontSize(16);
   pdf.text(50, 100, `Thank you for visiting my Website.`);
-pdf.text(50, 110, `Congratulations, you completed the Course.`);
+pdf.text(50, 110, `Congratulations, you completed the course.`);
 pdf.text(50, 120, `This Certificate is for fun, it is fake and not real.`);
 pdf.text(50, 130, `Only to remember that you could make it.`);
 pdf.text(50, 140, `What you achieved :`);
