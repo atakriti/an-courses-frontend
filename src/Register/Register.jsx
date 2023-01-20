@@ -137,7 +137,7 @@ function Register() {
           </a>
 
           <h1>Sign up</h1>
-          <input required onChange={handleChangeSignup} value={signUpValue.username} type="text" name="username" placeholder="First name and last name ..." />
+          <input required onChange={handleChangeSignup} value={signUpValue.username} type="text" name="username" placeholder="Full name..." />
           <input required onChange={handleChangeSignup} value={signUpValue.email} type="email" name="email" placeholder="Email..." />
           <input required onChange={handleChangeSignup} value={signUpValue.password} type="password" name="password" placeholder="Password..." title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
 
