@@ -24,7 +24,7 @@ function FeedbackPage() {
           <h1>{item.username}</h1>
           <span>{Array(item.rate).fill().map(() => <h3>⭐️</h3>)}</span>
           <h4>{item.comment}</h4>
-          <h5>{FullDate}</h5>
+          <h5>Registerd in: {item.timeStamp}</h5>
         </div>
         ) 
       ))}
