@@ -54,8 +54,8 @@ function Register() {
       if (users?.some(user => user?.email === signUpValue?.email)) { 
         alert("This email is allready exist")
       } else {
-        await axios.post("https://an-courses-backend.vercel.app/postingUser", signUpValue)
         setIsFetching(true)
+        await axios.post("https://an-courses-backend.vercel.app/postingUser", signUpValue)
         setSwitchRegister(1)
       fetchUsers().then(result => setUsers(result)).then(() =>  setIsFetching(false))
 
@@ -75,17 +75,26 @@ function Register() {
   let [findChangePasswordState,setFindChangePasswordState] = useState(findChangePassword)
   let handleChangePassword =async (e) => {
     e.preventDefault()
-    setFindChangePasswordState({...findChangePasswordState,password:changePasswordValue.emailChangePassword})
-    await axios.put(`https://an-courses-backend.vercel.app/updateUser/${findChangePassword._id}`, { ...findChangePasswordState, password:changePasswordValue.newPassword })
-    setIsSignedin(false);
-    setIsFetching(true);
-    setIsChangePassword(false) 
-    fetchUsers().then(result => setUsers(result)).then(() =>setIsFetching(false))
-    // // setTimeout(() => setIsFetching(false), 2000);
-    setSignedin({
-      username: "",
-      password: "",
-    });
+    if (users.some(item => item.email === changePasswordValue.emailChangePassword) === true) {
+      setFindChangePasswordState({...findChangePasswordState,password:changePasswordValue.emailChangePassword})
+      setIsFetching(true);
+      await axios.put(`https://an-courses-backend.vercel.app/updateUser/${findChangePassword._id}`, { ...findChangePasswordState, password:changePasswordValue.newPassword })
+      setIsSignedin(false);
+      setIsChangePassword(false) 
+      fetchUsers().then(result => setUsers(result)).then(() =>setIsFetching(false))
+      // // setTimeout(() => setIsFetching(false), 2000);
+      setSignedin({
+        username: "",
+        password: "",
+      });
+      setSigninValue({
+        email: changePasswordValue.emailChangePassword,
+        password:changePasswordValue.newPassword
+    })
+    } else {
+      alert("This account is not exist !")
+    }
+   
 
   }
   useEffect(() => {
@@ -128,7 +137,7 @@ function Register() {
           </a>
 
           <h1>Sign up</h1>
-          <input required onChange={handleChangeSignup} value={signUpValue.username} type="text" name="username" placeholder="Name..." />
+          <input required onChange={handleChangeSignup} value={signUpValue.username} type="text" name="username" placeholder="First name and last name ..." />
           <input required onChange={handleChangeSignup} value={signUpValue.email} type="email" name="email" placeholder="Email..." />
           <input required onChange={handleChangeSignup} value={signUpValue.password} type="password" name="password" placeholder="Password..." title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
 

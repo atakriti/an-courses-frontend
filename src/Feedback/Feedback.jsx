@@ -5,7 +5,7 @@ import ReactStars from "react-rating-stars-component";
 import "./feedback.scss"
 import axios from 'axios';
 function Feedback() {
-    let { users,signedin, fetchUsers,setUsers,setIsFeedback,isSignedin,animateIsSignin,setAnimateIsSignin} = useContext(context)
+    let { users,signedin, fetchUsers,setUsers,setIsFeedback,isSignedin,animateIsSignin,setAnimateIsSignin,setIsFetching} = useContext(context)
 
     let findUser = users.find((user) => user.email === signedin.email);
 
@@ -18,8 +18,11 @@ function Feedback() {
     let handleSubmit =async (e) => {
       e.preventDefault()
       if (isSignedin) {
-        setFoundUserState({...foundUserState,comment:reviewValue.comment,rate:reviewValue.rate})
+        setFoundUserState({ ...foundUserState, comment: reviewValue.comment, rate: reviewValue.rate })
+        setIsFetching(true)
         await axios.put(`https://an-courses-backend.vercel.app/updateUser/${foundUserState?._id}`, reviewValue)
+        setFoundUserState(findUser)
+        fetchUsers().then(result => setUsers(result)).then(() => setIsFetching(false))
       alert("Thank you for your Feedback")
       setIsFeedback(false)
     fetchUsers().then((result) => setUsers(result));

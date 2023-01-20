@@ -16,6 +16,7 @@ function Footer() {
     setUsers,
     isSignedin,
     languageValue,
+    setIsFetching
   } = useContext(context);
   // ====================== Find the user =========================
   let findUser = users?.find((user) => user?.email === signedin?.email);
@@ -24,15 +25,16 @@ function Footer() {
   let handleDeleteAccount = async (e) => {
     e.preventDefault();
     if (inputValue === findUser.password) {
+      setIsDelete(false);
+      setIsFetching(true)
       await axios.delete(`https://an-courses-backend.vercel.app/deleteUser/${findUser?._id}`);
+      fetchUsers().then((result) => setUsers(result)).then(() =>setIsFetching(false))
       setIsSignedin(false);
       setSignedin({
         email: "",
         password: "",
       });
-      fetchUsers().then((result) => setUsers(result));
       alert("Your account is Deleted");
-      setIsDelete(false);
       setInputValue("");
     } else {
       alert("The password is not correct !");
