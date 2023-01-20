@@ -8,8 +8,7 @@ function FeedbackPage() {
   let day = dateObj.getUTCDate();
   let year = dateObj.getUTCFullYear();
   let FullDate = day + "/" + month + "/" +  year
-  let FullTime = new Date(Date.now()).getHours() + ":" + new Date(Date.now()).getMinutes() + ":" + new Date(Date.now()).getSeconds()
-let resultDate = FullDate + "–" + FullTime
+
   // =============================
   let { users, languageValue } = useContext(context)
   let ask = users.some(item => item.comment !== undefined)
@@ -25,7 +24,7 @@ let resultDate = FullDate + "–" + FullTime
           <h1>{item.username}</h1>
           <span>{Array(item.rate).fill().map(() => <h3>⭐️</h3>)}</span>
           <h4>{item.comment}</h4>
-          <h5>{resultDate}</h5>
+          <h5>{FullDate}</h5>
         </div>
         ) 
       ))}
