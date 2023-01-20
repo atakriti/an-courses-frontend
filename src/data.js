@@ -427,7 +427,7 @@ let data = [
     answer: "Wann fängt der Film an?",
   },
   {
-    question: "zu - du - spät - Wieso - kommst?",
+    question: "zu - du - spät - Wieso - kommst - ?",
     translate: "ليش متاخر؟",
     type: "writting",
     level: "a1",
