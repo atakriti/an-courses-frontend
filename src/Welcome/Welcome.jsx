@@ -14,6 +14,7 @@ function Welcome() {
               <div className="top">
                   <h1>اهلا وسهلا فيكم</h1>
                   <p>بتمنى يعجبكم الموقع و يفيدكم بقدر الامكان</p>
+                  <p>الموقع مجاني</p>
                   <p>فيكم تختارو لغة الواجهة</p>
                   <label htmlFor="1">
                   العربية
@@ -24,6 +25,7 @@ function Welcome() {
               <div className="bottom">
                   <h1>Welcome</h1>
                   <p>I hope, that you like the website and find it helpful</p>
+                  <p>It's for free</p>
                   <p>You can choose the interface language </p>
                   <label htmlFor="2">
                   English
