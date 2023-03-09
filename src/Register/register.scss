@@ -80,6 +80,18 @@
                 background-color: #3994C9;
             }
         }
+        h5{
+            font-size: clamp(0.9rem,2vw,1rem);
+            background-color: #3994C9;
+            width: 100%;
+            border-radius: 20px;
+            padding: 1rem;
+            margin: 1rem 0;
+            color: white;
+            span{
+                color: red;
+            }
+        }
         h4{
             text-decoration: underline;
             cursor: pointer;

@@ -123,6 +123,7 @@ function Register() {
           <h1>Sign in</h1>
           <input required onChange={handleChangeSignin} value={signinValue.email} type="email" name="email" placeholder="Email..." />
           <input required onChange={handleChangeSignin} value={signinValue.password} type="password" name="password" placeholder="Password..." />
+          <h5>For companies: <br /> E-Mail: guest@gmail.com <br /> Password: Guest123 <br /> <span>Info: For companies means, that all courses are opened without passing the courses manually and taking time</span> </h5>
           <button>Sign in</button>
           <h4 onClick={() => setSwitchRegister(2)}>
             You don't have an account
