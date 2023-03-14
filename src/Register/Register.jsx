@@ -55,6 +55,7 @@ function Register() {
         alert("This email is allready exist")
       } else {
         setIsFetching(true)
+        // await axios.post("http://localhost:4000/postingUser", signUpValue)
         await axios.post("https://an-courses-backend.vercel.app/postingUser", signUpValue)
         setSwitchRegister(1)
       fetchUsers().then(result => setUsers(result)).then(() =>  setIsFetching(false))
