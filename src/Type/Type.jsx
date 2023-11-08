@@ -28,13 +28,13 @@ function Type() {
       alert("You must first finish Grammar and Vocabulary")
     }
   }
-  let handleSpeaking = () => {
-    if (findUser?.done[`${lan}-${level}-grammar`] && findUser?.done[`${lan}-${level}-vocabs`] && findUser?.done[`${lan}-${level}-writting`] === true) {
-      navigate(`/course/${lan}/${level}/speaking`)
-    } else {
-      alert("You must first finish Grammar, Vocabulary and Writting")
-    }
-  }
+  // let handleSpeaking = () => {
+  //   if (findUser?.done[`${lan}-${level}-grammar`] && findUser?.done[`${lan}-${level}-vocabs`] && findUser?.done[`${lan}-${level}-writting`] === true) {
+  //     navigate(`/course/${lan}/${level}/speaking`)
+  //   } else {
+  //     alert("You must first finish Grammar, Vocabulary and Writting")
+  //   }
+  // }
   return (
     <div className='german'>
 
@@ -61,11 +61,11 @@ function Type() {
           </span>
         </a>
         {/* ====================== Four =================== */}
-        <a onClick={handleSpeaking}><img src={speaking} alt="" /><h3>Speak</h3>
+        {/* <a onClick={handleSpeaking}><img src={speaking} alt="" /><h3>Speak</h3>
         <span className={findUser?.done[`${lan}-${level}-speaking`] === true ? "clip-green" : "clip-red"}>{findUser?.done[`${lan}-${level}-grammar`] && findUser?.done[`${lan}-${level}-vocabs`] && findUser?.done[`${lan}-${level}-writting`] === true ? <BsFillUnlockFill /> : <BsFillLockFill />}
           {findUser?.done[`${lan}-${level}-speaking`] === true && <MdDoneAll/>}
           </span>
-        </a>
+        </a> */}
       </div>
     </div>
   )

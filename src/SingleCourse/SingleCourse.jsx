@@ -52,12 +52,12 @@ pdf.text(50, 267, `${FullDate}`);
   
   
   
-  const {
-    transcript,
-    listening,
-    resetTranscript,
-    browserSupportsSpeechRecognition
-  } = useSpeechRecognition();
+  // const {
+  //   transcript,
+  //   listening,
+  //   resetTranscript,
+  //   browserSupportsSpeechRecognition
+  // } = useSpeechRecognition();
   // ====================================
   let { lan, level, type } = useParams();
   let navigate = useNavigate()
@@ -65,7 +65,7 @@ pdf.text(50, 267, `${FullDate}`);
     
   // ====================== End Find the user =========================
   let filterData = data.filter((item) => item.lan === lan && item.type === type && item.level === level);
-  let filterB1 = data.filter(item => item.type === "speaking" && item.level === "b1")
+  // let filterB1 = data.filter(item => item.type === "speaking" && item.level === "b1")
   let [counter, setCounter] = useState(0)
   let [clickedSentence, setClickedSentence] = useState()
   let [colorCorrect, setColorCorrect] = useState(false)
@@ -103,8 +103,8 @@ pdf.text(50, 267, `${FullDate}`);
       // setTimeout(()=>setIsFetching(false),2000)
        navigate(`/course/${lan}/${level}`)
 //! ============================ Here when the b1 is done it must give him a certificate
-      if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "de" && level === "b1") {
-        if (foundUserState.done["en-b1-speaking"] === true) {
+      if (counter === filterData?.length - 1 && lan === "de" && level === "b1") {
+        if (foundUserState.done["en-b1-writting"] === true) {
           pdf.setFont("helvetica", "normal");
           pdf.setFontSize(16);
           pdf.text(110, 150,"English:")
@@ -117,14 +117,14 @@ pdf.text(50, 267, `${FullDate}`);
         pdf.text(50, 155,  mappingKeysDE.join("")) 
         setTimeout(() => setAnimateDownload(false), 5000)
         setTimeout(() => pdf.save("certificate.pdf"), 5000)
-        if (foundUserState.done["en-b1-speaking"] === true) {
+        if (foundUserState.done["en-b1-writting"] === true) {
           pdf.setFont("helvetica", "normal");
           pdf.setFontSize(16);
           pdf.text(110, 150,"English:")
           pdf.text(110, 155,  mappingKeysEN.join("")) 
         }
-      }else if (counter === filterData?.length - 1 && speechText === transcript.toLowerCase() && lan === "en" && level === "b1") {
-        if (foundUserState.done["de-b1-speaking"] === true) {
+      }else if (counter === filterData?.length - 1 && lan === "en" && level === "b1") {
+        if (foundUserState.done["de-b1-writting"] === true) {
           pdf.setFont("helvetica", "normal");
           pdf.setFontSize(16);
           pdf.text(50, 150,"German:") 
@@ -140,9 +140,8 @@ pdf.text(50, 267, `${FullDate}`);
        
       }
       
-    }else if (clickedSentence?.isCorrect === true || speechText === transcript.toLowerCase() ) {
+    }else if (clickedSentence?.isCorrect === true ) {
       setCounter(counter + 1)
-      resetTranscript()
       setTranslate(false)
       setClickedSentence()
       setColorFalse(false)
@@ -216,20 +215,21 @@ pdf.text(50, 267, `${FullDate}`);
   // setInputValue(transcript)
   // inputValue = transcript
   
-  let handleRecord = () => {
-    if (lan === "de") {
+  // let handleRecord = () => {
+  //   if (lan === "de") {
 
-      SpeechRecognition.startListening({ language: 'de-DE' })
-    } else {
-      SpeechRecognition.startListening({ language: 'en-US' })
+  //     SpeechRecognition.startListening({ language: 'de-DE' })
+  //   } else {
+  //     SpeechRecognition.startListening({ language: 'en-US' })
       
-    }
+  //   }
      
-  }
+  // }
   // console.log("testing", { [`${lan}-${level}-${type}`]: true });
   useEffect(() => {
         setFoundUserState(findUser)
     },[users])
+
   return (
     <div className="singleCourse">
 
@@ -240,11 +240,11 @@ pdf.text(50, 267, `${FullDate}`);
         <span class="loader"></span>
         </div>
       )}
-      {listening && (
+      {/* {listening && (
           <div className="speaking">
           <span class="loader"></span>
           </div>
-      )}
+      )} */}
        {isFetching && (
         <div className="isFetching">
           <a><img src={logo} alt="" /></a>
@@ -254,9 +254,9 @@ pdf.text(50, 267, `${FullDate}`);
       <div className="singleCourse_container">
         <h1>{`${lan === "de" && "German" || lan === "en" && "English"} – ${level[0].toUpperCase() + level.slice(1)} – ${type[0].toUpperCase() + type.slice(1)}`}</h1>
         <h4>{`${counter + 1} out of ${filterData?.length}`}</h4>
-        {type === "speaking" && (
+        {/* {type === "speaking" && (
           <h6>In speaking, don't care about the uppercase</h6>
-        )}
+        )} */}
        
         {languageValue === "en" && (
 type === "writting" && (
@@ -278,15 +278,15 @@ type === "writting" && (
           <GiSpeaker onClick={handleSpeech} />
           
         </div>
-        {type === "speaking" && (
+        {/* {type === "speaking" && (
             <div onClick={handleRecord} className={listening ? "mic_btn_active" : "mic_btn"}>
             <MdKeyboardVoice  />
             </div>
-           )}
+           )} */}
        
-        {type === "speaking" && (
+        {/* {type === "speaking" && (
             <h6>{ listening ? "Mic is on" : "Mic is off"}</h6>
-            )}
+            )} */}
         <h5>{translate && filterData[counter]?.translate}</h5>
        
         <ul>
@@ -302,15 +302,15 @@ type === "writting" && (
           </form>
         )}
 
-        {type === "speaking" && (
+        {/* {type === "speaking" && (
           <p>{transcript}</p>
-        )}
-        {(type === "speaking" && speechText !== transcript.toLowerCase()) && (
+        )} */}
+        {/* {(type === "speaking" && speechText !== transcript.toLowerCase()) && (
           <h6>When it is correct the next button will show</h6>
-        )}
-        {speechText === transcript.toLowerCase() && (
+        )} */}
+        {/* {speechText === transcript.toLowerCase() && (
           <button onClick={handleNext}>Next</button>
-        )}
+        )} */}
         {clickedSentence?.isCorrect === true  && (
           <button onClick={handleNext}>Next</button>
         )}

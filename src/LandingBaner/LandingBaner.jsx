@@ -18,7 +18,7 @@ function LandingBaner() {
          
                <h1>An-Courses for free</h1>
          <p>In this website you will lern German and English lauguages, these made for all levels <br />
-         Grammar, Vocabulary, Writting, Speaking, Listening
+         Grammar, Vocabulary, Writting, Listening
          </p>
                <h3 onClick={()=>setIsFeedback(true)}>Your Feedback is important</h3>
                <h2>Beginner to Advanced</h2>
@@ -33,7 +33,7 @@ function LandingBaner() {
          
                <h1>مجاني An-Courses</h1>
          <p>بهاد الموقع فيكم تتعلموا اللغتين الانكليزية و الالمانية <br />
-         قواعد, سماعي, محادثة, كلمات
+         قواعد, سماعي, كلمات
          </p>
                <h3 onClick={()=>setIsFeedback(true)}>فيك تعطيني رأيك بالموقع؟</h3>
                <h2>من مبتدئ الى متقدم</h2>

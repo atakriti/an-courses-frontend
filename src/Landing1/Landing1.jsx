@@ -29,10 +29,10 @@ pdf.text(50, 120, `This Certificate is for fun, it is fake and not real.`);
 pdf.text(50, 130, `Only to remember that you could make it.`);
   pdf.text(50, 140, `What you achieved :`);
   
-  findUser?.done["de-b1-speaking"] && pdf.text(50, 150,"German:") 
-  findUser?.done["de-b1-speaking"] && pdf.text(50, 155,  mappingKeysDE.join(""))  
-  findUser?.done["en-b1-speaking"] && pdf.text(110, 150,"English:") 
-  findUser?.done["en-b1-speaking"] && pdf.text(110, 155,  mappingKeysEN.join("")) 
+  findUser?.done["de-b1-writting"] && pdf.text(50, 150,"German:") 
+  findUser?.done["de-b1-writting"] && pdf.text(50, 155,  mappingKeysDE.join(""))  
+  findUser?.done["en-b1-writting"] && pdf.text(110, 150,"English:") 
+  findUser?.done["en-b1-writting"] && pdf.text(110, 155,  mappingKeysEN.join("")) 
 
 
 pdf.text(50, 250, `Best regards,`);
@@ -46,7 +46,7 @@ pdf.text(50, 267, `${FullDate}`);
   pdf.addImage(certificate, "png", x, y, imgWidth, imgHeight);
 
   let handleDownload = () => {
-    if (findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ) {
+    if (findUser?.done["de-b1-writting"] || findUser?.done["en-b1-writting"] ) {
       if (isSignedin) {
         setAnimateDownload(true)
         setTimeout(() => setAnimateDownload(false), 4000)
@@ -70,7 +70,7 @@ pdf.text(50, 267, `${FullDate}`);
             <br /> You will get a Certificate but it is Fake only just for fun,
             that you achived it{" "}
           </p>
-          {findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ? (
+          {findUser?.done["de-b1-writting"] || findUser?.done["en-b1-writting"] ? (
   
           <button onClick={handleDownload}>Download Certificate</button>
           ):<h2>Download button will appear once you finished German or English</h2>}
@@ -87,7 +87,7 @@ pdf.text(50, 267, `${FullDate}`);
             اي نعم, بس تخلصوا كورس الالماني او الانكليزي <br /> 
             هية شهادة مزيفة وليست حقيقية, بس تقدير لجهودكم
           </p>
-          {findUser?.done["de-b1-speaking"] || findUser?.done["en-b1-speaking"] ? (
+          {findUser?.done["de-b1-writting"] || findUser?.done["en-b1-writting"] ? (
   
           <button onClick={handleDownload}>تحميل الشهادة</button>
           ):<h2>زر التحميل بيطلع بس لما تكونو مخلصين الانكليزي او الالماني</h2>}
